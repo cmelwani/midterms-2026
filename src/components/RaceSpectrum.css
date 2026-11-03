@@ -1,0 +1,11 @@
+.race-spectrum__bar { display: flex; gap: 4px; align-items: flex-start; }
+.race-spectrum__bucket { flex-basis: 0; min-width: 52px; display: flex; flex-direction: column; gap: 3px; }
+.race-spectrum__cells { display: flex; flex-wrap: wrap; gap: 2px; }
+.race-spectrum__cell { flex: 1 0 10px; min-width: 10px; max-width: 26px; height: 22px; border: 0; border-radius: 2px; padding: 0; color: #fff; font-size: 0.7rem; font-weight: 700; cursor: pointer; }
+.race-spectrum__cell:hover, .race-spectrum__cell:focus-visible { outline: 2px solid var(--text); outline-offset: 1px; }
+.race-spectrum__label { font-size: 0.7rem; color: var(--text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.race-spectrum__detail { margin: 4px 0 0; font-size: 0.8rem; color: var(--text-muted); min-height: 1.2em; }
+@media (max-width: 700px) {
+  .race-spectrum__bar { flex-wrap: wrap; }
+  .race-spectrum__bucket { flex: 1 1 30%; }
+}

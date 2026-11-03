@@ -1,11 +1,14 @@
-import { partyInfo } from '../lib/ids.js'
+import { formatDate, ratingKey, ratingLabel } from './RatingBadge.lib.js'
+import './RatingBadge.css'
 
-// Session B owns this file.
-// Props: { rating: { category: 'toss-up'|'lean'|'likely'|'solid', party: 'D'|'R'|null } }
+// Props: { rating: { category: 'toss-up'|'lean'|'likely'|'solid', party: 'D'|'R'|'I'|null, source?, asOf? } }
 export default function RatingBadge({ rating }) {
   if (!rating) return null
-  const label = rating.category === 'toss-up'
-    ? 'Toss-up'
-    : `${rating.category[0].toUpperCase()}${rating.category.slice(1)} ${partyInfo(rating.party).short}`
-  return <span className={`rating-badge rating-badge--${rating.category} rating-badge--${rating.party || 'tossup'}`}>{label}</span>
+  const label = ratingLabel(rating)
+  const tip = [rating.source || 'Rating', rating.asOf ? `as of ${formatDate(rating.asOf)}` : ''].filter(Boolean).join(', ')
+  return (
+    <span className={`rating-badge rating-badge--${ratingKey(rating)}`} title={tip} aria-label={`${label} (${tip})`}>
+      {label}
+    </span>
+  )
 }

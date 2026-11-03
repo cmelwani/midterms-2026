@@ -1,0 +1,14 @@
+.us-tile-map { margin: 0; }
+.us-tile-map__wrap { position: relative; max-width: 560px; }
+.us-tile-map__svg { width: 100%; height: auto; display: block; }
+.us-tile-map__tile rect { stroke: transparent; stroke-width: 2; transition: opacity 0.15s; }
+.us-tile-map__tile--empty rect { opacity: 0.7; }
+.us-tile-map__tile--interactive { cursor: pointer; outline: none; }
+.us-tile-map__tile--interactive:hover rect, .us-tile-map__tile--interactive:focus-visible rect { stroke: var(--text); }
+.us-tile-map__tile--selected rect { stroke: #f59e0b; stroke-width: 3; }
+.us-tile-map__abbr { font-size: 12px; font-weight: 700; pointer-events: none; }
+.us-tile-map__label { font-size: 10px; font-weight: 600; pointer-events: none; }
+.us-tile-map__tip { position: absolute; z-index: 5; pointer-events: none; background: #111827; color: #fff; font-size: 0.78rem; line-height: 1.35; padding: 6px 8px; border-radius: 6px; max-width: 240px; white-space: pre-line; box-shadow: 0 4px 12px rgb(0 0 0 / 0.2); }
+.us-tile-map__legend { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: 0.75rem; color: var(--text-muted); margin-top: 6px; }
+.us-tile-map__key { display: inline-flex; align-items: center; gap: 4px; }
+.us-tile-map__swatch { width: 12px; height: 12px; border-radius: 2px; display: inline-block; }

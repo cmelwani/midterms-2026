@@ -1,0 +1,11 @@
+{
+  "_doc": "Manual corrections applied by scripts/build-races.mjs on top of the seed CSVs. candidates.<raceId>: include/exclude (by name), rename {from: to}, party {name: code}. races.<raceId>: fields merged into the race (e.g. incumbent, rating). Keep notes in _why.",
+  "candidates": {
+    "sen-ak-2": {
+      "_why": "Top-four general: two minor Republicans (Gerald Heikes, Dan J. Sullivan) are on the ballot but have no measurable polling; Wikipedia disambiguates the incumbent as 'Dan S. Sullivan'.",
+      "exclude": ["Gerald Heikes", "Dan J. Sullivan"],
+      "rename": { "Dan S. Sullivan": "Dan Sullivan" }
+    }
+  },
+  "races": {}
+}
