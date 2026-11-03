@@ -28,7 +28,7 @@ npm run dev                          # keep the dashboard open
 npm run simulate                     # call 5 more races (cumulative); dashboard updates within 60 s
 npm run simulate -- --count 20       # call 20 more
 npm run simulate -- --all            # call every race (status "final" once all 470 are called)
-npm run simulate -- --fresh --seed 7 # restart from the seed, deterministic
+npm run simulate -- --fresh --seed 7 # restart from the seed; same race outcomes, current timestamps
 npm run simulate:reset               # restore the real pre-election seed
 ```
 

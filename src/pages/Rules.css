@@ -1,6 +1,6 @@
 .rules__toc { display: flex; flex-wrap: wrap; gap: 4px 16px; padding: 10px 16px; font-size: 0.9rem; }
 .rules__toc a { text-decoration: none; font-weight: 500; }
-.rules section[id] { scroll-margin-top: calc(var(--nav-height) + 12px); }
+.rules section[id], .rules__sources li[id] { scroll-margin-top: calc(var(--nav-offset, var(--nav-height)) + 12px); }
 .rules__chamber { border-top: 4px solid var(--ind); }
 .rules__chamber--house { border-top-color: var(--tossup); }
 .rules__chamber--senate { border-top-color: var(--text); }

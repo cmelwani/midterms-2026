@@ -5,7 +5,7 @@
 //   npm run simulate -- --count 20   # call 20 more races
 //   npm run simulate -- --all        # call every race in the race files (status "final" if all 470 exist)
 //   npm run simulate -- --fresh      # start from the pre-election seed instead of the current file
-//   npm run simulate -- --seed 42    # deterministic output
+//   npm run simulate -- --seed 42    # deterministic race outcomes (timestamps still use the current time)
 //   npm run simulate:reset           # restore the pre-election seed
 //
 // Output is fake. Never commit a simulated results.json — run `npm run simulate:reset` first.
@@ -72,9 +72,11 @@ function readJson(name) {
 }
 
 const seedNow = () => ({ updated: isoLocal(), ...structuredClone(SEED) })
+// Fixed so a reset reproduces the committed seed byte-for-byte.
+const SEED_UPDATED = '2026-11-03T17:00:00+00:00'
 
 if (flag('reset')) {
-  writeJson('results.json', seedNow())
+  writeJson('results.json', { updated: SEED_UPDATED, ...structuredClone(SEED) })
   console.log('results.json reset to the pre-election seed.')
   process.exit(0)
 }
