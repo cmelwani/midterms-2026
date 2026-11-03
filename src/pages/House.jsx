@@ -1,5 +1,5 @@
-import { useMemo, useState } from 'react'
-import { useSearchParams } from 'react-router-dom'
+import { useEffect, useMemo, useRef, useState } from 'react'
+import { useLocation, useSearchParams } from 'react-router-dom'
 import { useData } from '../hooks/useData.js'
 import { useResults } from '../hooks/useResults.jsx'
 import RaceCard from '../components/RaceCard.jsx'
@@ -85,6 +85,13 @@ export default function House() {
     setHighlight(id)
     setTimeout(() => { const el = document.getElementById(id); el?.scrollIntoView({ behavior: 'smooth', block: 'center' }); el?.focus({ preventScroll: true }) }, 50)
   }
+  const { hash } = useLocation()
+  const jumpRef = useRef(jump)
+  useEffect(() => { jumpRef.current = jump })
+  useEffect(() => {
+    const id = decodeURIComponent(hash.slice(1))
+    if (id && races.some((r) => r.id === id)) jumpRef.current(id)
+  }, [hash, races])
 
   if (loading && !data) return <div className="page"><h1>House</h1><p className="muted" role="status">Loading House races…</p></div>
   if (error && !data) return <div className="page"><h1>House</h1><p className="house__error" role="alert">Couldn't load House races: {String(error.message || error)} <button type="button" onClick={refresh}>Retry</button></p></div>

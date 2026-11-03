@@ -1,5 +1,5 @@
-import { useMemo, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useEffect, useMemo, useRef, useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import { useData } from '../hooks/useData.js'
 import { useResults } from '../hooks/useResults.jsx'
 import RaceCard, { RaceStatus } from '../components/RaceCard.jsx'
@@ -43,11 +43,19 @@ export default function Senate() {
     setCat('all'); setCalled('all')
     setHighlight(id)
     requestAnimationFrame(() => {
-      const el = document.getElementById(view === 'table' ? `row-${id}` : id) || document.getElementById(id)
+      const el = [document.getElementById(`row-${id}`), document.getElementById(id)].find((e) => e?.offsetParent)
       el?.scrollIntoView({ behavior: 'smooth', block: 'center' })
       el?.focus({ preventScroll: true })
     })
   }
+
+  const { hash } = useLocation()
+  const jumpRef = useRef(jump)
+  useEffect(() => { jumpRef.current = jump })
+  useEffect(() => {
+    const id = decodeURIComponent(hash.slice(1))
+    if (id && races.some((r) => r.id === id)) jumpRef.current(id)
+  }, [hash, races])
   const selectState = (st) => {
     const r = races.filter((x) => x.state === st).sort((a, b) => Math.abs(ratingScore(a.rating)) - Math.abs(ratingScore(b.rating)))[0]
     if (r) jump(r.id)
