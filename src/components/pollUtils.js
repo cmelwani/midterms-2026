@@ -2,7 +2,6 @@
 export const STALE_POLL_DAYS = 14
 export const POLLING_ERROR_PTS = 3
 
-// D margins are negative, R positive, everything else (I/L/G/O or tie) by sign of party.
 export const MAX_PLAUSIBLE_MARGIN = 100
 
 const validMargin = (m) => m && m.points != null && Math.abs(m.points) <= MAX_PLAUSIBLE_MARGIN
@@ -10,9 +9,8 @@ const validMargin = (m) => m && m.points != null && Math.abs(m.points) <= MAX_PL
 export function signedMargin(margin) {
   if (!validMargin(margin)) return null
   if (!margin.party) return 0
-  if (margin.party === 'D') return -margin.points
-  if (margin.party === 'R') return margin.points
-  return 0
+  // R leads plot right; D and non-R leads (independents, who caucus/compete against R) plot left.
+  return margin.party === 'R' ? margin.points : -margin.points
 }
 
 export function marginLabel(margin) {
