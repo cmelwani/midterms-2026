@@ -62,7 +62,7 @@ function MajorityCard({ chamber, name, summary, s }) {
             <span className="dashboard__need-party">{p === 'D' ? 'Democrats' : 'Republicans'}</span>
             <span className="dashboard__need-seats num">{s.seats[p]}</span>
             <span className="dashboard__need-text small">
-              {s.control === p ? <strong>Majority won</strong> : <>needs <strong className="num">{s.needed[p]}</strong> more{vp ? ` (${s.toWin[p]})` : ''}</>}
+              {s.control === p ? <strong>{s.seats[p] >= s.majority ? 'Majority won' : 'Control won (VP tiebreak)'}</strong> : <>needs <strong className="num">{s.needed[p]}</strong> more{vp ? ` (${s.toWin[p]})` : ''}</>}
             </span>
           </div>
         ))}
