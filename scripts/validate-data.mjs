@@ -82,6 +82,10 @@ function checkRace(r, file, chamber) {
 
 const senate = load('senate_races.json')
 const house = load('house_races.json')
+// While race files are still samples, references into them from other files are only warnings,
+// so candidates.json / results.json can be built in parallel with the race files.
+const racesAreSample = Boolean(senate?._sample || house?._sample)
+const xerr = (m) => (racesAreSample && !strict ? warn(`${m} [race files are sample data]`) : err(m))
 const cands = load('candidates.json')
 const links = load('links.json')
 const results = load('results.json')
@@ -110,8 +114,8 @@ if (cands) {
     seen.add(c.id)
     if (!c.name || !PARTIES.has(c.party) || typeof c.incumbent !== 'boolean') err(`${where}: needs name, party, incumbent`)
     if (!Array.isArray(c.priorities) || c.priorities.length !== 3) err(`${where}: priorities must have exactly 3 items`)
-    if (!races.has(c.raceId)) err(`${where}: raceId ${c.raceId} not found in race files`)
-    else if (raceCandidates.get(c.id) !== c.raceId) err(`${where}: not listed as a candidate in ${c.raceId}`)
+    if (!races.has(c.raceId)) xerr(`${where}: raceId ${c.raceId} not found in race files`)
+    else if (raceCandidates.get(c.id) !== c.raceId) xerr(`${where}: not listed as a candidate in ${c.raceId}`)
   }
   for (const [id, raceId] of raceCandidates) {
     const r = races.get(raceId)
@@ -123,7 +127,7 @@ if (cands) {
 if (links) {
   for (const l of links.links || []) {
     if (!l.id || !l.title || !l.publisher || !/^https?:\/\//.test(l.url || '')) err(`links.json ${l.id}: needs id, title, publisher, url`)
-    for (const rid of l.raceIds || []) if (!races.has(rid)) err(`links.json ${l.id}: unknown raceId ${rid}`)
+    for (const rid of l.raceIds || []) if (!races.has(rid)) xerr(`links.json ${l.id}: unknown raceId ${rid}`)
   }
 }
 
@@ -137,13 +141,13 @@ if (results) {
   let called = { senate: 0, house: 0 }
   for (const [rid, rr] of Object.entries(results.races || {})) {
     const race = races.get(rid)
-    if (!race) { err(`results.json: unknown race ${rid}`); continue }
+    if (!race) { xerr(`results.json: unknown race ${rid}`); continue }
     if (rr.called) {
       called[race.chamber]++
-      if (!raceCandidates.has(rr.winner) || raceCandidates.get(rr.winner) !== rid) err(`results.json ${rid}: winner ${rr.winner} not a candidate in race`)
+      if (!raceCandidates.has(rr.winner) || raceCandidates.get(rr.winner) !== rid) xerr(`results.json ${rid}: winner ${rr.winner} not a candidate in race`)
     }
     if (typeof rr.pctReporting !== 'number' || rr.pctReporting < 0 || rr.pctReporting > 100) err(`results.json ${rid}: pctReporting 0-100`)
-    for (const v of rr.votes || []) if (raceCandidates.get(v.candidateId) !== rid) err(`results.json ${rid}: vote candidate ${v.candidateId} not in race`)
+    for (const v of rr.votes || []) if (raceCandidates.get(v.candidateId) !== rid) xerr(`results.json ${rid}: vote candidate ${v.candidateId} not in race`)
   }
   for (const ch of ['senate', 'house']) {
     const s = results.chambers?.[ch]

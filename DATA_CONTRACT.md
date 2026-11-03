@@ -4,7 +4,9 @@ All data is static JSON under `public/data/`, fetched at runtime with `fetchJson
 (`src/lib/data.js`, `src/hooks/useData.js`): on every route load, every 60 s, and when the tab
 regains focus, with a cache-busting query string. `npm run validate` checks every file below,
 including cross-file references; `npm run validate:strict` also requires 35 Senate races,
-435 House races and a profile for every Senate / competitive-House candidate.
+435 House races and a profile for every Senate / competitive-House candidate. While the race
+files still have `"_sample": true`, references into them from `candidates.json`, `links.json` and
+`results.json` are reported as warnings instead of errors, so those files can be built in parallel.
 
 Every file has a top-level `"updated"` ISO-8601 timestamp. Remove `"_sample": true` once a
 file holds real data.
