@@ -1,26 +1,38 @@
 /* Shared design tokens. Owned by Session A; others consume, don't redefine. */
 :root {
   --dem: #1f5fbf;
+  --dem-mid: #7ea4e0;
   --dem-light: #dbe7fb;
   --rep: #c8202f;
+  --rep-mid: #e88a92;
   --rep-light: #fbdddf;
   --ind: #6b7280;
+  --ind-mid: #a3a9b3;
   --ind-light: #e5e7eb;
   --tossup: #7c3aed;
   --tossup-light: #ede9fe;
+  --uncalled: #d5d9e0;
 
   --bg: #f7f8fa;
   --surface: #ffffff;
+  --surface-2: #f1f3f6;
   --border: #e2e5ea;
   --text: #111827;
   --text-muted: #5b6472;
   --ok: #15803d;
+  --ok-light: #dcfce7;
   --warn: #b45309;
+  --warn-light: #fef3c7;
   --error: #b91c1c;
+  --error-light: #fee2e2;
+  --focus: #2563eb;
 
   --radius: 8px;
+  --radius-sm: 4px;
   --gap: 12px;
+  --shadow: 0 1px 2px rgb(16 24 40 / 6%), 0 1px 3px rgb(16 24 40 / 8%);
   --nav-height: 56px;
+  --max-width: 1200px;
   --font: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, SFMono-Regular, Menlo, monospace;
 }

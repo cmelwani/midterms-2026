@@ -10,6 +10,8 @@
     "preview": "vite preview",
     "validate": "node scripts/validate-data.mjs",
     "validate:strict": "node scripts/validate-data.mjs --strict",
+    "simulate": "node scripts/simulate-results.mjs",
+    "simulate:reset": "node scripts/simulate-results.mjs --reset",
     "check": "npm run validate && npm run lint && npm run build"
   },
   "dependencies": {

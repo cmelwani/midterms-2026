@@ -1,0 +1,55 @@
+.dashboard__banner { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; padding: 10px 14px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--ind); }
+.dashboard__banner--live { border-left-color: var(--ok); }
+.dashboard__banner--final { border-left-color: var(--text); }
+.dashboard__banner-tag { font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; padding: 2px 8px; border-radius: 999px; background: var(--surface-2); }
+.dashboard__banner--live .dashboard__banner-tag { background: var(--ok); color: #fff; }
+.dashboard__banner--final .dashboard__banner-tag { background: var(--text); color: #fff; }
+.dashboard__banner-time { font-size: 0.82rem; margin-left: auto; }
+.dashboard__banner-err { color: var(--error); font-weight: 600; font-size: 0.85rem; }
+.dashboard__sample { margin: 8px 0 0; text-align: left; }
+.dashboard__hint { margin: -6px 0 10px; }
+
+.dashboard__majority-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.dashboard__majority-head h2 { margin: 0; }
+.dashboard__majority-rule { margin: 4px 0 10px; }
+.dashboard__needs { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px; }
+.dashboard__need { display: grid; grid-template-columns: auto 1fr; grid-template-areas: 'seats party' 'seats text'; column-gap: 10px; align-items: center; padding: 8px 10px; border-radius: 6px; }
+.dashboard__need--D { background: var(--dem-light); color: var(--dem); }
+.dashboard__need--R { background: var(--rep-light); color: var(--rep); }
+.dashboard__need-party { grid-area: party; font-weight: 600; font-size: 0.85rem; }
+.dashboard__need-seats { grid-area: seats; font-size: 1.9rem; font-weight: 800; line-height: 1; }
+.dashboard__need-text { grid-area: text; color: var(--text); }
+
+.dashboard__cols { display: grid; gap: var(--gap); grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); align-items: start; }
+@media (max-width: 860px) { .dashboard__cols { grid-template-columns: 1fr; } }
+
+.dashboard__called { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+.dashboard__called-row { display: grid; grid-template-columns: 4.6em minmax(0, 1fr) minmax(0, 1.3fr) auto; gap: 8px; align-items: center; padding: 6px 8px; border-radius: 6px; font-size: 0.9rem; }
+.dashboard__called-race a, .dashboard__watch-race a { font-weight: 600; color: var(--text); }
+.dashboard__called-winner { display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.dashboard__called-winner a { color: inherit; }
+.dashboard__flip { background: var(--warn-light); color: var(--warn); }
+.dashboard__more { margin-top: 8px; }
+
+.dashboard__watch { list-style: none; margin: 0; padding: 0; }
+.dashboard__watch-row { display: grid; grid-template-columns: minmax(7em, 1fr) auto minmax(0, 2fr) minmax(8em, 1fr); gap: 4px 10px; align-items: center; padding: 8px 0; border-top: 1px solid var(--border); }
+.dashboard__watch-row:first-child { border-top: 0; }
+.dashboard__watch-race { display: flex; flex-direction: column; }
+.dashboard__watch-who a { text-decoration: none; font-weight: 500; }
+.dashboard__watch-status { text-align: right; }
+
+@media (max-width: 700px) {
+  .dashboard__needs { grid-template-columns: 1fr 1fr; }
+  .dashboard__need-seats { font-size: 1.5rem; }
+  .dashboard__called-row { grid-template-columns: 4.2em 1fr auto; grid-template-areas: 'time race flip' 'time winner winner'; }
+  .dashboard__called-time { grid-area: time; }
+  .dashboard__called-race { grid-area: race; }
+  .dashboard__called-winner { grid-area: winner; }
+  .dashboard__flip { grid-area: flip; }
+  .dashboard__watch-row { grid-template-columns: 1fr auto; grid-template-areas: 'race badge' 'who who' 'status status'; }
+  .dashboard__watch-race { grid-area: race; flex-direction: row; gap: 6px; align-items: baseline; }
+  .dashboard__watch-row .rating-badge { grid-area: badge; }
+  .dashboard__watch-who { grid-area: who; }
+  .dashboard__watch-status { grid-area: status; text-align: left; }
+  .dashboard__banner-time { margin-left: 0; }
+}
