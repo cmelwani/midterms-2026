@@ -60,7 +60,7 @@ export default function Senate() {
     setCat('all'); setCalled('all')
     setHighlight(id)
     requestAnimationFrame(() => {
-      const el = document.getElementById(view === 'table' ? `row-${id}` : id) || document.getElementById(id)
+      const el = [document.getElementById(`row-${id}`), document.getElementById(id)].find((x) => x?.getClientRects().length)
       el?.scrollIntoView({ behavior: 'smooth', block: 'center' })
       el?.focus({ preventScroll: true })
     })
