@@ -1,0 +1,14 @@
+.vote-share-bar { margin: 0 0 12px; }
+.vote-share-bar__label { font-size: 13px; font-weight: 600; margin-bottom: 4px; }
+.vote-share-bar__track { position: relative; display: flex; height: 26px; border-radius: 4px; overflow: hidden; background: var(--ind-light); }
+.vote-share-bar__seg { display: flex; align-items: center; justify-content: center; min-width: 2px; color: #fff; font-size: 12px; font-weight: 700; transition: opacity 0.2s; }
+.vote-share-bar__seg--D { background: var(--dem); }
+.vote-share-bar__seg--R { background: var(--rep); }
+.vote-share-bar__seg--I, .vote-share-bar__seg--L, .vote-share-bar__seg--G, .vote-share-bar__seg--O { background: var(--ind); }
+.vote-share-bar__seg--rest { background: repeating-linear-gradient(45deg, var(--ind-light), var(--ind-light) 4px, var(--surface) 4px, var(--surface) 8px); }
+.vote-share-bar__seg.is-highlight { box-shadow: inset 0 0 0 3px var(--text); }
+.vote-share-bar__seg.is-dim { opacity: 0.55; }
+.vote-share-bar__half { position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; background: var(--surface); }
+.vote-share-bar__legend { display: flex; flex-wrap: wrap; gap: 4px 14px; list-style: none; margin: 6px 0 0; padding: 0; font-size: 13px; }
+.vote-share-bar__legend .is-highlight { font-weight: 700; }
+.vote-share-bar__swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 4px; vertical-align: baseline; }

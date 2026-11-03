@@ -116,8 +116,10 @@ const house = src('house_races.csv').map((r) => {
   const district = Number(r.district)
   const candidates = withIds(r.state, district, picked, r.incumbentName.replace(/&nbsp;/g, ' '), isRunning)
   const listed = houseRatings.get(r.id)
-  // Seats Cook doesn't list are Solid for the running incumbent's party, else the district's PVI lean.
-  const solidParty = (isRunning && ['D', 'R'].includes(r.incumbentParty) ? r.incumbentParty : r.pvi?.[0]) || r.incumbentParty || null
+  // Seats Cook doesn't list are Solid for the running incumbent's party unless the district's PVI leans the other way, else the PVI lean.
+  const lean = ['D', 'R'].includes(r.pvi?.[0]) ? r.pvi[0] : null
+  const incParty = isRunning && ['D', 'R'].includes(r.incumbentParty) ? r.incumbentParty : null
+  const solidParty = (incParty && (!lean || lean === incParty) ? incParty : lean) || r.incumbentParty || null
   const rt = listed ? rating(listed, 'house') : { category: 'solid', party: solidParty, source: 'Cook Political Report', asOf: cookHouseAsOf, url: COOK.house, inferred: true }
   return {
     id: r.id, chamber: 'house', state: r.state, stateName: r.stateName, district, competitive: rt.category !== 'solid',

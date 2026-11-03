@@ -1,0 +1,23 @@
+.rating-spectrum__bar { position: relative; display: flex; gap: 2px; height: 34px; }
+.rating-spectrum__seg { flex: 1 1 0; min-width: 8px; border: 0; padding: 0; border-radius: 3px; cursor: pointer; color: #fff; font-weight: 700; font-size: 0.78rem; overflow: hidden; display: grid; place-items: center; font-variant-numeric: tabular-nums; }
+.rating-spectrum__seg:hover, .rating-spectrum__seg--sel { outline: 2px solid var(--text); outline-offset: 1px; z-index: 1; }
+.rating-spectrum__n { padding: 0 2px; }
+.rating-spectrum__seg--solid-D { background: var(--dem); }
+.rating-spectrum__seg--likely-D { background: #4f7fcf; }
+.rating-spectrum__seg--lean-D { background: var(--dem-mid); color: var(--text); }
+.rating-spectrum__seg--toss-up { background: var(--tossup-light); color: var(--tossup); box-shadow: inset 0 0 0 1px var(--tossup); }
+.rating-spectrum__seg--unrated { background: var(--uncalled); color: var(--text-muted); }
+.rating-spectrum__seg--lean-R { background: var(--rep-mid); color: var(--text); }
+.rating-spectrum__seg--likely-R { background: #dc4f5b; }
+.rating-spectrum__seg--solid-R { background: var(--rep); }
+.rating-spectrum__marker { position: absolute; left: 50%; top: -4px; bottom: -4px; width: 2px; margin-left: -1px; background: var(--text); pointer-events: none; z-index: 2; }
+.rating-spectrum__scale { display: flex; justify-content: space-between; margin-top: 4px; }
+.rating-spectrum__scale span:nth-child(2) { color: var(--text); font-weight: 600; }
+.rating-spectrum__legend { list-style: none; padding: 0; margin: 10px 0 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.rating-spectrum__chip { display: inline-flex; align-items: center; gap: 5px; padding: 2px 8px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); cursor: pointer; font-size: 0.8rem; }
+.rating-spectrum__chip--sel { border-color: var(--text); background: var(--surface-2); }
+.rating-spectrum__key { display: inline-block; width: 10px; height: 10px; border-radius: 2px; box-shadow: none; }
+.rating-spectrum__tip { margin: 8px 0 0; }
+.rating-spectrum__detail { margin-top: 8px; padding: 8px 10px; background: var(--surface-2); border-radius: 6px; font-size: 0.88rem; min-height: 2.4em; }
+.rating-spectrum__races { list-style: none; padding: 0; margin: 6px 0 0; display: flex; flex-wrap: wrap; gap: 4px 14px; max-height: 140px; overflow: auto; }
+.rating-spectrum__race { font-weight: 500; }

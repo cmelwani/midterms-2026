@@ -1,0 +1,21 @@
+.majority-builder__controls { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-bottom: 12px; }
+.majority-builder__check { display: inline-flex; align-items: center; gap: 6px; font-size: 0.9rem; margin-right: auto; }
+.majority-builder__cols { display: grid; gap: 16px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 760px) { .majority-builder__cols { grid-template-columns: 1fr; } }
+.majority-builder__chamber h3 { margin-bottom: 4px; }
+.majority-builder__verdict { margin: 0 0 8px; padding: 6px 10px; border-radius: 6px; font-weight: 700; font-size: 0.9rem; }
+.majority-builder__verdict--D { background: var(--dem-light); color: var(--dem); }
+.majority-builder__verdict--R { background: var(--rep-light); color: var(--rep); }
+.majority-builder__verdict--none { background: var(--surface-2); color: var(--text-muted); }
+.majority-builder__races { list-style: none; padding: 0; margin: 12px 0 0; display: grid; gap: 6px; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); max-height: 340px; overflow: auto; }
+.majority-builder__race { width: 100%; display: grid; grid-template-columns: 1fr auto; grid-template-areas: 'name pick' 'badge pick'; align-items: center; gap: 2px 6px; padding: 6px 8px; text-align: left; border: 1px solid var(--border); border-left: 4px solid var(--uncalled); border-radius: 6px; background: var(--surface); cursor: pointer; min-height: 44px; }
+.majority-builder__race:hover:not([aria-disabled='true']) { background: var(--surface-2); }
+.majority-builder__name { grid-area: name; font-weight: 600; font-size: 0.88rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.majority-builder__race .rating-badge { grid-area: badge; justify-self: start; font-size: 0.72rem; }
+.majority-builder__pick { grid-area: pick; min-width: 38px; text-align: center; padding: 2px 6px; border-radius: 999px; font-size: 0.75rem; font-weight: 700; background: var(--surface-2); color: var(--text-muted); }
+.majority-builder__race--D { border-left-color: var(--dem); background: var(--dem-light); }
+.majority-builder__race--D .majority-builder__pick { background: var(--dem); color: #fff; }
+.majority-builder__race--R { border-left-color: var(--rep); background: var(--rep-light); }
+.majority-builder__race--R .majority-builder__pick { background: var(--rep); color: #fff; }
+.majority-builder__race--locked { cursor: default; opacity: 0.85; }
+.majority-builder__race--locked:hover { background: inherit; }

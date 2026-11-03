@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T18:07:00Z",
+ "updated": "2026-11-03T22:14:43Z",
  "sources": [
   {
    "name": "Cook Political Report — House race ratings",
@@ -883,7 +883,7 @@
    ],
    "rating": {
     "category": "solid",
-    "party": "R",
+    "party": "D",
     "source": "Cook Political Report",
     "asOf": "2026-11-02",
     "url": "https://www.cookpolitical.com/ratings/house-race-ratings",

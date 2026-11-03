@@ -1,15 +1,2531 @@
 {
-  "_sample": true,
-  "updated": "2026-11-03T08:00:00-08:00",
+  "updated": "2026-11-03T16:59:32.543Z",
   "links": [
     {
-      "id": "cook-ratings",
+      "id": "cook-senate",
       "title": "2026 Senate Race Ratings",
       "publisher": "Cook Political Report",
       "url": "https://www.cookpolitical.com/ratings/senate-race-ratings",
-      "description": "Nonpartisan race ratings for every Senate contest.",
+      "description": "Nonpartisan toss-up / lean / likely / solid ratings for every 2026 Senate race; the canonical ratings used on this site.",
       "category": "ratings",
       "raceIds": []
+    },
+    {
+      "id": "cook-house",
+      "title": "2026 House Race Ratings",
+      "publisher": "Cook Political Report",
+      "url": "https://www.cookpolitical.com/ratings/house-race-ratings",
+      "description": "Cook's ratings for all 435 House districts, including the competitive-seat list this site uses.",
+      "category": "ratings",
+      "raceIds": []
+    },
+    {
+      "id": "cook-pvi",
+      "title": "2026 Cook Partisan Voter Index",
+      "publisher": "Cook Political Report",
+      "url": "https://www.cookpolitical.com/cook-pvi/2026-partisan-voting-index/district-map-and-list",
+      "description": "Partisan lean of every congressional district under the maps in effect for 2026.",
+      "category": "reference",
+      "raceIds": []
+    },
+    {
+      "id": "sabato-senate",
+      "title": "2026 Senate Ratings",
+      "publisher": "Sabato's Crystal Ball",
+      "url": "https://centerforpolitics.org/crystalball/2026-senate/",
+      "description": "University of Virginia Center for Politics ratings for every Senate race.",
+      "category": "ratings",
+      "raceIds": []
+    },
+    {
+      "id": "sabato-house",
+      "title": "2026 House Ratings",
+      "publisher": "Sabato's Crystal Ball",
+      "url": "https://centerforpolitics.org/crystalball/2026-house/",
+      "description": "Crystal Ball House ratings with district-level commentary.",
+      "category": "ratings",
+      "raceIds": []
+    },
+    {
+      "id": "inside-senate",
+      "title": "Senate Ratings",
+      "publisher": "Inside Elections",
+      "url": "https://insideelections.com/ratings/senate",
+      "description": "Nathan Gonzales' nonpartisan Senate ratings, including Tilt categories.",
+      "category": "ratings",
+      "raceIds": []
+    },
+    {
+      "id": "inside-house",
+      "title": "House Ratings",
+      "publisher": "Inside Elections",
+      "url": "https://insideelections.com/ratings/house",
+      "description": "Inside Elections' House ratings.",
+      "category": "ratings",
+      "raceIds": []
+    },
+    {
+      "id": "splitticket-model",
+      "title": "2026 Midterms Model",
+      "publisher": "Split Ticket",
+      "url": "https://www.theargumentmag.com/p/split-ticket-2026-midterms-model",
+      "description": "Split Ticket's probabilistic House and Senate forecast, published with The Argument.",
+      "category": "forecasts",
+      "raceIds": []
+    },
+    {
+      "id": "splitticket-site",
+      "title": "Split Ticket",
+      "publisher": "Split Ticket",
+      "url": "https://split-ticket.org/",
+      "description": "Election analysis, polling averages and race ratings from Split Ticket.",
+      "category": "polling",
+      "raceIds": []
+    },
+    {
+      "id": "ddhq-senate",
+      "title": "2026 Senate Forecast",
+      "publisher": "Decision Desk HQ",
+      "url": "https://votes.decisiondeskhq.com/forecast/2026/senate",
+      "description": "DDHQ / The Hill Senate forecast and ratings; DDHQ also calls races on election night.",
+      "category": "forecasts",
+      "raceIds": []
+    },
+    {
+      "id": "ddhq-house",
+      "title": "2026 House Forecast",
+      "publisher": "Decision Desk HQ",
+      "url": "https://votes.decisiondeskhq.com/forecast/2026/house",
+      "description": "DDHQ / The Hill House forecast and ratings.",
+      "category": "forecasts",
+      "raceIds": []
+    },
+    {
+      "id": "racetothewh-senate",
+      "title": "2026 Senate Forecast",
+      "publisher": "Race to the WH",
+      "url": "https://www.racetothewh.com/senate",
+      "description": "Poll-driven Senate forecast with state-by-state polling averages.",
+      "category": "forecasts",
+      "raceIds": []
+    },
+    {
+      "id": "racetothewh-house",
+      "title": "2026 House Forecast",
+      "publisher": "Race to the WH",
+      "url": "https://www.racetothewh.com/house",
+      "description": "District-level House forecast.",
+      "category": "forecasts",
+      "raceIds": []
+    },
+    {
+      "id": "rcp-senate-map",
+      "title": "Battle for the Senate 2026",
+      "publisher": "RealClearPolling",
+      "url": "https://www.realclearpolling.com/maps/senate/2026/toss-up",
+      "description": "RealClearPolitics Senate map with ratings and RCP polling averages.",
+      "category": "polling",
+      "raceIds": []
+    },
+    {
+      "id": "rcp-house-map",
+      "title": "Battle for the House 2026",
+      "publisher": "RealClearPolling",
+      "url": "https://www.realclearpolling.com/maps/house/2026/toss-up",
+      "description": "RealClearPolitics House ratings map.",
+      "category": "ratings",
+      "raceIds": []
+    },
+    {
+      "id": "rcp-latest",
+      "title": "Latest Polls",
+      "publisher": "RealClearPolling",
+      "url": "https://www.realclearpolling.com/latest-polls",
+      "description": "Every newly released public poll, including Senate and House races.",
+      "category": "polling",
+      "raceIds": []
+    },
+    {
+      "id": "economist-senate",
+      "title": "2026 Senate Forecast",
+      "publisher": "The Economist",
+      "url": "https://www.economist.com/interactive/2026/us-midterms/prediction-model/senate/",
+      "description": "The Economist's statistical Senate model (may be paywalled).",
+      "category": "forecasts",
+      "raceIds": []
+    },
+    {
+      "id": "silver-bulletin",
+      "title": "FLIPR 2026 midterm election forecast",
+      "publisher": "Silver Bulletin",
+      "url": "https://www.natesilver.net/p/nate-silver-2026-midterm-election-polls-model",
+      "description": "Nate Silver's House and Senate forecast (some content is subscriber-only).",
+      "category": "forecasts",
+      "raceIds": []
+    },
+    {
+      "id": "fpo-senate",
+      "title": "2026 Congressional Forecast (Senate)",
+      "publisher": "FiftyPlusOne",
+      "url": "https://fiftyplusone.news/forecast/senate/",
+      "description": "Independent Senate forecast.",
+      "category": "forecasts",
+      "raceIds": []
+    },
+    {
+      "id": "ballotpedia-senate",
+      "title": "United States Senate elections, 2026",
+      "publisher": "Ballotpedia",
+      "url": "https://ballotpedia.org/United_States_Senate_elections,_2026",
+      "description": "Every Senate candidate, primary result, retirements and battleground analysis.",
+      "category": "reference",
+      "raceIds": []
+    },
+    {
+      "id": "ballotpedia-house",
+      "title": "United States House of Representatives elections, 2026",
+      "publisher": "Ballotpedia",
+      "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections,_2026",
+      "description": "Candidate lists for all 435 districts, open seats and redistricting notes.",
+      "category": "reference",
+      "raceIds": []
+    },
+    {
+      "id": "ballotpedia-senate-battlegrounds",
+      "title": "U.S. Senate battlegrounds, 2026",
+      "publisher": "Ballotpedia",
+      "url": "https://ballotpedia.org/U.S._Senate_battlegrounds,_2026",
+      "description": "Ballotpedia's list of battleground Senate general elections.",
+      "category": "reference",
+      "raceIds": []
+    },
+    {
+      "id": "ballotpedia-house-battlegrounds",
+      "title": "U.S. House battlegrounds, 2026",
+      "publisher": "Ballotpedia",
+      "url": "https://ballotpedia.org/U.S._House_battlegrounds,_2026",
+      "description": "Ballotpedia's list of battleground House general elections.",
+      "category": "reference",
+      "raceIds": []
+    },
+    {
+      "id": "ballotpedia-sample-ballot",
+      "title": "Sample Ballot Lookup",
+      "publisher": "Ballotpedia",
+      "url": "https://ballotpedia.org/Sample_Ballot_Lookup",
+      "description": "Look up every race and measure on your own ballot.",
+      "category": "reference",
+      "raceIds": []
+    },
+    {
+      "id": "fec-candidates",
+      "title": "Candidate & committee finance data",
+      "publisher": "Federal Election Commission",
+      "url": "https://www.fec.gov/data/candidates/",
+      "description": "Official FEC fundraising and spending filings for every federal candidate.",
+      "category": "reference",
+      "raceIds": []
+    },
+    {
+      "id": "fec-senate-2026",
+      "title": "2026 Senate candidates (FEC)",
+      "publisher": "Federal Election Commission",
+      "url": "https://www.fec.gov/data/candidates/senate/?election_year=2026&cycle=2026&election_full=true",
+      "description": "Official FEC list of 2026 Senate candidates with receipts and disbursements.",
+      "category": "reference",
+      "raceIds": []
+    },
+    {
+      "id": "can-i-vote",
+      "title": "Can I Vote",
+      "publisher": "National Association of Secretaries of State",
+      "url": "https://www.nass.org/can-I-vote",
+      "description": "Official nonpartisan polling-place, registration and ID lookups by state.",
+      "category": "reference",
+      "raceIds": []
+    },
+    {
+      "id": "ap-results",
+      "title": "AP Election Results",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/hub/election-2026",
+      "description": "Live results and race calls from the Associated Press.",
+      "category": "news",
+      "raceIds": []
+    },
+    {
+      "id": "ddhq-results",
+      "title": "Decision Desk HQ Live Results",
+      "publisher": "Decision Desk HQ",
+      "url": "https://decisiondeskhq.com/",
+      "description": "Live vote counts and DDHQ race calls.",
+      "category": "news",
+      "raceIds": []
+    },
+    {
+      "id": "nbc-midterms",
+      "title": "The race for Congress: 2026 midterms",
+      "publisher": "NBC News",
+      "url": "https://www.nbcnews.com/politics/2026-elections/midterms",
+      "description": "NBC News ratings, live results and race calls.",
+      "category": "news",
+      "raceIds": []
+    },
+    {
+      "id": "wiki-senate",
+      "title": "2026 United States Senate elections",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_elections",
+      "description": "Side-by-side comparison of every major rating and forecast for each Senate race.",
+      "category": "reference",
+      "raceIds": []
+    },
+    {
+      "id": "wiki-house-ratings",
+      "title": "2026 United States House of Representatives election ratings",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_election_ratings",
+      "description": "Comparison table of House ratings from Cook, Sabato, Inside Elections and others.",
+      "category": "reference",
+      "raceIds": []
+    },
+    {
+      "id": "fpo-house",
+      "title": "2026 Congressional Forecast (House)",
+      "publisher": "FiftyPlusOne",
+      "url": "https://fiftyplusone.news/forecast/house/",
+      "description": "Independent House forecast.",
+      "category": "forecasts",
+      "raceIds": []
+    },
+    {
+      "id": "fpo-generic-ballot",
+      "title": "Generic Ballot Average",
+      "publisher": "FiftyPlusOne",
+      "url": "https://fiftyplusone.news/polls/generic-ballot/generic-ballot",
+      "description": "Polling average of the national generic congressional ballot.",
+      "category": "polling",
+      "raceIds": []
+    },
+    {
+      "id": "rcp-generic-ballot",
+      "title": "2026 Generic Congressional Vote",
+      "publisher": "RealClearPolling",
+      "url": "https://www.realclearpolling.com/polls/state-of-the-union/generic-congressional-vote",
+      "description": "RCP average of the national House generic ballot.",
+      "category": "polling",
+      "raceIds": []
+    },
+    {
+      "id": "silver-generic-ballot",
+      "title": "Generic ballot average",
+      "publisher": "Silver Bulletin",
+      "url": "https://www.natesilver.net/p/generic-ballot-average-2026-nate-silver-bulletin-congress-polls",
+      "description": "Silver Bulletin's generic-ballot polling average.",
+      "category": "polling",
+      "raceIds": []
+    },
+    {
+      "id": "economist-house",
+      "title": "2026 House Forecast",
+      "publisher": "The Economist",
+      "url": "https://www.economist.com/interactive/2026/us-midterms/prediction-model/house",
+      "description": "The Economist's statistical House model (may be paywalled).",
+      "category": "forecasts",
+      "raceIds": []
+    },
+    {
+      "id": "fox-power-rankings",
+      "title": "Fox News Power Rankings",
+      "publisher": "Fox News",
+      "url": "https://www.foxnews.com/politics/fox-news-power-rankings-kansas-moves-toss-up-nebraska-moves-lean-r",
+      "description": "Fox News Decision Desk's latest Senate power rankings.",
+      "category": "ratings",
+      "raceIds": []
+    },
+    {
+      "id": "msnow-senate",
+      "title": "2026 Senate ratings: races to watch",
+      "publisher": "MS NOW",
+      "url": "https://www.ms.now/news/2026-senate-ratings-ms-nows-races-to-watch",
+      "description": "MS NOW's Senate race ratings.",
+      "category": "ratings",
+      "raceIds": []
+    },
+    {
+      "id": "270towin-senate",
+      "title": "2026 Senate interactive map",
+      "publisher": "270toWin",
+      "url": "https://www.270towin.com/2026-senate-election/",
+      "description": "Build your own Senate forecast map.",
+      "category": "forecasts",
+      "raceIds": []
+    },
+    {
+      "id": "dem-platform",
+      "title": "2024 Democratic Party Platform",
+      "publisher": "The American Presidency Project (UCSB)",
+      "url": "https://www.presidency.ucsb.edu/documents/2024-democratic-party-platform",
+      "description": "Full text of the Democratic national platform; used for party-platform priorities on this site.",
+      "category": "reference",
+      "raceIds": []
+    },
+    {
+      "id": "gop-platform",
+      "title": "2024 Republican Party Platform",
+      "publisher": "The American Presidency Project (UCSB)",
+      "url": "https://www.presidency.ucsb.edu/documents/2024-republican-party-platform",
+      "description": "Full text of the Republican national platform; used for party-platform priorities on this site.",
+      "category": "reference",
+      "raceIds": []
+    },
+    {
+      "id": "wiki-house",
+      "title": "2026 United States House of Representatives elections",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections",
+      "description": "Every House district's candidates and redistricting changes for 2026.",
+      "category": "reference",
+      "raceIds": []
+    },
+    {
+      "id": "wiki-sen-ga",
+      "title": "2026 U.S. Senate election in Georgia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia",
+      "description": "Candidates, polling table and ratings for the Georgia Senate race.",
+      "category": "reference",
+      "raceIds": [
+        "sen-ga-2"
+      ]
+    },
+    {
+      "id": "bp-sen-ga",
+      "title": "United States Senate election in Georgia, 2026",
+      "publisher": "Ballotpedia",
+      "url": "https://ballotpedia.org/United_States_Senate_election_in_Georgia,_2026",
+      "description": "Ballotpedia's race page: candidates, survey responses and campaign finance.",
+      "category": "reference",
+      "raceIds": [
+        "sen-ga-2"
+      ]
+    },
+    {
+      "id": "wiki-sen-mi",
+      "title": "2026 U.S. Senate election in Michigan",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+      "description": "Candidates, polling table and ratings for the Michigan Senate race.",
+      "category": "reference",
+      "raceIds": [
+        "sen-mi-2"
+      ]
+    },
+    {
+      "id": "bp-sen-mi",
+      "title": "United States Senate election in Michigan, 2026",
+      "publisher": "Ballotpedia",
+      "url": "https://ballotpedia.org/United_States_Senate_election_in_Michigan,_2026",
+      "description": "Ballotpedia's race page: candidates, survey responses and campaign finance.",
+      "category": "reference",
+      "raceIds": [
+        "sen-mi-2"
+      ]
+    },
+    {
+      "id": "wiki-sen-nc",
+      "title": "2026 U.S. Senate election in North Carolina",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
+      "description": "Candidates, polling table and ratings for the North Carolina Senate race.",
+      "category": "reference",
+      "raceIds": [
+        "sen-nc-2"
+      ]
+    },
+    {
+      "id": "bp-sen-nc",
+      "title": "United States Senate election in North Carolina, 2026",
+      "publisher": "Ballotpedia",
+      "url": "https://ballotpedia.org/United_States_Senate_election_in_North_Carolina,_2026",
+      "description": "Ballotpedia's race page: candidates, survey responses and campaign finance.",
+      "category": "reference",
+      "raceIds": [
+        "sen-nc-2"
+      ]
+    },
+    {
+      "id": "wiki-sen-me",
+      "title": "2026 U.S. Senate election in Maine",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+      "description": "Candidates, polling table and ratings for the Maine Senate race.",
+      "category": "reference",
+      "raceIds": [
+        "sen-me-2"
+      ]
+    },
+    {
+      "id": "bp-sen-me",
+      "title": "United States Senate election in Maine, 2026",
+      "publisher": "Ballotpedia",
+      "url": "https://ballotpedia.org/United_States_Senate_election_in_Maine,_2026",
+      "description": "Ballotpedia's race page: candidates, survey responses and campaign finance.",
+      "category": "reference",
+      "raceIds": [
+        "sen-me-2"
+      ]
+    },
+    {
+      "id": "wiki-sen-tx",
+      "title": "2026 U.S. Senate election in Texas",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
+      "description": "Candidates, polling table and ratings for the Texas Senate race.",
+      "category": "reference",
+      "raceIds": [
+        "sen-tx-2"
+      ]
+    },
+    {
+      "id": "bp-sen-tx",
+      "title": "United States Senate election in Texas, 2026",
+      "publisher": "Ballotpedia",
+      "url": "https://ballotpedia.org/United_States_Senate_election_in_Texas,_2026",
+      "description": "Ballotpedia's race page: candidates, survey responses and campaign finance.",
+      "category": "reference",
+      "raceIds": [
+        "sen-tx-2"
+      ]
+    },
+    {
+      "id": "wiki-sen-ia",
+      "title": "2026 U.S. Senate election in Iowa",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+      "description": "Candidates, polling table and ratings for the Iowa Senate race.",
+      "category": "reference",
+      "raceIds": [
+        "sen-ia-2"
+      ]
+    },
+    {
+      "id": "bp-sen-ia",
+      "title": "United States Senate election in Iowa, 2026",
+      "publisher": "Ballotpedia",
+      "url": "https://ballotpedia.org/United_States_Senate_election_in_Iowa,_2026",
+      "description": "Ballotpedia's race page: candidates, survey responses and campaign finance.",
+      "category": "reference",
+      "raceIds": [
+        "sen-ia-2"
+      ]
+    },
+    {
+      "id": "wiki-sen-ak",
+      "title": "2026 U.S. Senate election in Alaska",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alaska",
+      "description": "Candidates, polling table and ratings for the Alaska Senate race.",
+      "category": "reference",
+      "raceIds": [
+        "sen-ak-2"
+      ]
+    },
+    {
+      "id": "bp-sen-ak",
+      "title": "United States Senate election in Alaska, 2026",
+      "publisher": "Ballotpedia",
+      "url": "https://ballotpedia.org/United_States_Senate_election_in_Alaska,_2026",
+      "description": "Ballotpedia's race page: candidates, survey responses and campaign finance.",
+      "category": "reference",
+      "raceIds": [
+        "sen-ak-2"
+      ]
+    },
+    {
+      "id": "wiki-sen-nh",
+      "title": "2026 U.S. Senate election in New Hampshire",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire",
+      "description": "Candidates, polling table and ratings for the New Hampshire Senate race.",
+      "category": "reference",
+      "raceIds": [
+        "sen-nh-2"
+      ]
+    },
+    {
+      "id": "bp-sen-nh",
+      "title": "United States Senate election in New Hampshire, 2026",
+      "publisher": "Ballotpedia",
+      "url": "https://ballotpedia.org/United_States_Senate_election_in_New_Hampshire,_2026",
+      "description": "Ballotpedia's race page: candidates, survey responses and campaign finance.",
+      "category": "reference",
+      "raceIds": [
+        "sen-nh-2"
+      ]
+    },
+    {
+      "id": "wiki-sen-ne",
+      "title": "2026 U.S. Senate election in Nebraska",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Nebraska",
+      "description": "Candidates, polling table and ratings for the Nebraska Senate race.",
+      "category": "reference",
+      "raceIds": [
+        "sen-ne-2"
+      ]
+    },
+    {
+      "id": "bp-sen-ne",
+      "title": "United States Senate election in Nebraska, 2026",
+      "publisher": "Ballotpedia",
+      "url": "https://ballotpedia.org/United_States_Senate_election_in_Nebraska,_2026",
+      "description": "Ballotpedia's race page: candidates, survey responses and campaign finance.",
+      "category": "reference",
+      "raceIds": [
+        "sen-ne-2"
+      ]
+    },
+    {
+      "id": "wiki-sen-mt",
+      "title": "2026 U.S. Senate election in Montana",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Montana",
+      "description": "Candidates, polling table and ratings for the Montana Senate race.",
+      "category": "reference",
+      "raceIds": [
+        "sen-mt-2"
+      ]
+    },
+    {
+      "id": "bp-sen-mt",
+      "title": "United States Senate election in Montana, 2026",
+      "publisher": "Ballotpedia",
+      "url": "https://ballotpedia.org/United_States_Senate_election_in_Montana,_2026",
+      "description": "Ballotpedia's race page: candidates, survey responses and campaign finance.",
+      "category": "reference",
+      "raceIds": [
+        "sen-mt-2"
+      ]
+    },
+    {
+      "id": "wiki-sen-ks",
+      "title": "2026 U.S. Senate election in Kansas",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Kansas",
+      "description": "Candidates, polling table and ratings for the Kansas Senate race.",
+      "category": "reference",
+      "raceIds": [
+        "sen-ks-2"
+      ]
+    },
+    {
+      "id": "bp-sen-ks",
+      "title": "United States Senate election in Kansas, 2026",
+      "publisher": "Ballotpedia",
+      "url": "https://ballotpedia.org/United_States_Senate_election_in_Kansas,_2026",
+      "description": "Ballotpedia's race page: candidates, survey responses and campaign finance.",
+      "category": "reference",
+      "raceIds": [
+        "sen-ks-2"
+      ]
+    },
+    {
+      "id": "wiki-sen-mn",
+      "title": "2026 U.S. Senate election in Minnesota",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
+      "description": "Candidates, polling table and ratings for the Minnesota Senate race.",
+      "category": "reference",
+      "raceIds": [
+        "sen-mn-2"
+      ]
+    },
+    {
+      "id": "bp-sen-mn",
+      "title": "United States Senate election in Minnesota, 2026",
+      "publisher": "Ballotpedia",
+      "url": "https://ballotpedia.org/United_States_Senate_election_in_Minnesota,_2026",
+      "description": "Ballotpedia's race page: candidates, survey responses and campaign finance.",
+      "category": "reference",
+      "raceIds": [
+        "sen-mn-2"
+      ]
+    },
+    {
+      "id": "wiki-sen-oh-special",
+      "title": "2026 U.S. Senate special election in Ohio",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_special_election_in_Ohio",
+      "description": "Candidates, polling and ratings for the Ohio special Senate election.",
+      "category": "reference",
+      "raceIds": [
+        "sen-oh-3"
+      ]
+    },
+    {
+      "id": "bp-sen-oh-special",
+      "title": "United States Senate special election in Ohio, 2026",
+      "publisher": "Ballotpedia",
+      "url": "https://ballotpedia.org/United_States_Senate_special_election_in_Ohio,_2026",
+      "description": "Ballotpedia's page for the Ohio special Senate election.",
+      "category": "reference",
+      "raceIds": [
+        "sen-oh-3"
+      ]
+    },
+    {
+      "id": "wiki-sen-fl-special",
+      "title": "2026 U.S. Senate special election in Florida",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_special_election_in_Florida",
+      "description": "Candidates, polling and ratings for the Florida special Senate election.",
+      "category": "reference",
+      "raceIds": [
+        "sen-fl-3"
+      ]
+    },
+    {
+      "id": "bp-sen-fl-special",
+      "title": "United States Senate special election in Florida, 2026",
+      "publisher": "Ballotpedia",
+      "url": "https://ballotpedia.org/United_States_Senate_special_election_in_Florida,_2026",
+      "description": "Ballotpedia's page for the Florida special Senate election.",
+      "category": "reference",
+      "raceIds": [
+        "sen-fl-3"
+      ]
     }
-  ]
+  ],
+  "ratingsMatrix": {
+    "chamber": "senate",
+    "source": "Wikipedia, 2026 United States Senate elections – Predictions (compiles each publisher's latest rating)",
+    "sourceUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Predictions",
+    "publishers": [
+      {
+        "key": "Cook",
+        "name": "Cook Political Report",
+        "linkId": "cook-senate",
+        "asOf": "2026-11-02"
+      },
+      {
+        "key": "Sabato",
+        "name": "Sabato's Crystal Ball",
+        "linkId": "sabato-senate",
+        "asOf": "2026-11-02"
+      },
+      {
+        "key": "IE",
+        "name": "Inside Elections",
+        "linkId": "inside-senate",
+        "asOf": "2026-10-29"
+      },
+      {
+        "key": "DDHQ",
+        "name": "Decision Desk HQ",
+        "linkId": "ddhq-senate",
+        "asOf": "2026-11-02"
+      },
+      {
+        "key": "Economist",
+        "name": "The Economist",
+        "linkId": "economist-senate",
+        "asOf": "2026-11-03"
+      },
+      {
+        "key": "FPO",
+        "name": "FiftyPlusOne",
+        "linkId": "fpo-senate",
+        "asOf": "2026-11-02"
+      },
+      {
+        "key": "Fox",
+        "name": "Fox News",
+        "linkId": "fox-power-rankings",
+        "asOf": "2026-11-01"
+      },
+      {
+        "key": "MSNOW",
+        "name": "MS NOW",
+        "linkId": "msnow-senate",
+        "asOf": "2026-10-29"
+      },
+      {
+        "key": "NBC",
+        "name": "NBC News",
+        "linkId": "nbc-midterms",
+        "asOf": "2026-11-03"
+      },
+      {
+        "key": "RCP",
+        "name": "RealClearPolitics",
+        "linkId": "rcp-senate-map",
+        "asOf": "2026-11-02"
+      },
+      {
+        "key": "SB",
+        "name": "Silver Bulletin",
+        "linkId": "silver-bulletin",
+        "asOf": "2026-11-03"
+      },
+      {
+        "key": "ST",
+        "name": "Split Ticket",
+        "linkId": "splitticket-model",
+        "asOf": "2026-11-02"
+      }
+    ],
+    "races": {
+      "sen-al-2": {
+        "Cook": {
+          "category": "solid",
+          "party": "R"
+        },
+        "DDHQ": {
+          "category": "solid",
+          "party": "R"
+        },
+        "Economist": {
+          "category": "solid",
+          "party": "R"
+        },
+        "FPO": {
+          "category": "solid",
+          "party": "R"
+        },
+        "Fox": {
+          "category": "solid",
+          "party": "R"
+        },
+        "IE": {
+          "category": "solid",
+          "party": "R"
+        },
+        "MSNOW": {
+          "category": "solid",
+          "party": "R"
+        },
+        "NBC": {
+          "category": "solid",
+          "party": "R"
+        },
+        "RCP": {
+          "category": "solid",
+          "party": "R"
+        },
+        "Sabato": {
+          "category": "solid",
+          "party": "R"
+        },
+        "SB": {
+          "category": "solid",
+          "party": "R"
+        },
+        "ST": {
+          "category": "solid",
+          "party": "R"
+        }
+      },
+      "sen-ak-2": {
+        "Cook": {
+          "category": "toss-up",
+          "party": null
+        },
+        "DDHQ": {
+          "category": "lean",
+          "party": "D"
+        },
+        "Economist": {
+          "category": "toss-up",
+          "party": null
+        },
+        "FPO": {
+          "category": "lean",
+          "party": "D"
+        },
+        "Fox": {
+          "category": "toss-up",
+          "party": null
+        },
+        "IE": {
+          "category": "toss-up",
+          "party": null
+        },
+        "MSNOW": {
+          "category": "toss-up",
+          "party": null
+        },
+        "NBC": {
+          "category": "toss-up",
+          "party": null
+        },
+        "RCP": {
+          "category": "toss-up",
+          "party": null
+        },
+        "Sabato": {
+          "category": "lean",
+          "party": "D"
+        },
+        "SB": {
+          "category": "toss-up",
+          "party": null
+        },
+        "ST": {
+          "category": "lean",
+          "party": "D"
+        }
+      },
+      "sen-ar-2": {
+        "Cook": {
+          "category": "solid",
+          "party": "R"
+        },
+        "DDHQ": {
+          "category": "solid",
+          "party": "R"
+        },
+        "Economist": {
+          "category": "solid",
+          "party": "R"
+        },
+        "FPO": {
+          "category": "solid",
+          "party": "R"
+        },
+        "Fox": {
+          "category": "solid",
+          "party": "R"
+        },
+        "IE": {
+          "category": "solid",
+          "party": "R"
+        },
+        "MSNOW": {
+          "category": "solid",
+          "party": "R"
+        },
+        "NBC": {
+          "category": "solid",
+          "party": "R"
+        },
+        "RCP": {
+          "category": "solid",
+          "party": "R"
+        },
+        "Sabato": {
+          "category": "solid",
+          "party": "R"
+        },
+        "SB": {
+          "category": "solid",
+          "party": "R"
+        },
+        "ST": {
+          "category": "solid",
+          "party": "R"
+        }
+      },
+      "sen-co-2": {
+        "Cook": {
+          "category": "solid",
+          "party": "D"
+        },
+        "DDHQ": {
+          "category": "solid",
+          "party": "D"
+        },
+        "Economist": {
+          "category": "solid",
+          "party": "D"
+        },
+        "FPO": {
+          "category": "solid",
+          "party": "D"
+        },
+        "Fox": {
+          "category": "solid",
+          "party": "D"
+        },
+        "IE": {
+          "category": "solid",
+          "party": "D"
+        },
+        "MSNOW": {
+          "category": "solid",
+          "party": "D"
+        },
+        "NBC": {
+          "category": "solid",
+          "party": "D"
+        },
+        "RCP": {
+          "category": "solid",
+          "party": "D"
+        },
+        "Sabato": {
+          "category": "solid",
+          "party": "D"
+        },
+        "SB": {
+          "category": "solid",
+          "party": "D"
+        },
+        "ST": {
+          "category": "solid",
+          "party": "D"
+        }
+      },
+      "sen-de-2": {
+        "Cook": {
+          "category": "solid",
+          "party": "D"
+        },
+        "DDHQ": {
+          "category": "solid",
+          "party": "D"
+        },
+        "Economist": {
+          "category": "solid",
+          "party": "D"
+        },
+        "FPO": {
+          "category": "solid",
+          "party": "D"
+        },
+        "Fox": {
+          "category": "solid",
+          "party": "D"
+        },
+        "IE": {
+          "category": "solid",
+          "party": "D"
+        },
+        "MSNOW": {
+          "category": "solid",
+          "party": "D"
+        },
+        "NBC": {
+          "category": "solid",
+          "party": "D"
+        },
+        "RCP": {
+          "category": "solid",
+          "party": "D"
+        },
+        "Sabato": {
+          "category": "solid",
+          "party": "D"
+        },
+        "SB": {
+          "category": "solid",
+          "party": "D"
+        },
+        "ST": {
+          "category": "solid",
+          "party": "D"
+        }
+      },
+      "sen-fl-3": {
+        "Cook": {
+          "category": "likely",
+          "party": "R"
+        },
+        "DDHQ": {
+          "category": "likely",
+          "party": "R"
+        },
+        "Economist": {
+          "category": "likely",
+          "party": "R"
+        },
+        "FPO": {
+          "category": "likely",
+          "party": "R"
+        },
+        "Fox": {
+          "category": "solid",
+          "party": "R"
+        },
+        "IE": {
+          "category": "likely",
+          "party": "R"
+        },
+        "MSNOW": {
+          "category": "likely",
+          "party": "R"
+        },
+        "NBC": {
+          "category": "likely",
+          "party": "R"
+        },
+        "RCP": {
+          "category": "lean",
+          "party": "R"
+        },
+        "Sabato": {
+          "category": "likely",
+          "party": "R"
+        },
+        "SB": {
+          "category": "likely",
+          "party": "R"
+        },
+        "ST": {
+          "category": "likely",
+          "party": "R"
+        }
+      },
+      "sen-ga-2": {
+        "Cook": {
+          "category": "likely",
+          "party": "D"
+        },
+        "DDHQ": {
+          "category": "likely",
+          "party": "D"
+        },
+        "Economist": {
+          "category": "likely",
+          "party": "D"
+        },
+        "FPO": {
+          "category": "solid",
+          "party": "D"
+        },
+        "Fox": {
+          "category": "likely",
+          "party": "D"
+        },
+        "IE": {
+          "category": "likely",
+          "party": "D"
+        },
+        "MSNOW": {
+          "category": "lean",
+          "party": "D"
+        },
+        "NBC": {
+          "category": "likely",
+          "party": "D"
+        },
+        "RCP": {
+          "category": "likely",
+          "party": "D"
+        },
+        "Sabato": {
+          "category": "likely",
+          "party": "D"
+        },
+        "SB": {
+          "category": "solid",
+          "party": "D"
+        },
+        "ST": {
+          "category": "solid",
+          "party": "D"
+        }
+      },
+      "sen-id-2": {
+        "Cook": {
+          "category": "solid",
+          "party": "R"
+        },
+        "DDHQ": {
+          "category": "solid",
+          "party": "R"
+        },
+        "Economist": {
+          "category": "solid",
+          "party": "R"
+        },
+        "FPO": {
+          "category": "solid",
+          "party": "R"
+        },
+        "Fox": {
+          "category": "solid",
+          "party": "R"
+        },
+        "IE": {
+          "category": "solid",
+          "party": "R"
+        },
+        "MSNOW": {
+          "category": "solid",
+          "party": "R"
+        },
+        "NBC": {
+          "category": "solid",
+          "party": "R"
+        },
+        "RCP": {
+          "category": "solid",
+          "party": "R"
+        },
+        "Sabato": {
+          "category": "solid",
+          "party": "R"
+        },
+        "SB": {
+          "category": "solid",
+          "party": "R"
+        },
+        "ST": {
+          "category": "solid",
+          "party": "R"
+        }
+      },
+      "sen-il-2": {
+        "Cook": {
+          "category": "solid",
+          "party": "D"
+        },
+        "DDHQ": {
+          "category": "solid",
+          "party": "D"
+        },
+        "Economist": {
+          "category": "solid",
+          "party": "D"
+        },
+        "FPO": {
+          "category": "solid",
+          "party": "D"
+        },
+        "Fox": {
+          "category": "solid",
+          "party": "D"
+        },
+        "IE": {
+          "category": "solid",
+          "party": "D"
+        },
+        "MSNOW": {
+          "category": "solid",
+          "party": "D"
+        },
+        "NBC": {
+          "category": "solid",
+          "party": "D"
+        },
+        "RCP": {
+          "category": "solid",
+          "party": "D"
+        },
+        "Sabato": {
+          "category": "solid",
+          "party": "D"
+        },
+        "SB": {
+          "category": "solid",
+          "party": "D"
+        },
+        "ST": {
+          "category": "solid",
+          "party": "D"
+        }
+      },
+      "sen-ia-2": {
+        "Cook": {
+          "category": "toss-up",
+          "party": null
+        },
+        "DDHQ": {
+          "category": "toss-up",
+          "party": null
+        },
+        "Economist": {
+          "category": "lean",
+          "party": "R"
+        },
+        "FPO": {
+          "category": "toss-up",
+          "party": null
+        },
+        "Fox": {
+          "category": "toss-up",
+          "party": null
+        },
+        "IE": {
+          "category": "toss-up",
+          "party": null
+        },
+        "MSNOW": {
+          "category": "lean",
+          "party": "R"
+        },
+        "NBC": {
+          "category": "toss-up",
+          "party": null
+        },
+        "RCP": {
+          "category": "toss-up",
+          "party": null
+        },
+        "Sabato": {
+          "category": "lean",
+          "party": "R"
+        },
+        "SB": {
+          "category": "toss-up",
+          "party": null
+        },
+        "ST": {
+          "category": "toss-up",
+          "party": null
+        }
+      },
+      "sen-ks-2": {
+        "Cook": {
+          "category": "toss-up",
+          "party": null
+        },
+        "DDHQ": {
+          "category": "toss-up",
+          "party": null
+        },
+        "Economist": {
+          "category": "toss-up",
+          "party": null
+        },
+        "FPO": {
+          "category": "lean",
+          "party": "D"
+        },
+        "Fox": {
+          "category": "toss-up",
+          "party": null
+        },
+        "IE": {
+          "category": "toss-up",
+          "party": null
+        },
+        "MSNOW": {
+          "category": "lean",
+          "party": "R"
+        },
+        "NBC": {
+          "category": "toss-up",
+          "party": null
+        },
+        "RCP": {
+          "category": "toss-up",
+          "party": null
+        },
+        "Sabato": {
+          "category": "lean",
+          "party": "D"
+        },
+        "SB": {
+          "category": "lean",
+          "party": "D"
+        },
+        "ST": {
+          "category": "lean",
+          "party": "D"
+        }
+      },
+      "sen-ky-2": {
+        "Cook": {
+          "category": "solid",
+          "party": "R"
+        },
+        "DDHQ": {
+          "category": "likely",
+          "party": "R"
+        },
+        "Economist": {
+          "category": "solid",
+          "party": "R"
+        },
+        "FPO": {
+          "category": "solid",
+          "party": "R"
+        },
+        "Fox": {
+          "category": "solid",
+          "party": "R"
+        },
+        "IE": {
+          "category": "solid",
+          "party": "R"
+        },
+        "MSNOW": {
+          "category": "solid",
+          "party": "R"
+        },
+        "NBC": {
+          "category": "solid",
+          "party": "R"
+        },
+        "RCP": {
+          "category": "solid",
+          "party": "R"
+        },
+        "Sabato": {
+          "category": "solid",
+          "party": "R"
+        },
+        "SB": {
+          "category": "solid",
+          "party": "R"
+        },
+        "ST": {
+          "category": "solid",
+          "party": "R"
+        }
+      },
+      "sen-la-2": {
+        "Cook": {
+          "category": "solid",
+          "party": "R"
+        },
+        "DDHQ": {
+          "category": "likely",
+          "party": "R"
+        },
+        "Economist": {
+          "category": "likely",
+          "party": "R"
+        },
+        "FPO": {
+          "category": "likely",
+          "party": "R"
+        },
+        "Fox": {
+          "category": "solid",
+          "party": "R"
+        },
+        "IE": {
+          "category": "likely",
+          "party": "R"
+        },
+        "MSNOW": {
+          "category": "solid",
+          "party": "R"
+        },
+        "NBC": {
+          "category": "solid",
+          "party": "R"
+        },
+        "RCP": {
+          "category": "solid",
+          "party": "R"
+        },
+        "Sabato": {
+          "category": "lean",
+          "party": "R"
+        },
+        "SB": {
+          "category": "likely",
+          "party": "R"
+        },
+        "ST": {
+          "category": "likely",
+          "party": "R"
+        }
+      },
+      "sen-me-2": {
+        "Cook": {
+          "category": "toss-up",
+          "party": null
+        },
+        "DDHQ": {
+          "category": "lean",
+          "party": "D"
+        },
+        "Economist": {
+          "category": "lean",
+          "party": "D"
+        },
+        "FPO": {
+          "category": "likely",
+          "party": "D"
+        },
+        "Fox": {
+          "category": "toss-up",
+          "party": null
+        },
+        "IE": {
+          "category": "toss-up",
+          "party": null
+        },
+        "MSNOW": {
+          "category": "toss-up",
+          "party": null
+        },
+        "NBC": {
+          "category": "lean",
+          "party": "D"
+        },
+        "RCP": {
+          "category": "toss-up",
+          "party": null
+        },
+        "Sabato": {
+          "category": "lean",
+          "party": "D"
+        },
+        "SB": {
+          "category": "likely",
+          "party": "D"
+        },
+        "ST": {
+          "category": "lean",
+          "party": "D"
+        }
+      },
+      "sen-ma-2": {
+        "Cook": {
+          "category": "solid",
+          "party": "D"
+        },
+        "DDHQ": {
+          "category": "solid",
+          "party": "D"
+        },
+        "Economist": {
+          "category": "solid",
+          "party": "D"
+        },
+        "FPO": {
+          "category": "solid",
+          "party": "D"
+        },
+        "Fox": {
+          "category": "solid",
+          "party": "D"
+        },
+        "IE": {
+          "category": "solid",
+          "party": "D"
+        },
+        "MSNOW": {
+          "category": "solid",
+          "party": "D"
+        },
+        "NBC": {
+          "category": "solid",
+          "party": "D"
+        },
+        "RCP": {
+          "category": "solid",
+          "party": "D"
+        },
+        "Sabato": {
+          "category": "solid",
+          "party": "D"
+        },
+        "SB": {
+          "category": "solid",
+          "party": "D"
+        },
+        "ST": {
+          "category": "solid",
+          "party": "D"
+        }
+      },
+      "sen-mi-2": {
+        "Cook": {
+          "category": "lean",
+          "party": "D"
+        },
+        "DDHQ": {
+          "category": "likely",
+          "party": "D"
+        },
+        "Economist": {
+          "category": "lean",
+          "party": "D"
+        },
+        "FPO": {
+          "category": "likely",
+          "party": "D"
+        },
+        "Fox": {
+          "category": "toss-up",
+          "party": null
+        },
+        "IE": {
+          "category": "tilt",
+          "party": "D"
+        },
+        "MSNOW": {
+          "category": "toss-up",
+          "party": null
+        },
+        "NBC": {
+          "category": "lean",
+          "party": "D"
+        },
+        "RCP": {
+          "category": "toss-up",
+          "party": null
+        },
+        "Sabato": {
+          "category": "lean",
+          "party": "D"
+        },
+        "SB": {
+          "category": "likely",
+          "party": "D"
+        },
+        "ST": {
+          "category": "likely",
+          "party": "D"
+        }
+      },
+      "sen-mn-2": {
+        "Cook": {
+          "category": "lean",
+          "party": "D"
+        },
+        "DDHQ": {
+          "category": "likely",
+          "party": "D"
+        },
+        "Economist": {
+          "category": "lean",
+          "party": "D"
+        },
+        "FPO": {
+          "category": "likely",
+          "party": "D"
+        },
+        "Fox": {
+          "category": "lean",
+          "party": "D"
+        },
+        "IE": {
+          "category": "lean",
+          "party": "D"
+        },
+        "MSNOW": {
+          "category": "lean",
+          "party": "D"
+        },
+        "NBC": {
+          "category": "likely",
+          "party": "D"
+        },
+        "RCP": {
+          "category": "lean",
+          "party": "D"
+        },
+        "Sabato": {
+          "category": "likely",
+          "party": "D"
+        },
+        "SB": {
+          "category": "likely",
+          "party": "D"
+        },
+        "ST": {
+          "category": "likely",
+          "party": "D"
+        }
+      },
+      "sen-ms-2": {
+        "Cook": {
+          "category": "likely",
+          "party": "R"
+        },
+        "DDHQ": {
+          "category": "likely",
+          "party": "R"
+        },
+        "Economist": {
+          "category": "likely",
+          "party": "R"
+        },
+        "FPO": {
+          "category": "solid",
+          "party": "R"
+        },
+        "Fox": {
+          "category": "likely",
+          "party": "R"
+        },
+        "IE": {
+          "category": "likely",
+          "party": "R"
+        },
+        "MSNOW": {
+          "category": "likely",
+          "party": "R"
+        },
+        "NBC": {
+          "category": "likely",
+          "party": "R"
+        },
+        "RCP": {
+          "category": "likely",
+          "party": "R"
+        },
+        "Sabato": {
+          "category": "likely",
+          "party": "R"
+        },
+        "SB": {
+          "category": "solid",
+          "party": "R"
+        },
+        "ST": {
+          "category": "likely",
+          "party": "R"
+        }
+      },
+      "sen-mt-2": {
+        "Cook": {
+          "category": "solid",
+          "party": "R"
+        },
+        "DDHQ": {
+          "category": "likely",
+          "party": "R"
+        },
+        "Economist": {
+          "category": "likely",
+          "party": "R"
+        },
+        "FPO": {
+          "category": "likely",
+          "party": "R"
+        },
+        "Fox": {
+          "category": "solid",
+          "party": "R"
+        },
+        "IE": {
+          "category": "solid",
+          "party": "R"
+        },
+        "MSNOW": {
+          "category": "solid",
+          "party": "R"
+        },
+        "NBC": {
+          "category": "likely",
+          "party": "R"
+        },
+        "RCP": {
+          "category": "likely",
+          "party": "R"
+        },
+        "Sabato": {
+          "category": "solid",
+          "party": "R"
+        },
+        "SB": {
+          "category": "likely",
+          "party": "R"
+        },
+        "ST": {
+          "category": "solid",
+          "party": "R"
+        }
+      },
+      "sen-ne-2": {
+        "Cook": {
+          "category": "lean",
+          "party": "R"
+        },
+        "DDHQ": {
+          "category": "lean",
+          "party": "R"
+        },
+        "Economist": {
+          "category": "likely",
+          "party": "R"
+        },
+        "FPO": {
+          "category": "likely",
+          "party": "R"
+        },
+        "Fox": {
+          "category": "lean",
+          "party": "R"
+        },
+        "IE": {
+          "category": "tilt",
+          "party": "R"
+        },
+        "MSNOW": {
+          "category": "likely",
+          "party": "R"
+        },
+        "NBC": {
+          "category": "lean",
+          "party": "R"
+        },
+        "RCP": {
+          "category": "toss-up",
+          "party": null
+        },
+        "Sabato": {
+          "category": "lean",
+          "party": "R"
+        },
+        "SB": {
+          "category": "lean",
+          "party": "R"
+        },
+        "ST": {
+          "category": "lean",
+          "party": "R"
+        }
+      },
+      "sen-nh-2": {
+        "Cook": {
+          "category": "lean",
+          "party": "D"
+        },
+        "DDHQ": {
+          "category": "likely",
+          "party": "D"
+        },
+        "Economist": {
+          "category": "likely",
+          "party": "D"
+        },
+        "FPO": {
+          "category": "solid",
+          "party": "D"
+        },
+        "Fox": {
+          "category": "lean",
+          "party": "D"
+        },
+        "IE": {
+          "category": "tilt",
+          "party": "D"
+        },
+        "MSNOW": {
+          "category": "lean",
+          "party": "D"
+        },
+        "NBC": {
+          "category": "lean",
+          "party": "D"
+        },
+        "RCP": {
+          "category": "lean",
+          "party": "D"
+        },
+        "Sabato": {
+          "category": "likely",
+          "party": "D"
+        },
+        "SB": {
+          "category": "solid",
+          "party": "D"
+        },
+        "ST": {
+          "category": "solid",
+          "party": "D"
+        }
+      },
+      "sen-nj-2": {
+        "Cook": {
+          "category": "solid",
+          "party": "D"
+        },
+        "DDHQ": {
+          "category": "solid",
+          "party": "D"
+        },
+        "Economist": {
+          "category": "solid",
+          "party": "D"
+        },
+        "FPO": {
+          "category": "solid",
+          "party": "D"
+        },
+        "Fox": {
+          "category": "solid",
+          "party": "D"
+        },
+        "IE": {
+          "category": "solid",
+          "party": "D"
+        },
+        "MSNOW": {
+          "category": "solid",
+          "party": "D"
+        },
+        "NBC": {
+          "category": "solid",
+          "party": "D"
+        },
+        "RCP": {
+          "category": "solid",
+          "party": "D"
+        },
+        "Sabato": {
+          "category": "solid",
+          "party": "D"
+        },
+        "SB": {
+          "category": "solid",
+          "party": "D"
+        },
+        "ST": {
+          "category": "solid",
+          "party": "D"
+        }
+      },
+      "sen-nm-2": {
+        "Cook": {
+          "category": "solid",
+          "party": "D"
+        },
+        "DDHQ": {
+          "category": "solid",
+          "party": "D"
+        },
+        "Economist": {
+          "category": "solid",
+          "party": "D"
+        },
+        "FPO": {
+          "category": "solid",
+          "party": "D"
+        },
+        "Fox": {
+          "category": "solid",
+          "party": "D"
+        },
+        "IE": {
+          "category": "solid",
+          "party": "D"
+        },
+        "MSNOW": {
+          "category": "solid",
+          "party": "D"
+        },
+        "NBC": {
+          "category": "solid",
+          "party": "D"
+        },
+        "RCP": {
+          "category": "likely",
+          "party": "D"
+        },
+        "Sabato": {
+          "category": "solid",
+          "party": "D"
+        },
+        "SB": {
+          "category": "solid",
+          "party": "D"
+        },
+        "ST": {
+          "category": "solid",
+          "party": "D"
+        }
+      },
+      "sen-nc-2": {
+        "Cook": {
+          "category": "likely",
+          "party": "D"
+        },
+        "DDHQ": {
+          "category": "likely",
+          "party": "D"
+        },
+        "Economist": {
+          "category": "likely",
+          "party": "D"
+        },
+        "FPO": {
+          "category": "likely",
+          "party": "D"
+        },
+        "Fox": {
+          "category": "likely",
+          "party": "D"
+        },
+        "IE": {
+          "category": "lean",
+          "party": "D"
+        },
+        "MSNOW": {
+          "category": "lean",
+          "party": "D"
+        },
+        "NBC": {
+          "category": "likely",
+          "party": "D"
+        },
+        "RCP": {
+          "category": "likely",
+          "party": "D"
+        },
+        "Sabato": {
+          "category": "likely",
+          "party": "D"
+        },
+        "SB": {
+          "category": "solid",
+          "party": "D"
+        },
+        "ST": {
+          "category": "solid",
+          "party": "D"
+        }
+      },
+      "sen-oh-3": {
+        "Cook": {
+          "category": "toss-up",
+          "party": null
+        },
+        "DDHQ": {
+          "category": "toss-up",
+          "party": null
+        },
+        "Economist": {
+          "category": "toss-up",
+          "party": null
+        },
+        "FPO": {
+          "category": "lean",
+          "party": "D"
+        },
+        "Fox": {
+          "category": "lean",
+          "party": "D"
+        },
+        "IE": {
+          "category": "tilt",
+          "party": "D"
+        },
+        "MSNOW": {
+          "category": "toss-up",
+          "party": null
+        },
+        "NBC": {
+          "category": "toss-up",
+          "party": null
+        },
+        "RCP": {
+          "category": "toss-up",
+          "party": null
+        },
+        "Sabato": {
+          "category": "lean",
+          "party": "D"
+        },
+        "SB": {
+          "category": "lean",
+          "party": "D"
+        },
+        "ST": {
+          "category": "lean",
+          "party": "D"
+        }
+      },
+      "sen-ok-2": {
+        "Cook": {
+          "category": "solid",
+          "party": "R"
+        },
+        "DDHQ": {
+          "category": "solid",
+          "party": "R"
+        },
+        "Economist": {
+          "category": "solid",
+          "party": "R"
+        },
+        "FPO": {
+          "category": "solid",
+          "party": "R"
+        },
+        "Fox": {
+          "category": "solid",
+          "party": "R"
+        },
+        "IE": {
+          "category": "solid",
+          "party": "R"
+        },
+        "MSNOW": {
+          "category": "solid",
+          "party": "R"
+        },
+        "NBC": {
+          "category": "solid",
+          "party": "R"
+        },
+        "RCP": {
+          "category": "solid",
+          "party": "R"
+        },
+        "Sabato": {
+          "category": "solid",
+          "party": "R"
+        },
+        "SB": {
+          "category": "solid",
+          "party": "R"
+        },
+        "ST": {
+          "category": "solid",
+          "party": "R"
+        }
+      },
+      "sen-or-2": {
+        "Cook": {
+          "category": "solid",
+          "party": "D"
+        },
+        "DDHQ": {
+          "category": "solid",
+          "party": "D"
+        },
+        "Economist": {
+          "category": "solid",
+          "party": "D"
+        },
+        "FPO": {
+          "category": "solid",
+          "party": "D"
+        },
+        "Fox": {
+          "category": "solid",
+          "party": "D"
+        },
+        "IE": {
+          "category": "solid",
+          "party": "D"
+        },
+        "MSNOW": {
+          "category": "solid",
+          "party": "D"
+        },
+        "NBC": {
+          "category": "solid",
+          "party": "D"
+        },
+        "RCP": {
+          "category": "solid",
+          "party": "D"
+        },
+        "Sabato": {
+          "category": "solid",
+          "party": "D"
+        },
+        "SB": {
+          "category": "solid",
+          "party": "D"
+        },
+        "ST": {
+          "category": "solid",
+          "party": "D"
+        }
+      },
+      "sen-ri-2": {
+        "Cook": {
+          "category": "solid",
+          "party": "D"
+        },
+        "DDHQ": {
+          "category": "solid",
+          "party": "D"
+        },
+        "Economist": {
+          "category": "solid",
+          "party": "D"
+        },
+        "FPO": {
+          "category": "solid",
+          "party": "D"
+        },
+        "Fox": {
+          "category": "solid",
+          "party": "D"
+        },
+        "IE": {
+          "category": "solid",
+          "party": "D"
+        },
+        "MSNOW": {
+          "category": "solid",
+          "party": "D"
+        },
+        "NBC": {
+          "category": "solid",
+          "party": "D"
+        },
+        "RCP": {
+          "category": "solid",
+          "party": "D"
+        },
+        "Sabato": {
+          "category": "solid",
+          "party": "D"
+        },
+        "SB": {
+          "category": "solid",
+          "party": "D"
+        },
+        "ST": {
+          "category": "solid",
+          "party": "D"
+        }
+      },
+      "sen-sc-2": {
+        "Cook": {
+          "category": "lean",
+          "party": "R"
+        },
+        "DDHQ": {
+          "category": "lean",
+          "party": "R"
+        },
+        "Economist": {
+          "category": "lean",
+          "party": "R"
+        },
+        "FPO": {
+          "category": "lean",
+          "party": "R"
+        },
+        "Fox": {
+          "category": "toss-up",
+          "party": null
+        },
+        "IE": {
+          "category": "tilt",
+          "party": "R"
+        },
+        "MSNOW": {
+          "category": "lean",
+          "party": "R"
+        },
+        "NBC": {
+          "category": "lean",
+          "party": "R"
+        },
+        "RCP": {
+          "category": "toss-up",
+          "party": null
+        },
+        "Sabato": {
+          "category": "lean",
+          "party": "R"
+        },
+        "SB": {
+          "category": "lean",
+          "party": "R"
+        },
+        "ST": {
+          "category": "lean",
+          "party": "R"
+        }
+      },
+      "sen-sd-2": {
+        "Cook": {
+          "category": "solid",
+          "party": "R"
+        },
+        "DDHQ": {
+          "category": "solid",
+          "party": "R"
+        },
+        "Economist": {
+          "category": "solid",
+          "party": "R"
+        },
+        "FPO": {
+          "category": "solid",
+          "party": "R"
+        },
+        "Fox": {
+          "category": "solid",
+          "party": "R"
+        },
+        "IE": {
+          "category": "solid",
+          "party": "R"
+        },
+        "MSNOW": {
+          "category": "solid",
+          "party": "R"
+        },
+        "NBC": {
+          "category": "solid",
+          "party": "R"
+        },
+        "RCP": {
+          "category": "solid",
+          "party": "R"
+        },
+        "Sabato": {
+          "category": "solid",
+          "party": "R"
+        },
+        "SB": {
+          "category": "solid",
+          "party": "R"
+        },
+        "ST": {
+          "category": "likely",
+          "party": "R"
+        }
+      },
+      "sen-tn-2": {
+        "Cook": {
+          "category": "solid",
+          "party": "R"
+        },
+        "DDHQ": {
+          "category": "solid",
+          "party": "R"
+        },
+        "Economist": {
+          "category": "solid",
+          "party": "R"
+        },
+        "FPO": {
+          "category": "solid",
+          "party": "R"
+        },
+        "Fox": {
+          "category": "solid",
+          "party": "R"
+        },
+        "IE": {
+          "category": "solid",
+          "party": "R"
+        },
+        "MSNOW": {
+          "category": "solid",
+          "party": "R"
+        },
+        "NBC": {
+          "category": "solid",
+          "party": "R"
+        },
+        "RCP": {
+          "category": "solid",
+          "party": "R"
+        },
+        "Sabato": {
+          "category": "solid",
+          "party": "R"
+        },
+        "SB": {
+          "category": "solid",
+          "party": "R"
+        },
+        "ST": {
+          "category": "solid",
+          "party": "R"
+        }
+      },
+      "sen-tx-2": {
+        "Cook": {
+          "category": "toss-up",
+          "party": null
+        },
+        "DDHQ": {
+          "category": "lean",
+          "party": "D"
+        },
+        "Economist": {
+          "category": "toss-up",
+          "party": null
+        },
+        "FPO": {
+          "category": "lean",
+          "party": "D"
+        },
+        "Fox": {
+          "category": "toss-up",
+          "party": null
+        },
+        "IE": {
+          "category": "tilt",
+          "party": "D"
+        },
+        "MSNOW": {
+          "category": "toss-up",
+          "party": null
+        },
+        "NBC": {
+          "category": "toss-up",
+          "party": null
+        },
+        "RCP": {
+          "category": "toss-up",
+          "party": null
+        },
+        "Sabato": {
+          "category": "lean",
+          "party": "D"
+        },
+        "SB": {
+          "category": "likely",
+          "party": "D"
+        },
+        "ST": {
+          "category": "likely",
+          "party": "D"
+        }
+      },
+      "sen-va-2": {
+        "Cook": {
+          "category": "solid",
+          "party": "D"
+        },
+        "DDHQ": {
+          "category": "solid",
+          "party": "D"
+        },
+        "Economist": {
+          "category": "solid",
+          "party": "D"
+        },
+        "FPO": {
+          "category": "solid",
+          "party": "D"
+        },
+        "Fox": {
+          "category": "solid",
+          "party": "D"
+        },
+        "IE": {
+          "category": "solid",
+          "party": "D"
+        },
+        "MSNOW": {
+          "category": "solid",
+          "party": "D"
+        },
+        "NBC": {
+          "category": "solid",
+          "party": "D"
+        },
+        "RCP": {
+          "category": "solid",
+          "party": "D"
+        },
+        "Sabato": {
+          "category": "solid",
+          "party": "D"
+        },
+        "SB": {
+          "category": "solid",
+          "party": "D"
+        },
+        "ST": {
+          "category": "solid",
+          "party": "D"
+        }
+      },
+      "sen-wv-2": {
+        "Cook": {
+          "category": "solid",
+          "party": "R"
+        },
+        "DDHQ": {
+          "category": "solid",
+          "party": "R"
+        },
+        "Economist": {
+          "category": "solid",
+          "party": "R"
+        },
+        "FPO": {
+          "category": "solid",
+          "party": "R"
+        },
+        "Fox": {
+          "category": "solid",
+          "party": "R"
+        },
+        "IE": {
+          "category": "solid",
+          "party": "R"
+        },
+        "MSNOW": {
+          "category": "solid",
+          "party": "R"
+        },
+        "NBC": {
+          "category": "solid",
+          "party": "R"
+        },
+        "RCP": {
+          "category": "solid",
+          "party": "R"
+        },
+        "Sabato": {
+          "category": "solid",
+          "party": "R"
+        },
+        "SB": {
+          "category": "solid",
+          "party": "R"
+        },
+        "ST": {
+          "category": "solid",
+          "party": "R"
+        }
+      },
+      "sen-wy-2": {
+        "Cook": {
+          "category": "solid",
+          "party": "R"
+        },
+        "DDHQ": {
+          "category": "solid",
+          "party": "R"
+        },
+        "Economist": {
+          "category": "solid",
+          "party": "R"
+        },
+        "FPO": {
+          "category": "solid",
+          "party": "R"
+        },
+        "Fox": {
+          "category": "solid",
+          "party": "R"
+        },
+        "IE": {
+          "category": "solid",
+          "party": "R"
+        },
+        "MSNOW": {
+          "category": "solid",
+          "party": "R"
+        },
+        "NBC": {
+          "category": "solid",
+          "party": "R"
+        },
+        "RCP": {
+          "category": "solid",
+          "party": "R"
+        },
+        "Sabato": {
+          "category": "solid",
+          "party": "R"
+        },
+        "SB": {
+          "category": "solid",
+          "party": "R"
+        },
+        "ST": {
+          "category": "solid",
+          "party": "R"
+        }
+      }
+    }
+  }
 }
