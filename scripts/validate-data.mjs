@@ -74,7 +74,10 @@ function checkRace(r, file, chamber) {
     if (!Array.isArray(p.average) || !p.source || !ISO.test(p.asOf || '')) err(`${where}: poll needs average[], source, asOf`)
     for (const a of p.average || []) {
       if (!ids.has(a.candidateId)) err(`${where}: poll candidate ${a.candidateId} not in race`)
-      if (typeof a.pct !== 'number') err(`${where}: poll pct must be number`)
+      if (typeof a.pct !== 'number' || a.pct < 0 || a.pct > 100) err(`${where}: poll pct must be a number 0-100`)
+    }
+    for (const m of [p.margin, ...(p.others || []).map((o) => o.margin)]) {
+      if (m && (typeof m.points !== 'number' || m.points < 0 || m.points > 100)) err(`${where}: poll margin points must be 0-100 (got ${m.points})`)
     }
   }
   if (r.winner != null && !ids.has(r.winner)) err(`${where}: winner ${r.winner} not in candidates`)

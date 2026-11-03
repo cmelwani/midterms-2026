@@ -1,7 +1,13 @@
 {
-  "_sample": true,
-  "updated": "2026-11-03T08:00:00-08:00",
+  "updated": "2026-11-03T17:00:00+00:00",
   "status": "pre-election",
+  "sources": [
+    {
+      "name": "Ballotpedia — U.S. Senate elections, 2026 (53 R, 45 D, 2 I; 35 seats up: 33 Class II + OH and FL specials)",
+      "url": "https://ballotpedia.org/United_States_Senate_elections,_2026",
+      "asOf": "2026-11-03"
+    }
+  ],
   "chambers": {
     "senate": {
       "total": 100,
@@ -9,25 +15,28 @@
       "tiebreak": "R",
       "racesUp": 35,
       "racesCalled": 0,
-      "notUp": { "D": 32, "I": 2, "R": 31 },
-      "called": { "D": 0, "I": 0, "R": 0 }
+      "notUp": {
+        "D": 32,
+        "I": 2,
+        "R": 31
+      },
+      "called": {
+        "D": 0,
+        "I": 0,
+        "R": 0
+      }
     },
     "house": {
       "total": 435,
       "majority": 218,
       "racesUp": 435,
       "racesCalled": 0,
-      "called": { "D": 0, "I": 0, "R": 0 }
+      "called": {
+        "D": 0,
+        "I": 0,
+        "R": 0
+      }
     }
   },
-  "races": {
-    "sen-ga-2": {
-      "called": false,
-      "winner": null,
-      "calledAt": null,
-      "calledBy": null,
-      "pctReporting": 0,
-      "votes": []
-    }
-  }
+  "races": {}
 }

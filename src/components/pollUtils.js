@@ -2,19 +2,30 @@
 export const STALE_POLL_DAYS = 14
 export const POLLING_ERROR_PTS = 3
 
-export const MAX_PLAUSIBLE_MARGIN = 100
-
-const validMargin = (m) => m && m.points != null && Math.abs(m.points) <= MAX_PLAUSIBLE_MARGIN
-
-export function signedMargin(margin) {
-  if (!validMargin(margin)) return null
+// D margins are negative, R positive. A third-party lead goes on the side opposite the
+// leading major-party opponent in `race` (0 = genuine tie, or no major-party opponent known).
+export function signedMargin(margin, race) {
+  if (!margin || margin.points == null) return null
   if (!margin.party) return 0
-  // R leads plot right; D and non-R leads (independents, who caucus/compete against R) plot left.
-  return margin.party === 'R' ? margin.points : -margin.points
+  if (margin.party === 'D') return -margin.points
+  if (margin.party === 'R') return margin.points
+  const opp = leadingMajorParty(race)
+  return opp === 'R' ? -margin.points : opp === 'D' ? margin.points : 0
+}
+
+export const isThirdPartyLead = (margin) => Boolean(margin?.party && margin.points > 0 && !['D', 'R'].includes(margin.party))
+
+function leadingMajorParty(race) {
+  const cands = race?.candidates || []
+  const partyOf = (id) => cands.find((c) => c.id === id)?.party
+  const polled = (race?.poll?.average || []).filter((a) => ['D', 'R'].includes(partyOf(a.candidateId)))
+  if (polled.length) return partyOf(polled.reduce((a, b) => (b.pct > a.pct ? b : a)).candidateId)
+  const majors = [...new Set(cands.map((c) => c.party).filter((p) => p === 'D' || p === 'R'))]
+  return majors.length === 1 ? majors[0] : null
 }
 
 export function marginLabel(margin) {
-  if (!validMargin(margin)) return '—'
+  if (!margin || margin.points == null) return '—'
   if (!margin.party || margin.points === 0) return 'Tied'
   return `${margin.party}+${Number(margin.points).toFixed(1).replace(/\.0$/, '')}`
 }

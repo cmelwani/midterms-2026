@@ -1,0 +1,26 @@
+.seat-bar { margin: 0; }
+.seat-bar__labels { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin-bottom: 4px; }
+.seat-bar__party { font-size: 0.9rem; font-weight: 600; }
+.seat-bar__party b { font-size: 1.35rem; }
+.seat-bar__party abbr { text-decoration: none; }
+.seat-bar__party--D { color: var(--dem); }
+.seat-bar__party--R { color: var(--rep); }
+.seat-bar__mid { font-size: 0.85rem; }
+.seat-bar__track { position: relative; display: flex; height: 22px; border-radius: var(--radius-sm); overflow: hidden; background: var(--uncalled); }
+.seat-bar__seg { height: 100%; transition: width 0.6s ease; }
+.seat-bar__seg + .seat-bar__seg { box-shadow: inset 1px 0 0 rgb(255 255 255 / 55%); }
+.seat-bar__seg--d-notup { background: var(--dem-mid); }
+.seat-bar__seg--d-won { background: var(--dem); }
+.seat-bar__seg--uncalled { background: var(--uncalled); flex: 1 1 auto; }
+.seat-bar__seg--r-won { background: var(--rep); }
+.seat-bar__seg--r-notup { background: var(--rep-mid); }
+.seat-bar__marker { position: absolute; left: 50%; top: -3px; bottom: -3px; width: 2px; margin-left: -1px; background: var(--text); }
+.seat-bar__foot { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; margin-top: 4px; }
+.seat-bar__legend { display: inline-flex; align-items: center; gap: 4px; flex-wrap: wrap; }
+.seat-bar__key { display: inline-block; width: 18px; height: 9px; border-radius: 2px; margin-left: 6px; }
+.seat-bar__key:first-child { margin-left: 0; }
+.seat-bar__key--notup { background: linear-gradient(90deg, var(--dem-mid) 50%, var(--rep-mid) 50%); }
+.seat-bar__key--won { background: linear-gradient(90deg, var(--dem) 50%, var(--rep) 50%); }
+.seat-bar__key--uncalled { background: var(--uncalled); }
+.seat-bar__majority { color: var(--text); font-weight: 600; }
+@media (prefers-reduced-motion: reduce) { .seat-bar__seg { transition: none; } }

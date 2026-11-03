@@ -1,0 +1,29 @@
+.hemicycle__wrap { position: relative; }
+.hemicycle__svg { display: block; width: 100%; height: auto; overflow: visible; touch-action: manipulation; border-radius: var(--radius); }
+.hemicycle__svg:focus-visible { outline: 2px solid var(--focus); outline-offset: 4px; }
+.hemicycle__seat { cursor: pointer; transition: fill 0.4s; stroke: transparent; stroke-width: 0.02; }
+.hemicycle__seat--won-D { fill: var(--dem); }
+.hemicycle__seat--notup-D { fill: var(--dem-mid); }
+.hemicycle__seat--won-R { fill: var(--rep); }
+.hemicycle__seat--notup-R { fill: var(--rep-mid); }
+.hemicycle__seat--uncalled { fill: var(--uncalled); }
+.hemicycle__seat--active { stroke: var(--text); stroke-width: 0.012; }
+.hemicycle__majority { stroke: var(--text); stroke-width: 0.008; stroke-dasharray: 0.03 0.02; }
+.hemicycle__count { font-size: 0.15px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.hemicycle__count--D { fill: var(--dem); }
+.hemicycle__count--R { fill: var(--rep); }
+.hemicycle__win { font-size: 0.055px; fill: var(--text-muted); font-weight: 600; }
+.hemicycle__tip { position: absolute; z-index: 2; transform: translate(-50%, calc(-100% - 10px)); display: flex; flex-direction: column; gap: 1px; min-width: 160px; max-width: 240px; padding: 6px 10px; background: var(--text); color: #fff; border-radius: 6px; font-size: 0.8rem; pointer-events: none; box-shadow: var(--shadow); }
+.hemicycle__tip .muted { color: #cbd2dc; }
+.hemicycle__tip--left { transform: translate(calc(-100% + 16px), calc(-100% - 10px)); }
+.hemicycle__tip--right { transform: translate(-16px, calc(-100% - 10px)); }
+.hemicycle__legend { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 12px; margin-top: 6px; }
+.hemicycle__legend span { display: inline-flex; align-items: center; gap: 4px; }
+.hemicycle__legend-win { color: var(--text); font-weight: 600; }
+.hemicycle__key { display: inline-block; width: 10px; height: 10px; border-radius: 50%; }
+.hemicycle__key--won-D { background: var(--dem); }
+.hemicycle__key--notup-D { background: var(--dem-mid); }
+.hemicycle__key--won-R { background: var(--rep); }
+.hemicycle__key--notup-R { background: var(--rep-mid); }
+.hemicycle__key--uncalled { background: var(--uncalled); }
+@media (prefers-reduced-motion: reduce) { .hemicycle__seat { transition: none; } }

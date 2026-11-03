@@ -1,0 +1,14 @@
+.race-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; display: flex; flex-direction: column; gap: 6px; scroll-margin-top: calc(var(--nav-height, 56px) + 12px); transition: box-shadow 0.3s, border-color 0.3s; }
+.race-card--highlight { border-color: var(--tossup); box-shadow: 0 0 0 3px var(--tossup-light); }
+.race-card--called { border-left: 4px solid #047857; }
+.race-card__head { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+.race-card__title { margin: 0; font-size: 1rem; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; }
+.race-card__tag { font-size: 0.68rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; padding: 0 5px; border-radius: 3px; background: var(--bg); color: var(--text-muted); border: 1px solid var(--border); }
+.race-card__tag--special { background: #fef3c7; color: #92400e; border-color: #fcd34d; }
+.race-card__tag--open { background: #e0f2fe; color: #075985; border-color: #7dd3fc; }
+.race-card__inc { margin: 0; font-size: 0.8rem; color: var(--text-muted); }
+.race-card__pvi { white-space: nowrap; }
+.race-card__foot { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; font-size: 0.78rem; color: var(--text-muted); margin-top: auto; }
+.race-card__status { font-weight: 600; color: var(--text); white-space: nowrap; }
+.race-card__status--called { color: #047857; }
+.race-card__status--pending { color: var(--text-muted); font-weight: 500; }
