@@ -18,8 +18,10 @@ const WIKI = 'https://en.wikipedia.org/wiki/'
 
 async function wiki(title) {
   const file = join(cache, `${title.replace(/[^\w-]/g, '_')}.wiki`)
-  if (existsSync(file)) return readFileSync(file, 'utf8')
-  if (offline) throw new Error(`not cached: ${title}`)
+  if (offline) {
+    if (existsSync(file)) return readFileSync(file, 'utf8')
+    throw new Error(`not cached: ${title}`)
+  }
   for (let attempt = 0; attempt < 4; attempt++) {
     const res = await fetch(`https://en.wikipedia.org/w/index.php?title=${encodeURIComponent(title)}&action=raw`, {
       headers: { 'User-Agent': 'midterms-2026-databuild/1.0 (https://github.com/cmelwani/midterms-2026)' },
@@ -138,7 +140,13 @@ for (const r of senRaces) {
     })
     if (!candCols.length || matched.some((m) => !m)) continue
     for (const row of tableRows(t).slice(1)) {
-      const lines = row.filter((l) => l.startsWith('|'))
+      const lines = []
+      for (const l of row) {
+        const prev = lines[lines.length - 1]
+        const open = prev && (prev.match(/\{\{/g) || []).length > (prev.match(/\}\}/g) || []).length
+        if (open) lines[lines.length - 1] += `\n${l}`
+        else if (l.startsWith('|')) lines.push(l)
+      }
       if (lines.length < 3 + candCols.length || /colspan/.test(lines[0])) continue
       const src = lines[0]
       const name = stripRefs(src).replace(/<ref[\s\S]*$/, '').replace(/''/g, '').replace(/^\|/, '').replace(/\[\[([^|\]]*\|)?([^\]]*)\]\]/g, '$2').replace(/\[https?:\S+ ([^\]]*)\]/g, '$1').trim()
@@ -149,7 +157,7 @@ for (const r of senRaces) {
       }
       const updated = parseDate(stripRefs(lines[2]).replace(/^\|/, ''))
       const pcts = lines.slice(3, 3 + candCols.length).map((l) => Number(l.replace(/^.*\|/, '').replace(/[^\d.]/g, '')))
-      if (pcts.some((p) => !Number.isFinite(p) || p === 0)) continue
+      if (pcts.some((p) => !Number.isFinite(p) || p <= 0 || p > 100)) continue
       matched.forEach((m, i) => senPolls.push({ raceId: r.id, source: name, url: url || '', asOf: updated || '', candidate: m.name, pct: pcts[i] }))
     }
     break

@@ -62,7 +62,7 @@ function buildPoll(rows, candidates) {
   if (!rows?.length) return null
   const bySource = group(rows.map((r) => ({ ...r, source: SOURCE_NAMES[r.source] || r.source })), 'source')
   const entries = [...bySource.entries()].map(([source, rs]) => {
-    const average = rs.map((r) => ({ candidateId: candidates.find((c) => c.name === r.candidate)?.id, pct: Number(r.pct) })).filter((a) => a.candidateId)
+    const average = rs.map((r) => ({ candidateId: candidates.find((c) => c.name === r.candidate)?.id, pct: Number(r.pct) })).filter((a) => a.candidateId && a.pct > 0 && a.pct <= 100)
     const sorted = [...average].sort((a, b) => b.pct - a.pct)
     const lead = candidates.find((c) => c.id === sorted[0]?.candidateId)
     const points = Math.round(((sorted[0]?.pct ?? 0) - (sorted[1]?.pct ?? 0)) * 10) / 10

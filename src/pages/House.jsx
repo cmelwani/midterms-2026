@@ -32,7 +32,7 @@ export default function House() {
   const shown = useMemo(() => {
     const needle = q.trim().toLowerCase()
     return races.filter((r) => {
-      if (!showAll && !r.competitive && !(needle || state)) return false
+      if (!showAll && !r.competitive && !(needle || state || rating || inc)) return false
       if (state && r.state !== state) return false
       if (rating && r.rating?.category !== rating) return false
       if (inc === 'open' ? r.incumbent?.running : inc && r.incumbent?.party !== inc) return false
@@ -147,8 +147,8 @@ export default function House() {
         {(state || rating || inc || q || showAll) && <button type="button" className="house__reset" onClick={() => setParams(new URLSearchParams(), { replace: true })}>Reset</button>}
       </form>
       <p className="muted house__count" aria-live="polite">
-        Showing {shown.length} {showAll || state || q ? '' : 'competitive '}race{shown.length === 1 ? '' : 's'} in {groups.length} state{groups.length === 1 ? '' : 's'}
-        {!showAll && !state && !q && <> · <button type="button" className="house__link" onClick={() => setParam('show', 'all')}>Show all 435</button></>}
+        Showing {shown.length} {showAll || state || q || rating || inc ? '' : 'competitive '}race{shown.length === 1 ? '' : 's'} in {groups.length} state{groups.length === 1 ? '' : 's'}
+        {!showAll && !state && !q && !rating && !inc && <> · <button type="button" className="house__link" onClick={() => setParam('show', 'all')}>Show all 435</button></>}
       </p>
 
       {groups.length === 0 && <p className="house__empty">No districts match these filters.</p>}
