@@ -1,0 +1,16 @@
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.45;
+}
+a { color: var(--dem); }
+h1, h2, h3 { line-height: 1.2; }
+.page { max-width: 1200px; margin: 0 auto; padding: 16px; }
+.muted { color: var(--text-muted); }
+.party-D { color: var(--dem); }
+.party-R { color: var(--rep); }
+.party-I, .party-L, .party-G, .party-O { color: var(--ind); }

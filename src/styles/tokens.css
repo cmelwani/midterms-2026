@@ -1,0 +1,26 @@
+/* Shared design tokens. Owned by Session A; others consume, don't redefine. */
+:root {
+  --dem: #1f5fbf;
+  --dem-light: #dbe7fb;
+  --rep: #c8202f;
+  --rep-light: #fbdddf;
+  --ind: #6b7280;
+  --ind-light: #e5e7eb;
+  --tossup: #7c3aed;
+  --tossup-light: #ede9fe;
+
+  --bg: #f7f8fa;
+  --surface: #ffffff;
+  --border: #e2e5ea;
+  --text: #111827;
+  --text-muted: #5b6472;
+  --ok: #15803d;
+  --warn: #b45309;
+  --error: #b91c1c;
+
+  --radius: 8px;
+  --gap: 12px;
+  --nav-height: 56px;
+  --font: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+}

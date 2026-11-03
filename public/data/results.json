@@ -1,0 +1,33 @@
+{
+  "_sample": true,
+  "updated": "2026-11-03T08:00:00-08:00",
+  "status": "pre-election",
+  "chambers": {
+    "senate": {
+      "total": 100,
+      "majority": 51,
+      "tiebreak": "R",
+      "racesUp": 35,
+      "racesCalled": 0,
+      "notUp": { "D": 32, "I": 2, "R": 31 },
+      "called": { "D": 0, "I": 0, "R": 0 }
+    },
+    "house": {
+      "total": 435,
+      "majority": 218,
+      "racesUp": 435,
+      "racesCalled": 0,
+      "called": { "D": 0, "I": 0, "R": 0 }
+    }
+  },
+  "races": {
+    "sen-ga-2": {
+      "called": false,
+      "winner": null,
+      "calledAt": null,
+      "calledBy": null,
+      "pctReporting": 0,
+      "votes": []
+    }
+  }
+}

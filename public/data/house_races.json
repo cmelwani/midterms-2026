@@ -1,0 +1,40 @@
+{
+  "_sample": true,
+  "updated": "2026-11-03T08:00:00-08:00",
+  "sources": [
+    { "name": "Ballotpedia", "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections,_2026" }
+  ],
+  "races": [
+    {
+      "id": "house-pa-07",
+      "chamber": "house",
+      "state": "PA",
+      "stateName": "Pennsylvania",
+      "district": 7,
+      "competitive": true,
+      "incumbent": { "name": "Ryan Mackenzie", "party": "R", "candidateId": "pa-07-mackenzie", "running": true },
+      "candidates": [
+        { "id": "pa-07-mackenzie", "name": "Ryan Mackenzie", "party": "R", "incumbent": true },
+        { "id": "pa-07-sample", "name": "Sample Democrat", "party": "D", "incumbent": false }
+      ],
+      "rating": { "category": "toss-up", "party": null, "source": "Cook Political Report", "asOf": "2026-10-30" },
+      "poll": null,
+      "winner": null
+    },
+    {
+      "id": "house-ak-al",
+      "chamber": "house",
+      "state": "AK",
+      "stateName": "Alaska",
+      "district": 0,
+      "competitive": false,
+      "incumbent": { "name": "Nick Begich", "party": "R", "candidateId": "ak-al-begich", "running": true },
+      "candidates": [
+        { "id": "ak-al-begich", "name": "Nick Begich", "party": "R", "incumbent": true }
+      ],
+      "rating": { "category": "likely", "party": "R", "source": "Cook Political Report", "asOf": "2026-10-30" },
+      "poll": null,
+      "winner": null
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "_sample": true,
+  "updated": "2026-11-03T08:00:00-08:00",
+  "sources": [
+    { "name": "Ballotpedia", "url": "https://ballotpedia.org/United_States_Senate_elections,_2026" }
+  ],
+  "races": [
+    {
+      "id": "sen-ga-2",
+      "chamber": "senate",
+      "state": "GA",
+      "stateName": "Georgia",
+      "seatClass": 2,
+      "special": false,
+      "incumbent": { "name": "Jon Ossoff", "party": "D", "candidateId": "ga-sen-ossoff", "running": true },
+      "candidates": [
+        { "id": "ga-sen-ossoff", "name": "Jon Ossoff", "party": "D", "incumbent": true },
+        { "id": "ga-sen-sample", "name": "Sample Republican", "party": "R", "incumbent": false }
+      ],
+      "rating": { "category": "toss-up", "party": null, "source": "Cook Political Report", "asOf": "2026-10-30" },
+      "poll": {
+        "average": [
+          { "candidateId": "ga-sen-ossoff", "pct": 48.0 },
+          { "candidateId": "ga-sen-sample", "pct": 46.5 }
+        ],
+        "margin": { "party": "D", "points": 1.5 },
+        "source": "RealClearPolling",
+        "url": "https://www.realclearpolling.com/",
+        "asOf": "2026-11-02T12:00:00-05:00"
+      },
+      "winner": null
+    }
+  ]
+}

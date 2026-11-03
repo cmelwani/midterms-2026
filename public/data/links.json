@@ -1,0 +1,15 @@
+{
+  "_sample": true,
+  "updated": "2026-11-03T08:00:00-08:00",
+  "links": [
+    {
+      "id": "cook-ratings",
+      "title": "2026 Senate Race Ratings",
+      "publisher": "Cook Political Report",
+      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings",
+      "description": "Nonpartisan race ratings for every Senate contest.",
+      "category": "ratings",
+      "raceIds": []
+    }
+  ]
+}

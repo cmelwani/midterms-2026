@@ -1,0 +1,33 @@
+{
+  "_sample": true,
+  "updated": "2026-11-03T08:00:00-08:00",
+  "partyPlatforms": {
+    "D": {
+      "summary": "Sample Democratic platform summary.",
+      "priorities": ["Lower costs", "Protect health care", "Defend democracy"],
+      "source": "https://democrats.org/where-we-stand/party-platform/"
+    },
+    "R": {
+      "summary": "Sample Republican platform summary.",
+      "priorities": ["Secure the border", "Cut taxes", "Lower inflation"],
+      "source": "https://gop.com/platform/"
+    }
+  },
+  "candidates": [
+    {
+      "id": "ga-sen-ossoff",
+      "name": "Jon Ossoff",
+      "party": "D",
+      "raceId": "sen-ga-2",
+      "incumbent": true,
+      "currentOffice": "U.S. Senator from Georgia (2021–present)",
+      "bio": "Sample bio.",
+      "priorities": ["Priority one", "Priority two", "Priority three"],
+      "prioritiesSource": "campaign",
+      "links": {
+        "campaign": "https://www.electjon.com/",
+        "ballotpedia": "https://ballotpedia.org/Jon_Ossoff"
+      }
+    }
+  ]
+}
