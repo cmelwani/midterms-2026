@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useResults } from '../hooks/useResults.jsx'
 import { useData } from '../hooks/useData.js'
 import SeatBar from '../components/SeatBar.jsx'
@@ -7,6 +7,8 @@ import Hemicycle from '../components/Hemicycle.jsx'
 import RatingSpectrum from '../components/RatingSpectrum.jsx'
 import MajorityBuilder from '../components/MajorityBuilder.jsx'
 import RatingBadge from '../components/RatingBadge.jsx'
+import USTileMap from '../components/USTileMap.jsx'
+import { senateMapValues, SENATE_MAP_LEGEND } from '../components/senateMap.js'
 import { raceLabel, sideOf, winnerOf, leaderOf } from '../components/seatModel.js'
 import { partyInfo } from '../lib/ids.js'
 import './Dashboard.css'
@@ -14,6 +16,27 @@ import './Dashboard.css'
 // Session A owns this page.
 const CHAMBERS = [['senate', 'Senate'], ['house', 'House']]
 const EMPTY = []
+const WATCH_PREVIEW = 12
+const SHADES = ['var(--ind-light)', '#ddd6fe', '#c4b5fd', '#a78bfa', '#7c3aed', '#5b21b6']
+const shade = (n) => SHADES[n === 0 ? 0 : n <= 1 ? 1 : n <= 3 ? 2 : n <= 6 ? 3 : n <= 10 ? 4 : 5]
+const HOUSE_LEGEND = [['0', 0], ['1', 1], ['2–3', 2], ['4–6', 3], ['7–10', 4], ['11+', 5]].map(([label, i]) => ({ fill: SHADES[i], label }))
+
+function houseMapValues(races, raceResult) {
+  const byState = new Map()
+  for (const r of races) byState.set(r.state, [...(byState.get(r.state) || []), r])
+  const v = {}
+  for (const [st, rs] of byState) {
+    const comp = rs.filter((r) => r.competitive)
+    const calledN = comp.filter((r) => raceResult(r.id)?.called).length
+    v[st] = {
+      fill: shade(comp.length),
+      textColor: comp.length > 3 ? '#fff' : 'var(--text)',
+      label: String(comp.length),
+      tooltip: `${rs[0].stateName}: ${comp.length} of ${rs.length} seat${rs.length > 1 ? 's' : ''} competitive${calledN ? `, ${calledN} called` : ''}`,
+    }
+  }
+  return v
+}
 const timeFmt = new Intl.DateTimeFormat(undefined, { hour: 'numeric', minute: '2-digit' })
 const fullFmt = new Intl.DateTimeFormat(undefined, { dateStyle: 'medium', timeStyle: 'short' })
 const CALLED_PREVIEW = 12
@@ -111,10 +134,13 @@ function CalledList({ calledRaces, raceById }) {
 }
 
 function WatchList({ races, raceResult }) {
+  const [all, setAll] = useState(false)
   if (!races.length) return <p className="state">No toss-up races in the race data.</p>
+  const shown = all ? races : races.slice(0, WATCH_PREVIEW)
   return (
+    <>
     <ul className="dashboard__watch">
-      {races.map((race) => {
+      {shown.map((race) => {
         const r = raceResult(race.id)
         const w = winnerOf(race, r)
         const lead = !w && leaderOf(race, r)
@@ -142,6 +168,12 @@ function WatchList({ races, raceResult }) {
         )
       })}
     </ul>
+    {races.length > WATCH_PREVIEW && (
+      <button type="button" className="btn dashboard__more" onClick={() => setAll(!all)}>
+        {all ? 'Show fewer' : `Show all ${races.length} toss-ups`}
+      </button>
+    )}
+    </>
   )
 }
 
@@ -158,6 +190,9 @@ export default function Dashboard() {
   const raceError = senate.error || house.error
   const racesLoading = (senate.loading && !senate.data) || (house.loading && !house.data)
   const sample = senate.data?._sample || house.data?._sample
+  const navigate = useNavigate()
+  const senateMap = useMemo(() => senateMapValues(senateRaces, raceResult), [senateRaces, raceResult])
+  const houseMap = useMemo(() => houseMapValues(houseRaces, raceResult), [houseRaces, raceResult])
 
   return (
     <div className="page dashboard">
@@ -189,6 +224,23 @@ export default function Dashboard() {
                 <Hemicycle chamber={ch} summary={results.chambers[ch]} races={racesFor[ch]} raceResult={raceResult} />
               </div>
             ))}
+          </div>
+        </section>
+      )}
+
+      {!racesLoading && !raceError && (
+        <section className="section" aria-labelledby="dash-maps">
+          <h2 id="dash-maps">Battleground map</h2>
+          <p className="muted small dashboard__hint">Hover or tap a state for details; click to open its races.</p>
+          <div className="grid--2">
+            <div className="card">
+              <h3>Senate races by rating</h3>
+              <USTileMap title="Senate races by state, colored by Cook rating or called winner" values={senateMap} onSelect={() => navigate('/senate')} legend={SENATE_MAP_LEGEND} />
+            </div>
+            <div className="card">
+              <h3>Competitive House seats per state</h3>
+              <USTileMap title="Number of competitive House seats per state" values={houseMap} onSelect={(st) => navigate(`/house?state=${st}`)} legend={HOUSE_LEGEND} />
+            </div>
           </div>
         </section>
       )}

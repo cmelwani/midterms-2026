@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T16:52:56Z",
+ "updated": "2026-11-03T17:04:37Z",
  "sources": [
   {
    "name": "Cook Political Report — Senate race ratings",
@@ -411,15 +411,6 @@
       "margin": {
        "party": "R",
        "points": 6.1
-      }
-     },
-     {
-      "source": "270toWin",
-      "url": null,
-      "asOf": "2026-11-02",
-      "margin": {
-       "party": "R",
-       "points": 21975.2
       }
      },
      {

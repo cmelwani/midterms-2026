@@ -5,8 +5,9 @@ import { useResults } from '../hooks/useResults.jsx'
 import RaceCard, { RaceStatus } from '../components/RaceCard.jsx'
 import RatingBadge from '../components/RatingBadge.jsx'
 import USTileMap from '../components/USTileMap.jsx'
+import { senateMapValues, SENATE_MAP_LEGEND } from '../components/senateMap.js'
 import RaceSpectrum from '../components/RaceSpectrum.jsx'
-import { marginLabel, partyFill, ratingFill, ratingLabel, ratingScore, ratingTextColor, SPECTRUM_FILLS, SPECTRUM_LABELS, SPECTRUM_ORDER, formatDate } from '../components/RatingBadge.lib.js'
+import { marginLabel, ratingScore, SPECTRUM_FILLS, SPECTRUM_LABELS, SPECTRUM_ORDER, formatDate } from '../components/RatingBadge.lib.js'
 import './Senate.css'
 
 const CATS = ['toss-up', 'lean', 'likely', 'solid']
@@ -33,25 +34,7 @@ export default function Senate() {
       : [...list].sort((a, b) => Math.abs(ratingScore(a.rating)) - Math.abs(ratingScore(b.rating)) || Math.abs(a.poll?.margin?.points ?? 99) - Math.abs(b.poll?.margin?.points ?? 99))
   }, [races, cat, called, sort, raceResult])
 
-  const mapValues = useMemo(() => {
-    const v = {}
-    for (const st of new Set(races.map((r) => r.state))) {
-      const rs = races.filter((r) => r.state === st)
-      const res = rs.map((r) => ({ r, res: raceResult(r.id) }))
-      const winners = res.map(({ r, res: x }) => x?.called && r.candidates.find((c) => c.id === x.winner)).filter(Boolean)
-      const main = rs.reduce((a, b) => (Math.abs(ratingScore(b.rating)) < Math.abs(ratingScore(a.rating)) ? b : a))
-      const allCalled = winners.length === rs.length
-      const tooltip = rs.map((r) => {
-        const x = raceResult(r.id)
-        const w = x?.called && r.candidates.find((c) => c.id === x.winner)
-        return `${r.stateName}${r.special ? ' (special)' : ''}: ${ratingLabel(r.rating)}${r.poll ? `, poll ${marginLabel(r.poll.margin)}` : ''}\n${r.candidates.map((c) => `${c.name} (${c.party})`).join(' vs ')}${w ? `\n✓ ${w.name} wins` : ''}`
-      }).join('\n\n')
-      v[st] = allCalled
-        ? { fill: partyFill(winners[0].party), label: '✓', tooltip }
-        : { fill: ratingFill(main.rating), textColor: ratingTextColor(main.rating), label: rs.length > 1 ? '2 races' : undefined, tooltip }
-    }
-    return v
-  }, [races, raceResult])
+  const mapValues = useMemo(() => senateMapValues(races, raceResult), [races, raceResult])
 
   const counts = useMemo(() => SPECTRUM_ORDER.map((k) => ({ k, n: races.filter((r) => (r.rating?.category === 'toss-up' ? 'toss-up' : `${r.rating?.category}-${r.rating?.party}`) === k).length })), [races])
   const calledCount = races.filter((r) => raceResult(r.id)?.called).length
@@ -96,7 +79,7 @@ export default function Senate() {
             values={mapValues}
             onSelect={selectState}
             selected={highlight ? races.find((r) => r.id === highlight)?.state : undefined}
-            legend={[...SPECTRUM_ORDER.map((k) => ({ fill: SPECTRUM_FILLS[k], label: SPECTRUM_LABELS[k] })), { fill: 'var(--ind-light)', label: 'No race' }, { fill: '#111827', label: '✓ = called' }]}
+            legend={SENATE_MAP_LEGEND}
           />
         </section>
         <section aria-labelledby="senate-spec-h">
