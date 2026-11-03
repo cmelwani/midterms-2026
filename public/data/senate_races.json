@@ -1,34 +1,2299 @@
 {
-  "_sample": true,
-  "updated": "2026-11-03T08:00:00-08:00",
-  "sources": [
-    { "name": "Ballotpedia", "url": "https://ballotpedia.org/United_States_Senate_elections,_2026" }
-  ],
-  "races": [
+ "updated": "2026-11-03T16:52:28Z",
+ "sources": [
+  {
+   "name": "Cook Political Report — Senate race ratings",
+   "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+  },
+  {
+   "name": "Wikipedia — 2026 United States Senate elections (nominees, ratings table)",
+   "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_elections"
+  },
+  {
+   "name": "Ballotpedia — U.S. Senate elections, 2026",
+   "url": "https://ballotpedia.org/United_States_Senate_elections,_2026"
+  },
+  {
+   "name": "Poll aggregates (RealClearPolling, Race to the WH, Split Ticket, others) via each state race article",
+   "url": "https://www.realclearpolling.com/latest-polls/senate"
+  }
+ ],
+ "races": [
+  {
+   "id": "sen-al-2",
+   "chamber": "senate",
+   "state": "AL",
+   "stateName": "Alabama",
+   "seatClass": 2,
+   "special": false,
+   "incumbent": {
+    "name": "Tommy Tuberville",
+    "party": "R",
+    "candidateId": null,
+    "running": false
+   },
+   "status": "Incumbent retiring to run for governor",
+   "candidates": [
     {
-      "id": "sen-ga-2",
-      "chamber": "senate",
-      "state": "GA",
-      "stateName": "Georgia",
-      "seatClass": 2,
-      "special": false,
-      "incumbent": { "name": "Jon Ossoff", "party": "D", "candidateId": "ga-sen-ossoff", "running": true },
-      "candidates": [
-        { "id": "ga-sen-ossoff", "name": "Jon Ossoff", "party": "D", "incumbent": true },
-        { "id": "ga-sen-sample", "name": "Sample Republican", "party": "R", "incumbent": false }
-      ],
-      "rating": { "category": "toss-up", "party": null, "source": "Cook Political Report", "asOf": "2026-10-30" },
-      "poll": {
-        "average": [
-          { "candidateId": "ga-sen-ossoff", "pct": 48.0 },
-          { "candidateId": "ga-sen-sample", "pct": 46.5 }
-        ],
-        "margin": { "party": "D", "points": 1.5 },
-        "source": "RealClearPolling",
-        "url": "https://www.realclearpolling.com/",
-        "asOf": "2026-11-02T12:00:00-05:00"
-      },
-      "winner": null
+     "id": "al-sen-wess",
+     "name": "Everett Wess",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "id": "al-sen-moore",
+     "name": "Barry Moore",
+     "party": "R",
+     "incumbent": false
     }
-  ]
+   ],
+   "rating": {
+    "category": "solid",
+    "party": "R",
+    "source": "Cook Political Report",
+    "asOf": "2026-11-02",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "poll": {
+    "average": [
+     {
+      "candidateId": "al-sen-moore",
+      "pct": 51
+     },
+     {
+      "candidateId": "al-sen-wess",
+      "pct": 37.1
+     }
+    ],
+    "margin": {
+     "party": "R",
+     "points": 13.9
+    },
+    "source": "Silver Bulletin",
+    "url": "https://www.natesilver.net/p/nate-silver-2026-midterm-election-polls-model",
+    "asOf": "2026-11-03",
+    "others": [
+     {
+      "source": "270toWin",
+      "url": "https://www.270towin.com/2026-senate-polls/alabama",
+      "asOf": "2026-10-28",
+      "margin": {
+       "party": "R",
+       "points": 16.7
+      }
+     }
+    ]
+   },
+   "winner": null
+  },
+  {
+   "id": "sen-ak-2",
+   "chamber": "senate",
+   "state": "AK",
+   "stateName": "Alaska",
+   "seatClass": 2,
+   "special": false,
+   "incumbent": {
+    "name": "Dan Sullivan",
+    "party": "R",
+    "candidateId": "ak-sen-sullivan",
+    "running": true
+   },
+   "status": "Incumbent advanced to general",
+   "candidates": [
+    {
+     "id": "ak-sen-peltola",
+     "name": "Mary Peltola",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "id": "ak-sen-sullivan",
+     "name": "Dan Sullivan",
+     "party": "R",
+     "incumbent": true
+    }
+   ],
+   "rating": {
+    "category": "toss-up",
+    "party": null,
+    "source": "Cook Political Report",
+    "asOf": "2026-11-02",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "poll": null,
+   "winner": null
+  },
+  {
+   "id": "sen-ar-2",
+   "chamber": "senate",
+   "state": "AR",
+   "stateName": "Arkansas",
+   "seatClass": 2,
+   "special": false,
+   "incumbent": {
+    "name": "Tom Cotton",
+    "party": "R",
+    "candidateId": "ar-sen-cotton",
+    "running": true
+   },
+   "status": "Incumbent renominated",
+   "candidates": [
+    {
+     "id": "ar-sen-shoffner",
+     "name": "Hallie Shoffner",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "id": "ar-sen-cotton",
+     "name": "Tom Cotton",
+     "party": "R",
+     "incumbent": true
+    }
+   ],
+   "rating": {
+    "category": "solid",
+    "party": "R",
+    "source": "Cook Political Report",
+    "asOf": "2026-11-02",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "poll": {
+    "average": [
+     {
+      "candidateId": "ar-sen-cotton",
+      "pct": 52.8
+     },
+     {
+      "candidateId": "ar-sen-shoffner",
+      "pct": 39.8
+     }
+    ],
+    "margin": {
+     "party": "R",
+     "points": 13
+    },
+    "source": "Silver Bulletin",
+    "url": "https://www.natesilver.net/p/nate-silver-2026-midterm-election-polls-model",
+    "asOf": "2026-11-03"
+   },
+   "winner": null
+  },
+  {
+   "id": "sen-co-2",
+   "chamber": "senate",
+   "state": "CO",
+   "stateName": "Colorado",
+   "seatClass": 2,
+   "special": false,
+   "incumbent": {
+    "name": "John Hickenlooper",
+    "party": "D",
+    "candidateId": "co-sen-hickenlooper",
+    "running": true
+   },
+   "status": "Incumbent renominated",
+   "candidates": [
+    {
+     "id": "co-sen-hickenlooper",
+     "name": "John Hickenlooper",
+     "party": "D",
+     "incumbent": true
+    },
+    {
+     "id": "co-sen-baisley",
+     "name": "Mark Baisley",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "rating": {
+    "category": "solid",
+    "party": "D",
+    "source": "Cook Political Report",
+    "asOf": "2026-11-02",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "poll": {
+    "average": [
+     {
+      "candidateId": "co-sen-hickenlooper",
+      "pct": 57.1
+     },
+     {
+      "candidateId": "co-sen-baisley",
+      "pct": 37.5
+     }
+    ],
+    "margin": {
+     "party": "D",
+     "points": 19.6
+    },
+    "source": "Silver Bulletin",
+    "url": "https://www.natesilver.net/p/nate-silver-2026-midterm-election-polls-model",
+    "asOf": "2026-11-03",
+    "others": [
+     {
+      "source": "270toWin",
+      "url": "https://www.270towin.com/2026-senate-polls/colorado",
+      "asOf": "2026-11-02",
+      "margin": {
+       "party": "D",
+       "points": 21
+      }
+     }
+    ]
+   },
+   "winner": null
+  },
+  {
+   "id": "sen-de-2",
+   "chamber": "senate",
+   "state": "DE",
+   "stateName": "Delaware",
+   "seatClass": 2,
+   "special": false,
+   "incumbent": {
+    "name": "Chris Coons",
+    "party": "D",
+    "candidateId": "de-sen-coons",
+    "running": true
+   },
+   "status": "Incumbent renominated",
+   "candidates": [
+    {
+     "id": "de-sen-coons",
+     "name": "Chris Coons",
+     "party": "D",
+     "incumbent": true
+    },
+    {
+     "id": "de-sen-katz",
+     "name": "Michael Katz",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "rating": {
+    "category": "solid",
+    "party": "D",
+    "source": "Cook Political Report",
+    "asOf": "2026-11-02",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "poll": null,
+   "winner": null
+  },
+  {
+   "id": "sen-fl-3",
+   "chamber": "senate",
+   "state": "FL",
+   "stateName": "Florida",
+   "seatClass": 3,
+   "special": true,
+   "incumbent": {
+    "name": "Ashley Moody",
+    "party": "R",
+    "candidateId": "fl-sen-moody",
+    "running": true
+   },
+   "status": "Interim appointee nominated",
+   "candidates": [
+    {
+     "id": "fl-sen-nixon",
+     "name": "Angie Nixon",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "id": "fl-sen-moody",
+     "name": "Ashley Moody",
+     "party": "R",
+     "incumbent": true
+    }
+   ],
+   "rating": {
+    "category": "likely",
+    "party": "R",
+    "source": "Cook Political Report",
+    "asOf": "2026-11-02",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "poll": {
+    "average": [
+     {
+      "candidateId": "fl-sen-moody",
+      "pct": 49.7
+     },
+     {
+      "candidateId": "fl-sen-nixon",
+      "pct": 43.4
+     }
+    ],
+    "margin": {
+     "party": "R",
+     "points": 6.3
+    },
+    "source": "RealClearPolling",
+    "url": "https://www.realclearpolling.com/polls/senate/general/2026/florida/moody-vs-nixon",
+    "asOf": "2026-10-31",
+    "others": [
+     {
+      "source": "FiftyPlusOne",
+      "url": "https://fiftyplusone.news/polls/senate/general/florida",
+      "asOf": "2026-11-03",
+      "margin": {
+       "party": "R",
+       "points": 6.1
+      }
+     },
+     {
+      "source": "Silver Bulletin",
+      "url": "https://www.natesilver.net/p/nate-silver-2026-midterm-election-polls-model",
+      "asOf": "2026-11-03",
+      "margin": {
+       "party": "R",
+       "points": 6.1
+      }
+     },
+     {
+      "source": "270toWin",
+      "url": null,
+      "asOf": "2026-11-02",
+      "margin": {
+       "party": "R",
+       "points": 21975.2
+      }
+     },
+     {
+      "source": "Decision Desk HQ",
+      "url": "https://votes.decisiondeskhq.com/races/2026-11-03/florida-us-senate-special-election-general/polling",
+      "asOf": "2026-11-02",
+      "margin": {
+       "party": "R",
+       "points": 5.6
+      }
+     }
+    ]
+   },
+   "winner": null
+  },
+  {
+   "id": "sen-ga-2",
+   "chamber": "senate",
+   "state": "GA",
+   "stateName": "Georgia",
+   "seatClass": 2,
+   "special": false,
+   "incumbent": {
+    "name": "Jon Ossoff",
+    "party": "D",
+    "candidateId": "ga-sen-ossoff",
+    "running": true
+   },
+   "status": "Incumbent renominated",
+   "candidates": [
+    {
+     "id": "ga-sen-ossoff",
+     "name": "Jon Ossoff",
+     "party": "D",
+     "incumbent": true
+    },
+    {
+     "id": "ga-sen-collins",
+     "name": "Mike Collins",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "rating": {
+    "category": "likely",
+    "party": "D",
+    "source": "Cook Political Report",
+    "asOf": "2026-11-02",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "poll": {
+    "average": [
+     {
+      "candidateId": "ga-sen-ossoff",
+      "pct": 52
+     },
+     {
+      "candidateId": "ga-sen-collins",
+      "pct": 43.4
+     }
+    ],
+    "margin": {
+     "party": "D",
+     "points": 8.6
+    },
+    "source": "RealClearPolling",
+    "url": "https://www.realclearpolling.com/polls/senate/general/2026/georgia/ossoff-vs-collins",
+    "asOf": "2026-10-20",
+    "others": [
+     {
+      "source": "270toWin",
+      "url": "https://www.270towin.com/2026-senate-polls/georgia",
+      "asOf": "2026-10-21",
+      "margin": {
+       "party": "D",
+       "points": 8.4
+      }
+     },
+     {
+      "source": "Decision Desk HQ",
+      "url": "https://votes.decisiondeskhq.com/races/2026-11-03/georgia-us-senate-general-election/polling",
+      "asOf": "2026-10-21",
+      "margin": {
+       "party": "D",
+       "points": 7.8
+      }
+     },
+     {
+      "source": "FiftyPlusOne",
+      "url": "https://fiftyplusone.news/polls/senate/general/georgia",
+      "asOf": "2026-10-21",
+      "margin": {
+       "party": "D",
+       "points": 8.6
+      }
+     },
+     {
+      "source": "Silver Bulletin",
+      "url": "https://www.natesilver.net/p/nate-silver-2026-midterm-election-polls-model",
+      "asOf": "2026-10-20",
+      "margin": {
+       "party": "D",
+       "points": 8.9
+      }
+     }
+    ]
+   },
+   "winner": null
+  },
+  {
+   "id": "sen-id-2",
+   "chamber": "senate",
+   "state": "ID",
+   "stateName": "Idaho",
+   "seatClass": 2,
+   "special": false,
+   "incumbent": {
+    "name": "Jim Risch",
+    "party": "R",
+    "candidateId": "id-sen-risch",
+    "running": true
+   },
+   "status": "Incumbent renominated",
+   "candidates": [
+    {
+     "id": "id-sen-risch",
+     "name": "Jim Risch",
+     "party": "R",
+     "incumbent": true
+    },
+    {
+     "id": "id-sen-achilles",
+     "name": "Todd Achilles",
+     "party": "I",
+     "incumbent": false
+    }
+   ],
+   "rating": {
+    "category": "solid",
+    "party": "R",
+    "source": "Cook Political Report",
+    "asOf": "2026-11-02",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "poll": {
+    "average": [
+     {
+      "candidateId": "id-sen-risch",
+      "pct": 50.6
+     },
+     {
+      "candidateId": "id-sen-achilles",
+      "pct": 34.6
+     }
+    ],
+    "margin": {
+     "party": "R",
+     "points": 16
+    },
+    "source": "Silver Bulletin",
+    "url": "https://www.natesilver.net/p/nate-silver-2026-midterm-election-polls-model",
+    "asOf": "2026-10-26"
+   },
+   "winner": null
+  },
+  {
+   "id": "sen-il-2",
+   "chamber": "senate",
+   "state": "IL",
+   "stateName": "Illinois",
+   "seatClass": 2,
+   "special": false,
+   "incumbent": {
+    "name": "Dick Durbin",
+    "party": "D",
+    "candidateId": null,
+    "running": false
+   },
+   "status": "Incumbent retiring",
+   "candidates": [
+    {
+     "id": "il-sen-stratton",
+     "name": "Juliana Stratton",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "id": "il-sen-tracy",
+     "name": "Don Tracy",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "rating": {
+    "category": "solid",
+    "party": "D",
+    "source": "Cook Political Report",
+    "asOf": "2026-11-02",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "poll": null,
+   "winner": null
+  },
+  {
+   "id": "sen-ia-2",
+   "chamber": "senate",
+   "state": "IA",
+   "stateName": "Iowa",
+   "seatClass": 2,
+   "special": false,
+   "incumbent": {
+    "name": "Joni Ernst",
+    "party": "R",
+    "candidateId": null,
+    "running": false
+   },
+   "status": "Incumbent retiring",
+   "candidates": [
+    {
+     "id": "ia-sen-turek",
+     "name": "Josh Turek",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "id": "ia-sen-hinson",
+     "name": "Ashley Hinson",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "rating": {
+    "category": "toss-up",
+    "party": null,
+    "source": "Cook Political Report",
+    "asOf": "2026-11-02",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "poll": {
+    "average": [
+     {
+      "candidateId": "ia-sen-hinson",
+      "pct": 47.1
+     },
+     {
+      "candidateId": "ia-sen-turek",
+      "pct": 47.1
+     }
+    ],
+    "margin": {
+     "party": null,
+     "points": 0
+    },
+    "source": "RealClearPolling",
+    "url": "https://www.realclearpolling.com/polls/senate/general/2026/iowa/turek-vs-hinson",
+    "asOf": "2026-11-03",
+    "others": [
+     {
+      "source": "Decision Desk HQ",
+      "url": "https://votes.decisiondeskhq.com/races/2026-11-03/iowa-us-senate-general-election/polling",
+      "asOf": "2026-11-03",
+      "margin": {
+       "party": "R",
+       "points": 0.3
+      }
+     },
+     {
+      "source": "FiftyPlusOne",
+      "url": "https://fiftyplusone.news/polls/senate/general/iowa",
+      "asOf": "2026-11-03",
+      "margin": {
+       "party": "D",
+       "points": 0.6
+      }
+     },
+     {
+      "source": "270toWin",
+      "url": "https://www.270towin.com/2026-senate-polls/iowa",
+      "asOf": "2026-11-02",
+      "margin": {
+       "party": "D",
+       "points": 0.9
+      }
+     },
+     {
+      "source": "Silver Bulletin",
+      "url": "https://www.natesilver.net/p/nate-silver-2026-midterm-election-polls-model",
+      "asOf": "2026-11-02",
+      "margin": {
+       "party": "D",
+       "points": 1
+      }
+     }
+    ]
+   },
+   "winner": null
+  },
+  {
+   "id": "sen-ks-2",
+   "chamber": "senate",
+   "state": "KS",
+   "stateName": "Kansas",
+   "seatClass": 2,
+   "special": false,
+   "incumbent": {
+    "name": "Roger Marshall",
+    "party": "R",
+    "candidateId": "ks-sen-marshall",
+    "running": true
+   },
+   "status": "Incumbent renominated",
+   "candidates": [
+    {
+     "id": "ks-sen-hamilton",
+     "name": "Adam Hamilton",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "id": "ks-sen-marshall",
+     "name": "Roger Marshall",
+     "party": "R",
+     "incumbent": true
+    }
+   ],
+   "rating": {
+    "category": "toss-up",
+    "party": null,
+    "source": "Cook Political Report",
+    "asOf": "2026-11-02",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "poll": {
+    "average": [
+     {
+      "candidateId": "ks-sen-marshall",
+      "pct": 46.2
+     },
+     {
+      "candidateId": "ks-sen-hamilton",
+      "pct": 49.8
+     }
+    ],
+    "margin": {
+     "party": "D",
+     "points": 3.6
+    },
+    "source": "RealClearPolling",
+    "url": "https://www.realclearpolling.com/polls/senate/general/2026/kansas/marshall-vs-hamilton",
+    "asOf": "2026-11-01",
+    "others": [
+     {
+      "source": "270toWin",
+      "url": "https://www.270towin.com/2026-senate-polls/kansas",
+      "asOf": "2026-11-02",
+      "margin": {
+       "party": "D",
+       "points": 4.6
+      }
+     },
+     {
+      "source": "FiftyPlusOne",
+      "url": "https://fiftyplusone.news/polls/senate/general/kansas",
+      "asOf": "2026-11-02",
+      "margin": {
+       "party": "D",
+       "points": 3.4
+      }
+     },
+     {
+      "source": "Silver Bulletin",
+      "url": "https://www.natesilver.net/p/nate-silver-2026-midterm-election-polls-model",
+      "asOf": "2026-11-02",
+      "margin": {
+       "party": "D",
+       "points": 3.3
+      }
+     },
+     {
+      "source": "Decision Desk HQ",
+      "url": "https://votes.decisiondeskhq.com/races/2026-11-03/kansas-us-senate-general-election/polling",
+      "asOf": "2026-11-01",
+      "margin": {
+       "party": "D",
+       "points": 3.4
+      }
+     }
+    ]
+   },
+   "winner": null
+  },
+  {
+   "id": "sen-ky-2",
+   "chamber": "senate",
+   "state": "KY",
+   "stateName": "Kentucky",
+   "seatClass": 2,
+   "special": false,
+   "incumbent": {
+    "name": "Mitch McConnell",
+    "party": "R",
+    "candidateId": null,
+    "running": false
+   },
+   "status": "Incumbent retiring",
+   "candidates": [
+    {
+     "id": "ky-sen-booker",
+     "name": "Charles Booker",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "id": "ky-sen-barr",
+     "name": "Andy Barr",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "rating": {
+    "category": "solid",
+    "party": "R",
+    "source": "Cook Political Report",
+    "asOf": "2026-11-02",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "poll": null,
+   "winner": null
+  },
+  {
+   "id": "sen-la-2",
+   "chamber": "senate",
+   "state": "LA",
+   "stateName": "Louisiana",
+   "seatClass": 2,
+   "special": false,
+   "incumbent": {
+    "name": "Bill Cassidy",
+    "party": "R",
+    "candidateId": null,
+    "running": false
+   },
+   "status": "Incumbent lost renomination",
+   "candidates": [
+    {
+     "id": "la-sen-davis",
+     "name": "Jamie Davis",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "id": "la-sen-letlow",
+     "name": "Julia Letlow",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "rating": {
+    "category": "solid",
+    "party": "R",
+    "source": "Cook Political Report",
+    "asOf": "2026-11-02",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "poll": null,
+   "winner": null
+  },
+  {
+   "id": "sen-me-2",
+   "chamber": "senate",
+   "state": "ME",
+   "stateName": "Maine",
+   "seatClass": 2,
+   "special": false,
+   "incumbent": {
+    "name": "Susan Collins",
+    "party": "R",
+    "candidateId": "me-sen-collins",
+    "running": true
+   },
+   "status": "Incumbent renominated",
+   "candidates": [
+    {
+     "id": "me-sen-jackson",
+     "name": "Troy Jackson",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "id": "me-sen-collins",
+     "name": "Susan Collins",
+     "party": "R",
+     "incumbent": true
+    }
+   ],
+   "rating": {
+    "category": "toss-up",
+    "party": null,
+    "source": "Cook Political Report",
+    "asOf": "2026-11-02",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "poll": {
+    "average": [
+     {
+      "candidateId": "me-sen-collins",
+      "pct": 46.6
+     },
+     {
+      "candidateId": "me-sen-jackson",
+      "pct": 50.2
+     }
+    ],
+    "margin": {
+     "party": "D",
+     "points": 3.6
+    },
+    "source": "RealClearPolling",
+    "url": "https://www.realclearpolling.com/polls/senate/general/2026/collins-vs-jackson",
+    "asOf": "2026-11-03",
+    "others": [
+     {
+      "source": "270toWin",
+      "url": "https://www.270towin.com/2026-senate-polls/maine",
+      "asOf": "2026-11-03",
+      "margin": {
+       "party": "D",
+       "points": 5
+      }
+     },
+     {
+      "source": "Decision Desk HQ",
+      "url": "https://votes.decisiondeskhq.com/races/2026-11-03/maine-us-senate-general-election/polling",
+      "asOf": "2026-11-03",
+      "margin": {
+       "party": "D",
+       "points": 5.3
+      }
+     },
+     {
+      "source": "Silver Bulletin",
+      "url": "https://www.natesilver.net/p/nate-silver-2026-midterm-election-polls-model",
+      "asOf": "2026-11-03",
+      "margin": {
+       "party": "D",
+       "points": 4
+      }
+     },
+     {
+      "source": "FiftyPlusOne",
+      "url": "https://fiftyplusone.news/polls/senate/general/maine",
+      "asOf": "2026-11-02",
+      "margin": {
+       "party": "D",
+       "points": 4.7
+      }
+     }
+    ]
+   },
+   "winner": null
+  },
+  {
+   "id": "sen-ma-2",
+   "chamber": "senate",
+   "state": "MA",
+   "stateName": "Massachusetts",
+   "seatClass": 2,
+   "special": false,
+   "incumbent": {
+    "name": "Ed Markey",
+    "party": "D",
+    "candidateId": "ma-sen-markey",
+    "running": true
+   },
+   "status": "Incumbent renominated",
+   "candidates": [
+    {
+     "id": "ma-sen-markey",
+     "name": "Ed Markey",
+     "party": "D",
+     "incumbent": true
+    },
+    {
+     "id": "ma-sen-deaton",
+     "name": "John Deaton",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "rating": {
+    "category": "solid",
+    "party": "D",
+    "source": "Cook Political Report",
+    "asOf": "2026-11-02",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "poll": {
+    "average": [
+     {
+      "candidateId": "ma-sen-markey",
+      "pct": 55.8
+     },
+     {
+      "candidateId": "ma-sen-deaton",
+      "pct": 29.8
+     }
+    ],
+    "margin": {
+     "party": "D",
+     "points": 26
+    },
+    "source": "RealClearPolling",
+    "url": "https://www.realclearpolling.com/polls/senate/general/2026/massachusetts/deaton-vs-markey",
+    "asOf": "2026-10-20",
+    "others": [
+     {
+      "source": "Decision Desk HQ",
+      "url": "https://votes.decisiondeskhq.com/polls/general-ballot-test/2026-ma-us-senate/massachusetts/lv-rv-adults",
+      "asOf": "2026-11-02",
+      "margin": {
+       "party": "D",
+       "points": 25.9
+      }
+     },
+     {
+      "source": "270toWin",
+      "url": "https://www.270towin.com/2026-senate-polls/massachusetts",
+      "asOf": "2026-10-20",
+      "margin": {
+       "party": "D",
+       "points": 26.2
+      }
+     },
+     {
+      "source": "Silver Bulletin",
+      "url": "https://www.natesilver.net/p/nate-silver-2026-midterm-election-polls-model",
+      "asOf": "2026-10-19",
+      "margin": {
+       "party": "D",
+       "points": 26.6
+      }
+     }
+    ]
+   },
+   "winner": null
+  },
+  {
+   "id": "sen-mi-2",
+   "chamber": "senate",
+   "state": "MI",
+   "stateName": "Michigan",
+   "seatClass": 2,
+   "special": false,
+   "incumbent": {
+    "name": "Gary Peters",
+    "party": "D",
+    "candidateId": null,
+    "running": false
+   },
+   "status": "Incumbent retiring",
+   "candidates": [
+    {
+     "id": "mi-sen-el-sayed",
+     "name": "Abdul El-Sayed",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "id": "mi-sen-rogers",
+     "name": "Mike Rogers",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "rating": {
+    "category": "lean",
+    "party": "D",
+    "source": "Cook Political Report",
+    "asOf": "2026-11-02",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "poll": {
+    "average": [
+     {
+      "candidateId": "mi-sen-el-sayed",
+      "pct": 50.1
+     },
+     {
+      "candidateId": "mi-sen-rogers",
+      "pct": 44.8
+     }
+    ],
+    "margin": {
+     "party": "D",
+     "points": 5.3
+    },
+    "source": "RealClearPolling",
+    "url": "https://www.realclearpolling.com/polls/senate/general/2026/michigan/rogers-vs-el-sayed",
+    "asOf": "2026-11-01",
+    "others": [
+     {
+      "source": "270toWin",
+      "url": "https://www.270towin.com/2026-senate-polls/michigan",
+      "asOf": "2026-11-02",
+      "margin": {
+       "party": "D",
+       "points": 6.3
+      }
+     },
+     {
+      "source": "Decision Desk HQ",
+      "url": "https://votes.decisiondeskhq.com/races/2026-11-03/michigan-us-senate-general-election/polling",
+      "asOf": "2026-11-02",
+      "margin": {
+       "party": "D",
+       "points": 5.2
+      }
+     },
+     {
+      "source": "FiftyPlusOne",
+      "url": "https://fiftyplusone.news/polls/senate/general/michigan",
+      "asOf": "2026-11-02",
+      "margin": {
+       "party": "D",
+       "points": 5.3
+      }
+     },
+     {
+      "source": "Silver Bulletin",
+      "url": "https://www.natesilver.net/p/nate-silver-2026-midterm-election-polls-model",
+      "asOf": "2026-11-02",
+      "margin": {
+       "party": "D",
+       "points": 4.7
+      }
+     }
+    ]
+   },
+   "winner": null
+  },
+  {
+   "id": "sen-mn-2",
+   "chamber": "senate",
+   "state": "MN",
+   "stateName": "Minnesota",
+   "seatClass": 2,
+   "special": false,
+   "incumbent": {
+    "name": "Tina Smith",
+    "party": "D",
+    "candidateId": null,
+    "running": false
+   },
+   "status": "Incumbent retiring",
+   "candidates": [
+    {
+     "id": "mn-sen-flanagan",
+     "name": "Peggy Flanagan",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "id": "mn-sen-tafoya",
+     "name": "Michele Tafoya",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "rating": {
+    "category": "lean",
+    "party": "D",
+    "source": "Cook Political Report",
+    "asOf": "2026-11-02",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "poll": null,
+   "winner": null
+  },
+  {
+   "id": "sen-ms-2",
+   "chamber": "senate",
+   "state": "MS",
+   "stateName": "Mississippi",
+   "seatClass": 2,
+   "special": false,
+   "incumbent": {
+    "name": "Cindy Hyde-Smith",
+    "party": "R",
+    "candidateId": "ms-sen-hyde-smith",
+    "running": true
+   },
+   "status": "Incumbent renominated",
+   "candidates": [
+    {
+     "id": "ms-sen-colom",
+     "name": "Scott Colom",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "id": "ms-sen-hyde-smith",
+     "name": "Cindy Hyde-Smith",
+     "party": "R",
+     "incumbent": true
+    }
+   ],
+   "rating": {
+    "category": "likely",
+    "party": "R",
+    "source": "Cook Political Report",
+    "asOf": "2026-11-02",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "poll": null,
+   "winner": null
+  },
+  {
+   "id": "sen-mt-2",
+   "chamber": "senate",
+   "state": "MT",
+   "stateName": "Montana",
+   "seatClass": 2,
+   "special": false,
+   "incumbent": {
+    "name": "Steve Daines",
+    "party": "R",
+    "candidateId": null,
+    "running": false
+   },
+   "status": "Incumbent retiring",
+   "candidates": [
+    {
+     "id": "mt-sen-bankhead",
+     "name": "Alani Bankhead",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "id": "mt-sen-alme",
+     "name": "Kurt Alme",
+     "party": "R",
+     "incumbent": false
+    },
+    {
+     "id": "mt-sen-bodnar",
+     "name": "Seth Bodnar",
+     "party": "I",
+     "incumbent": false
+    }
+   ],
+   "rating": {
+    "category": "solid",
+    "party": "R",
+    "source": "Cook Political Report",
+    "asOf": "2026-11-02",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "poll": {
+    "average": [
+     {
+      "candidateId": "mt-sen-alme",
+      "pct": 41
+     },
+     {
+      "candidateId": "mt-sen-bankhead",
+      "pct": 18.5
+     },
+     {
+      "candidateId": "mt-sen-bodnar",
+      "pct": 29
+     }
+    ],
+    "margin": {
+     "party": "R",
+     "points": 12
+    },
+    "source": "RealClearPolling",
+    "url": "https://www.realclearpolling.com/polls/senate/general/2026/montana/alme-vs-bankhead-vs-bodnar-vs-austin",
+    "asOf": "2026-10-20",
+    "others": [
+     {
+      "source": "Decision Desk HQ",
+      "url": "https://votes.decisiondeskhq.com/polls/general-ballot-test/2026-mt-us-senate/montana",
+      "asOf": "2026-10-30",
+      "margin": {
+       "party": "R",
+       "points": 6.2
+      }
+     },
+     {
+      "source": "FiftyPlusOne",
+      "url": "https://fiftyplusone.news/polls/senate/general/montana",
+      "asOf": "2026-10-30",
+      "margin": {
+       "party": "R",
+       "points": 8
+      }
+     },
+     {
+      "source": "Silver Bulletin",
+      "url": "https://www.natesilver.net/p/nate-silver-2026-midterm-election-polls-model",
+      "asOf": "2026-10-30",
+      "margin": {
+       "party": "R",
+       "points": 8.4
+      }
+     },
+     {
+      "source": "270toWin",
+      "url": "https://www.270towin.com/2026-senate-polls/montana",
+      "asOf": "2026-10-20",
+      "margin": {
+       "party": "R",
+       "points": 18
+      }
+     }
+    ]
+   },
+   "winner": null
+  },
+  {
+   "id": "sen-ne-2",
+   "chamber": "senate",
+   "state": "NE",
+   "stateName": "Nebraska",
+   "seatClass": 2,
+   "special": false,
+   "incumbent": {
+    "name": "Pete Ricketts",
+    "party": "R",
+    "candidateId": "ne-sen-ricketts",
+    "running": true
+   },
+   "status": "Incumbent renominated",
+   "candidates": [
+    {
+     "id": "ne-sen-ricketts",
+     "name": "Pete Ricketts",
+     "party": "R",
+     "incumbent": true
+    },
+    {
+     "id": "ne-sen-osborn",
+     "name": "Dan Osborn",
+     "party": "I",
+     "incumbent": false
+    }
+   ],
+   "rating": {
+    "category": "lean",
+    "party": "R",
+    "source": "Cook Political Report",
+    "asOf": "2026-11-02",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "poll": {
+    "average": [
+     {
+      "candidateId": "ne-sen-ricketts",
+      "pct": 47.3
+     },
+     {
+      "candidateId": "ne-sen-osborn",
+      "pct": 46.4
+     }
+    ],
+    "margin": {
+     "party": "R",
+     "points": 0.9
+    },
+    "source": "Silver Bulletin",
+    "url": "https://www.natesilver.net/p/nate-silver-2026-midterm-election-polls-model",
+    "asOf": "2026-11-02",
+    "others": [
+     {
+      "source": "270toWin",
+      "url": "https://www.270towin.com/2026-senate-polls/nebraska",
+      "asOf": "2026-11-01",
+      "margin": {
+       "party": "R",
+       "points": 2.8
+      }
+     },
+     {
+      "source": "Decision Desk HQ",
+      "url": "https://votes.decisiondeskhq.com/races/2026-11-03/nebraska-us-senate-general-election/polling",
+      "asOf": "2026-11-01",
+      "margin": {
+       "party": "R",
+       "points": 1.2
+      }
+     },
+     {
+      "source": "FiftyPlusOne",
+      "url": "https://fiftyplusone.news/polls/senate/general/nebraska",
+      "asOf": "2026-11-01",
+      "margin": {
+       "party": "R",
+       "points": 1.5
+      }
+     }
+    ]
+   },
+   "winner": null
+  },
+  {
+   "id": "sen-nh-2",
+   "chamber": "senate",
+   "state": "NH",
+   "stateName": "New Hampshire",
+   "seatClass": 2,
+   "special": false,
+   "incumbent": {
+    "name": "Jeanne Shaheen",
+    "party": "D",
+    "candidateId": null,
+    "running": false
+   },
+   "status": "Incumbent retiring",
+   "candidates": [
+    {
+     "id": "nh-sen-pappas",
+     "name": "Chris Pappas",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "id": "nh-sen-sununu",
+     "name": "John E. Sununu",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "rating": {
+    "category": "lean",
+    "party": "D",
+    "source": "Cook Political Report",
+    "asOf": "2026-11-02",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "poll": {
+    "average": [
+     {
+      "candidateId": "nh-sen-pappas",
+      "pct": 49.5
+     },
+     {
+      "candidateId": "nh-sen-sununu",
+      "pct": 43
+     }
+    ],
+    "margin": {
+     "party": "D",
+     "points": 6.5
+    },
+    "source": "RealClearPolling",
+    "url": "https://www.realclearpolling.com/polls/senate/general/2026/new-hampshire/pappas-vs-sununu",
+    "asOf": "2026-10-22",
+    "others": [
+     {
+      "source": "270toWin",
+      "url": "https://www.270towin.com/2026-senate-polls/new-hampshire",
+      "asOf": "2026-10-22",
+      "margin": {
+       "party": "D",
+       "points": 6.9
+      }
+     },
+     {
+      "source": "Decision Desk HQ",
+      "url": "https://votes.decisiondeskhq.com/races/2026-11-03/new-hampshire-us-senate-general-election/polling",
+      "asOf": "2026-10-22",
+      "margin": {
+       "party": "D",
+       "points": 7.3
+      }
+     },
+     {
+      "source": "FiftyPlusOne",
+      "url": "https://fiftyplusone.news/polls/senate/general/new-hampshire",
+      "asOf": "2026-10-22",
+      "margin": {
+       "party": "D",
+       "points": 6.9
+      }
+     },
+     {
+      "source": "Silver Bulletin",
+      "url": "https://www.natesilver.net/p/nate-silver-2026-midterm-election-polls-model",
+      "asOf": "2026-10-22",
+      "margin": {
+       "party": "D",
+       "points": 7.3
+      }
+     }
+    ]
+   },
+   "winner": null
+  },
+  {
+   "id": "sen-nj-2",
+   "chamber": "senate",
+   "state": "NJ",
+   "stateName": "New Jersey",
+   "seatClass": 2,
+   "special": false,
+   "incumbent": {
+    "name": "Cory Booker",
+    "party": "D",
+    "candidateId": "nj-sen-booker",
+    "running": true
+   },
+   "status": "Incumbent renominated",
+   "candidates": [
+    {
+     "id": "nj-sen-booker",
+     "name": "Cory Booker",
+     "party": "D",
+     "incumbent": true
+    },
+    {
+     "id": "nj-sen-murphy",
+     "name": "Justin Murphy",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "rating": {
+    "category": "solid",
+    "party": "D",
+    "source": "Cook Political Report",
+    "asOf": "2026-11-02",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "poll": null,
+   "winner": null
+  },
+  {
+   "id": "sen-nm-2",
+   "chamber": "senate",
+   "state": "NM",
+   "stateName": "New Mexico",
+   "seatClass": 2,
+   "special": false,
+   "incumbent": {
+    "name": "Ben Ray Luján",
+    "party": "D",
+    "candidateId": "nm-sen-lujan",
+    "running": true
+   },
+   "status": "Incumbent renominated",
+   "candidates": [
+    {
+     "id": "nm-sen-lujan",
+     "name": "Ben Ray Luján",
+     "party": "D",
+     "incumbent": true
+    },
+    {
+     "id": "nm-sen-marker",
+     "name": "Larry Marker",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "rating": {
+    "category": "solid",
+    "party": "D",
+    "source": "Cook Political Report",
+    "asOf": "2026-11-02",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "poll": {
+    "average": [
+     {
+      "candidateId": "nm-sen-lujan",
+      "pct": 53.5
+     },
+     {
+      "candidateId": "nm-sen-marker",
+      "pct": 37
+     }
+    ],
+    "margin": {
+     "party": "D",
+     "points": 16.5
+    },
+    "source": "RealClearPolling",
+    "url": "https://www.realclearpolling.com/polls/senate/general/2026/new-mexico/marker-vs-lujan",
+    "asOf": "2026-10-27",
+    "others": [
+     {
+      "source": "Silver Bulletin",
+      "url": "https://www.natesilver.net/p/nate-silver-2026-midterm-election-polls-model",
+      "asOf": "2026-10-27",
+      "margin": {
+       "party": "D",
+       "points": 17.1
+      }
+     }
+    ]
+   },
+   "winner": null
+  },
+  {
+   "id": "sen-nc-2",
+   "chamber": "senate",
+   "state": "NC",
+   "stateName": "North Carolina",
+   "seatClass": 2,
+   "special": false,
+   "incumbent": {
+    "name": "Thom Tillis",
+    "party": "R",
+    "candidateId": null,
+    "running": false
+   },
+   "status": "Incumbent retiring",
+   "candidates": [
+    {
+     "id": "nc-sen-cooper",
+     "name": "Roy Cooper",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "id": "nc-sen-whatley",
+     "name": "Michael Whatley",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "rating": {
+    "category": "likely",
+    "party": "D",
+    "source": "Cook Political Report",
+    "asOf": "2026-11-02",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "poll": {
+    "average": [
+     {
+      "candidateId": "nc-sen-whatley",
+      "pct": 40.8
+     },
+     {
+      "candidateId": "nc-sen-cooper",
+      "pct": 51.8
+     }
+    ],
+    "margin": {
+     "party": "D",
+     "points": 11
+    },
+    "source": "RealClearPolling",
+    "url": "https://www.realclearpolling.com/polls/senate/general/2026/north-carolina/cooper-vs-whatley",
+    "asOf": "2026-11-01",
+    "others": [
+     {
+      "source": "270toWin",
+      "url": "https://www.270towin.com/2026-senate-polls/north-carolina",
+      "asOf": "2026-11-01",
+      "margin": {
+       "party": "D",
+       "points": 11.6
+      }
+     },
+     {
+      "source": "Decision Desk HQ",
+      "url": "https://votes.decisiondeskhq.com/races/2026-11-03/north-carolina-us-senate-general-election/polling",
+      "asOf": "2026-11-01",
+      "margin": {
+       "party": "D",
+       "points": 10.1
+      }
+     },
+     {
+      "source": "FiftyPlusOne",
+      "url": "https://fiftyplusone.news/polls/senate/general/north-carolina",
+      "asOf": "2026-11-01",
+      "margin": {
+       "party": "D",
+       "points": 10.6
+      }
+     },
+     {
+      "source": "Silver Bulletin",
+      "url": "https://www.natesilver.net/p/nate-silver-2026-midterm-election-polls-model",
+      "asOf": "2026-11-01",
+      "margin": {
+       "party": "D",
+       "points": 10
+      }
+     }
+    ]
+   },
+   "winner": null
+  },
+  {
+   "id": "sen-oh-3",
+   "chamber": "senate",
+   "state": "OH",
+   "stateName": "Ohio",
+   "seatClass": 3,
+   "special": true,
+   "incumbent": {
+    "name": "Jon Husted",
+    "party": "R",
+    "candidateId": "oh-sen-husted",
+    "running": true
+   },
+   "status": "Interim appointee nominated",
+   "candidates": [
+    {
+     "id": "oh-sen-brown",
+     "name": "Sherrod Brown",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "id": "oh-sen-husted",
+     "name": "Jon Husted",
+     "party": "R",
+     "incumbent": true
+    }
+   ],
+   "rating": {
+    "category": "toss-up",
+    "party": null,
+    "source": "Cook Political Report",
+    "asOf": "2026-11-02",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "poll": {
+    "average": [
+     {
+      "candidateId": "oh-sen-husted",
+      "pct": 46.1
+     },
+     {
+      "candidateId": "oh-sen-brown",
+      "pct": 48.9
+     }
+    ],
+    "margin": {
+     "party": "D",
+     "points": 2.8
+    },
+    "source": "RealClearPolling",
+    "url": "https://www.realclearpolling.com/polls/senate/special-election/2026/ohio/husted-vs-brown",
+    "asOf": "2026-11-01",
+    "others": [
+     {
+      "source": "270toWin",
+      "url": "https://www.270towin.com/2026-senate-polls/ohio",
+      "asOf": "2026-11-02",
+      "margin": {
+       "party": "D",
+       "points": 1.7
+      }
+     },
+     {
+      "source": "Decision Desk HQ",
+      "url": "https://polls.decisiondeskhq.com/averages/general-ballot-test/2026-oh-us-senate/ohio/lv-rv-adults",
+      "asOf": "2026-11-02",
+      "margin": {
+       "party": "D",
+       "points": 2.3
+      }
+     },
+     {
+      "source": "FiftyPlusOne",
+      "url": "https://fiftyplusone.news/polls/senate/general/ohio",
+      "asOf": "2026-11-02",
+      "margin": {
+       "party": "D",
+       "points": 2.9
+      }
+     },
+     {
+      "source": "Silver Bulletin",
+      "url": "https://www.natesilver.net/p/nate-silver-2026-midterm-election-polls-model",
+      "asOf": "2026-11-02",
+      "margin": {
+       "party": "D",
+       "points": 3
+      }
+     }
+    ]
+   },
+   "winner": null
+  },
+  {
+   "id": "sen-ok-2",
+   "chamber": "senate",
+   "state": "OK",
+   "stateName": "Oklahoma",
+   "seatClass": 2,
+   "special": false,
+   "incumbent": {
+    "name": "Alan Armstrong",
+    "party": "R",
+    "candidateId": null,
+    "running": false
+   },
+   "status": "Interim appointee ineligible to run",
+   "candidates": [
+    {
+     "id": "ok-sen-thomas",
+     "name": "N'Kiyla Jasmine Thomas",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "id": "ok-sen-hern",
+     "name": "Kevin Hern",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "rating": {
+    "category": "solid",
+    "party": "R",
+    "source": "Cook Political Report",
+    "asOf": "2026-11-02",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "poll": null,
+   "winner": null
+  },
+  {
+   "id": "sen-or-2",
+   "chamber": "senate",
+   "state": "OR",
+   "stateName": "Oregon",
+   "seatClass": 2,
+   "special": false,
+   "incumbent": {
+    "name": "Jeff Merkley",
+    "party": "D",
+    "candidateId": "or-sen-merkley",
+    "running": true
+   },
+   "status": "Incumbent renominated",
+   "candidates": [
+    {
+     "id": "or-sen-merkley",
+     "name": "Jeff Merkley",
+     "party": "D",
+     "incumbent": true
+    },
+    {
+     "id": "or-sen-smith",
+     "name": "David Brock Smith",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "rating": {
+    "category": "solid",
+    "party": "D",
+    "source": "Cook Political Report",
+    "asOf": "2026-11-02",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "poll": null,
+   "winner": null
+  },
+  {
+   "id": "sen-ri-2",
+   "chamber": "senate",
+   "state": "RI",
+   "stateName": "Rhode Island",
+   "seatClass": 2,
+   "special": false,
+   "incumbent": {
+    "name": "Jack Reed",
+    "party": "D",
+    "candidateId": "ri-sen-reed",
+    "running": true
+   },
+   "status": "Incumbent renominated",
+   "candidates": [
+    {
+     "id": "ri-sen-reed",
+     "name": "Jack Reed",
+     "party": "D",
+     "incumbent": true
+    },
+    {
+     "id": "ri-sen-mckay",
+     "name": "Raymond McKay",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "rating": {
+    "category": "solid",
+    "party": "D",
+    "source": "Cook Political Report",
+    "asOf": "2026-11-02",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "poll": null,
+   "winner": null
+  },
+  {
+   "id": "sen-sc-2",
+   "chamber": "senate",
+   "state": "SC",
+   "stateName": "South Carolina",
+   "seatClass": 2,
+   "special": false,
+   "incumbent": {
+    "name": "Darline Graham",
+    "party": "R",
+    "candidateId": "sc-sen-graham",
+    "running": true
+   },
+   "status": "Interim appointee nominated in runoff",
+   "candidates": [
+    {
+     "id": "sc-sen-andrews",
+     "name": "Annie Andrews",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "id": "sc-sen-graham",
+     "name": "Darline Graham",
+     "party": "R",
+     "incumbent": true
+    }
+   ],
+   "rating": {
+    "category": "lean",
+    "party": "R",
+    "source": "Cook Political Report",
+    "asOf": "2026-11-02",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "poll": {
+    "average": [
+     {
+      "candidateId": "sc-sen-graham",
+      "pct": 48
+     },
+     {
+      "candidateId": "sc-sen-andrews",
+      "pct": 45.4
+     }
+    ],
+    "margin": {
+     "party": "R",
+     "points": 2.6
+    },
+    "source": "RealClearPolling",
+    "url": "https://www.realclearpolling.com/polls/senate/general/2026/south-carolina/graham-nordone-vs-andrews",
+    "asOf": "2026-11-02",
+    "others": [
+     {
+      "source": "FiftyPlusOne",
+      "url": "https://fiftyplusone.news/polls/senate/general/south-carolina",
+      "asOf": "2026-11-03",
+      "margin": {
+       "party": null,
+       "points": 0
+      }
+     },
+     {
+      "source": "Silver Bulletin",
+      "url": "https://www.natesilver.net/p/nate-silver-2026-midterm-election-polls-model",
+      "asOf": "2026-11-03",
+      "margin": {
+       "party": "R",
+       "points": 1.1
+      }
+     },
+     {
+      "source": "270toWin",
+      "url": "https://www.270towin.com/2026-senate-polls/south-carolina",
+      "asOf": "2026-11-02",
+      "margin": {
+       "party": "R",
+       "points": 2.2
+      }
+     },
+     {
+      "source": "Decision Desk HQ",
+      "url": "https://votes.decisiondeskhq.com/races/2026-11-03/south-carolina-us-senate-general-election/polling",
+      "asOf": "2026-11-02",
+      "margin": {
+       "party": "D",
+       "points": 0.1
+      }
+     }
+    ]
+   },
+   "winner": null
+  },
+  {
+   "id": "sen-sd-2",
+   "chamber": "senate",
+   "state": "SD",
+   "stateName": "South Dakota",
+   "seatClass": 2,
+   "special": false,
+   "incumbent": {
+    "name": "Mike Rounds",
+    "party": "R",
+    "candidateId": "sd-sen-rounds",
+    "running": true
+   },
+   "status": "Incumbent renominated",
+   "candidates": [
+    {
+     "id": "sd-sen-rounds",
+     "name": "Mike Rounds",
+     "party": "R",
+     "incumbent": true
+    },
+    {
+     "id": "sd-sen-bengs",
+     "name": "Brian Bengs",
+     "party": "I",
+     "incumbent": false
+    }
+   ],
+   "rating": {
+    "category": "solid",
+    "party": "R",
+    "source": "Cook Political Report",
+    "asOf": "2026-11-02",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "poll": {
+    "average": [
+     {
+      "candidateId": "sd-sen-rounds",
+      "pct": 49.7
+     },
+     {
+      "candidateId": "sd-sen-bengs",
+      "pct": 39.5
+     }
+    ],
+    "margin": {
+     "party": "R",
+     "points": 10.2
+    },
+    "source": "Decision Desk HQ",
+    "url": "https://votes.decisiondeskhq.com/races/2026-11-03/south-dakota-us-senate-general-election/polling",
+    "asOf": "2026-10-30",
+    "others": [
+     {
+      "source": "FiftyPlusOne",
+      "url": "https://fiftyplusone.news/polls/senate/general/south-dakota",
+      "asOf": "2026-10-30",
+      "margin": {
+       "party": "R",
+       "points": 10.2
+      }
+     },
+     {
+      "source": "Silver Bulletin",
+      "url": "https://www.natesilver.net/p/nate-silver-2026-midterm-election-polls-model",
+      "asOf": "2026-10-30",
+      "margin": {
+       "party": "R",
+       "points": 10.7
+      }
+     }
+    ]
+   },
+   "winner": null
+  },
+  {
+   "id": "sen-tn-2",
+   "chamber": "senate",
+   "state": "TN",
+   "stateName": "Tennessee",
+   "seatClass": 2,
+   "special": false,
+   "incumbent": {
+    "name": "Bill Hagerty",
+    "party": "R",
+    "candidateId": "tn-sen-hagerty",
+    "running": true
+   },
+   "status": "Incumbent renominated",
+   "candidates": [
+    {
+     "id": "tn-sen-bradshaw",
+     "name": "Marquita Bradshaw",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "id": "tn-sen-hagerty",
+     "name": "Bill Hagerty",
+     "party": "R",
+     "incumbent": true
+    }
+   ],
+   "rating": {
+    "category": "solid",
+    "party": "R",
+    "source": "Cook Political Report",
+    "asOf": "2026-11-02",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "poll": null,
+   "winner": null
+  },
+  {
+   "id": "sen-tx-2",
+   "chamber": "senate",
+   "state": "TX",
+   "stateName": "Texas",
+   "seatClass": 2,
+   "special": false,
+   "incumbent": {
+    "name": "John Cornyn",
+    "party": "R",
+    "candidateId": null,
+    "running": false
+   },
+   "status": "Incumbent lost renomination in runoff",
+   "candidates": [
+    {
+     "id": "tx-sen-talarico",
+     "name": "James Talarico",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "id": "tx-sen-paxton",
+     "name": "Ken Paxton",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "rating": {
+    "category": "toss-up",
+    "party": null,
+    "source": "Cook Political Report",
+    "asOf": "2026-11-02",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "poll": {
+    "average": [
+     {
+      "candidateId": "tx-sen-paxton",
+      "pct": 46.5
+     },
+     {
+      "candidateId": "tx-sen-talarico",
+      "pct": 49
+     }
+    ],
+    "margin": {
+     "party": "D",
+     "points": 2.5
+    },
+    "source": "RealClearPolling",
+    "url": "https://www.realclearpolling.com/polls/senate/general/2026/texas/talarico-vs-paxton",
+    "asOf": "2026-11-01",
+    "others": [
+     {
+      "source": "270toWin",
+      "url": "https://www.270towin.com/2026-senate-polls/texas",
+      "asOf": "2026-11-02",
+      "margin": {
+       "party": "D",
+       "points": 3.4
+      }
+     },
+     {
+      "source": "Decision Desk HQ",
+      "url": "https://votes.decisiondeskhq.com/races/2026-11-03/texas-us-senate-general-election/polling",
+      "asOf": "2026-11-02",
+      "margin": {
+       "party": "D",
+       "points": 3.5
+      }
+     },
+     {
+      "source": "FiftyPlusOne",
+      "url": "https://fiftyplusone.news/polls/senate/general/texas",
+      "asOf": "2026-11-02",
+      "margin": {
+       "party": "D",
+       "points": 3.8
+      }
+     },
+     {
+      "source": "The Texas Tribune",
+      "url": "https://www.texastribune.org/2026/08/07/texas-us-senate-james-talarico-ken-paxton-polls/",
+      "asOf": "2026-11-02",
+      "margin": {
+       "party": "D",
+       "points": 3.3
+      }
+     },
+     {
+      "source": "Silver Bulletin",
+      "url": "https://www.natesilver.net/p/nate-silver-2026-midterm-election-polls-model",
+      "asOf": "2026-11-02",
+      "margin": {
+       "party": "D",
+       "points": 3.5
+      }
+     }
+    ]
+   },
+   "winner": null
+  },
+  {
+   "id": "sen-va-2",
+   "chamber": "senate",
+   "state": "VA",
+   "stateName": "Virginia",
+   "seatClass": 2,
+   "special": false,
+   "incumbent": {
+    "name": "Mark Warner",
+    "party": "D",
+    "candidateId": "va-sen-warner",
+    "running": true
+   },
+   "status": "Incumbent renominated",
+   "candidates": [
+    {
+     "id": "va-sen-warner",
+     "name": "Mark Warner",
+     "party": "D",
+     "incumbent": true
+    },
+    {
+     "id": "va-sen-mizusawa",
+     "name": "Bert Mizusawa",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "rating": {
+    "category": "solid",
+    "party": "D",
+    "source": "Cook Political Report",
+    "asOf": "2026-11-02",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "poll": null,
+   "winner": null
+  },
+  {
+   "id": "sen-wv-2",
+   "chamber": "senate",
+   "state": "WV",
+   "stateName": "West Virginia",
+   "seatClass": 2,
+   "special": false,
+   "incumbent": {
+    "name": "Shelley Moore Capito",
+    "party": "R",
+    "candidateId": "wv-sen-capito",
+    "running": true
+   },
+   "status": "Incumbent renominated",
+   "candidates": [
+    {
+     "id": "wv-sen-anderson",
+     "name": "Rachel Fetty Anderson",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "id": "wv-sen-capito",
+     "name": "Shelley Moore Capito",
+     "party": "R",
+     "incumbent": true
+    }
+   ],
+   "rating": {
+    "category": "solid",
+    "party": "R",
+    "source": "Cook Political Report",
+    "asOf": "2026-11-02",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "poll": null,
+   "winner": null
+  },
+  {
+   "id": "sen-wy-2",
+   "chamber": "senate",
+   "state": "WY",
+   "stateName": "Wyoming",
+   "seatClass": 2,
+   "special": false,
+   "incumbent": {
+    "name": "Cynthia Lummis",
+    "party": "R",
+    "candidateId": null,
+    "running": false
+   },
+   "status": "Incumbent retiring",
+   "candidates": [
+    {
+     "id": "wy-sen-byrd",
+     "name": "James W. Byrd",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "id": "wy-sen-hageman",
+     "name": "Harriet Hageman",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "rating": {
+    "category": "solid",
+    "party": "R",
+    "source": "Cook Political Report",
+    "asOf": "2026-11-02",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "poll": null,
+   "winner": null
+  }
+ ]
 }

@@ -1,0 +1,124 @@
+raceId,name,party,partyLabel
+sen-fl-3,Neil Gillespie,I,Independent
+sen-fl-3,Ashley Moody,R,Republican
+sen-fl-3,Angie Nixon,D,Democratic
+sen-oh-3,Sherrod Brown,D,Democratic
+sen-oh-3,Jon Husted,R,Republican
+sen-oh-3,Greg Levy,I,Independent
+sen-oh-3,William Redpath,L,Libertarian
+sen-al-2,Barry Moore,R,Republican
+sen-al-2,Everett Wess,D,Democratic
+sen-ak-2,Gerald Heikes,R,Republican
+sen-ak-2,Mary Peltola,D,Democratic
+sen-ak-2,Dan J. Sullivan,R,Republican
+sen-ak-2,Dan S. Sullivan,R,Republican
+sen-ar-2,Tom Cotton,R,Republican
+sen-ar-2,Hallie Shoffner,D,Democratic
+sen-ar-2,Jeff Wadlin,L,Libertarian
+sen-co-2,Mark Baisley,R,Republican
+sen-co-2,Christopher Baum,O,Approval Voting
+sen-co-2,Bob Chew,O,Forward
+sen-co-2,John Hickenlooper,D,Democratic
+sen-co-2,Blake Huber,L,Libertarian
+sen-co-2,Adam Withrow,O,Unity
+sen-de-2,Chris Coons,D,Democratic
+sen-de-2,Michael Katz,R,Republican
+sen-ga-2,Mike Collins,R,Republican
+sen-ga-2,Jon Ossoff,D,Democratic
+sen-id-2,Todd Achilles,I,Independent
+sen-id-2,Natalie Fleming,I,Independent
+sen-id-2,Matt Loesby,L,Libertarian
+sen-id-2,Jim Risch,R,Republican
+sen-il-2,Whitfield Harrington Jr.,I,Independent
+sen-il-2,Juliana Stratton,D,Democratic
+sen-il-2,Don Tracy,R,Republican
+sen-ia-2,Ashley Hinson,R,Republican
+sen-ia-2,Thomas Laehn,L,Libertarian
+sen-ia-2,Josh Turek,D,Democratic
+sen-ks-2,David Graham,L,Libertarian
+sen-ks-2,Adam Hamilton,D,Democratic
+sen-ks-2,Roger Marshall,R,Republican
+sen-ky-2,Andy Barr,R,Republican
+sen-ky-2,Charles Booker,D,Democratic
+sen-ky-2,Christopher Campbell,I,Independent
+sen-la-2,Jamie Davis,D,Democratic
+sen-la-2,Julia Letlow,R,Republican
+sen-me-2,Susan Collins,R,Republican
+sen-me-2,Troy Jackson,D,Democratic
+sen-ma-2,Shiva Ayyadurai,I,Independent
+sen-ma-2,John Deaton,R,Republican
+sen-ma-2,Ed Markey,D,Democratic
+sen-ma-2,Joe Tache,O,Socialism and Liberation
+sen-mi-2,Lydia Christensen,L,Libertarian
+sen-mi-2,Abdul El-Sayed,D,Democratic
+sen-mi-2,Walter P. Kristy,O,Natural Law
+sen-mi-2,Tim Long,O,U.S. Taxpayers
+sen-mi-2,Douglas P. Marsh,G,Green
+sen-mi-2,Mike Rogers,R,Republican
+sen-mn-2,Peggy Flanagan,D,DFL
+sen-mn-2,Marisa Simonetti,I,Independent
+sen-mn-2,Michele Tafoya,R,Republican
+sen-mn-2,Rebecca Whiting,L,Libertarian
+sen-ms-2,Scott Colom,D,Democratic
+sen-ms-2,Cindy Hyde-Smith,R,Republican
+sen-ms-2,Ty Pinkins,I,Independent
+sen-mt-2,Kurt Alme,R,Republican
+sen-mt-2,Kyle Austin,L,Libertarian
+sen-mt-2,Alani Bankhead,D,Democratic
+sen-mt-2,Seth Bodnar,I,Independent
+sen-ne-2,Chuck Conboy,O,America First
+sen-ne-2,Mike Marvin,O,Legal Marijuana Now
+sen-ne-2,Dan Osborn,I,Independent
+sen-ne-2,Robin Richards,O,Working People
+sen-ne-2,Pete Ricketts,R,Republican
+sen-nh-2,Edmond LaPlante,O,Constitution
+sen-nh-2,Chris Pappas,D,Democratic
+sen-nh-2,John E. Sununu,R,Republican
+sen-nj-2,Cory Booker,D,Democratic
+sen-nj-2,Veronica Fernandez,I,Independent
+sen-nj-2,Joanne Kuniansky,O,Socialist Workers
+sen-nj-2,Justin Murphy,R,Republican
+sen-nm-2,Ben Ray Luján,D,Democratic
+sen-nm-2,Larry Marker,R,Republican
+sen-nc-2,Shannon Bray,L,Libertarian
+sen-nc-2,Roy Cooper,D,Democratic
+sen-nc-2,Michael Dublin,G,Green
+sen-nc-2,Michael Whatley,R,Republican
+sen-ok-2,Kevin Hern,R,Republican
+sen-ok-2,Ron Meinhardt,I,Independent
+sen-ok-2,Curtis Stinnett,I,Independent
+sen-ok-2,N'Kiyla Jasmine Thomas,D,Democratic
+sen-ok-2,Sevier White,L,Libertarian
+sen-or-2,Gary Lyndon Dye,L,Libertarian
+sen-or-2,Chris Henry,O,Progressive
+sen-or-2,Jeff Merkley,D,Democratic
+sen-or-2,David Brock Smith,R,Republican
+sen-ri-2,Michael Bahry,I,Independent
+sen-ri-2,Raymond McKay,R,Republican
+sen-ri-2,Jack Reed,D,Democratic
+sen-sc-2,Annie Andrews,D,Democratic
+sen-sc-2,Darline Graham,R,Republican
+sen-sc-2,Mark Hackett,O,Constitution
+sen-sc-2,Kasie Whitener,L,Libertarian
+sen-sd-2,Brian Bengs,I,Independent
+sen-sd-2,Mike Rounds,R,Republican
+sen-tn-2,Marquita Bradshaw,D,Democratic
+sen-tn-2,Tharon Chandler,I,Independent
+sen-tn-2,Andrew Gerena,I,Independent
+sen-tn-2,Bill Hagerty,R,Republican
+sen-tn-2,Jeremy Hearn,I,Independent
+sen-tn-2,Robert Jones,I,Independent
+sen-tn-2,James Macon III,I,Independent
+sen-tn-2,Yoshi Matthews,I,Independent
+sen-tn-2,David Sutman Jr.,I,Independent
+sen-tn-2,Catherine Whitson,I,Independent
+sen-tx-2,Ted Brown,L,Libertarian
+sen-tx-2,Ken Paxton,R,Republican
+sen-tx-2,James Talarico,D,Democratic
+sen-va-2,Bert Mizusawa,R,Republican
+sen-va-2,Mark Warner,D,Democratic
+sen-wv-2,Rachel Fetty Anderson,D,Democratic
+sen-wv-2,Shelley Moore Capito,R,Republican
+sen-wv-2,S. Marshall Wilson,O,Constitution
+sen-wy-2,James W. Byrd,D,Democratic
+sen-wy-2,Harriet Hageman,R,Republican
