@@ -88,9 +88,12 @@ export default function House() {
   const { hash } = useLocation()
   const jumpRef = useRef(jump)
   useEffect(() => { jumpRef.current = jump })
+  const jumpedTo = useRef('')
   useEffect(() => {
     const id = decodeURIComponent(hash.slice(1))
-    if (id && races.some((r) => r.id === id)) jumpRef.current(id)
+    if (!id || id === jumpedTo.current || !races.some((r) => r.id === id)) return
+    jumpedTo.current = id
+    jumpRef.current(id)
   }, [hash, races])
 
   if (loading && !data) return <div className="page"><h1>House</h1><p className="muted" role="status">Loading House races…</p></div>

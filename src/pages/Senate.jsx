@@ -52,9 +52,12 @@ export default function Senate() {
   const { hash } = useLocation()
   const jumpRef = useRef(jump)
   useEffect(() => { jumpRef.current = jump })
+  const jumpedTo = useRef('')
   useEffect(() => {
     const id = decodeURIComponent(hash.slice(1))
-    if (id && races.some((r) => r.id === id)) jumpRef.current(id)
+    if (!id || id === jumpedTo.current || !races.some((r) => r.id === id)) return
+    jumpedTo.current = id
+    jumpRef.current(id)
   }, [hash, races])
   const selectState = (st) => {
     const r = races.filter((x) => x.state === st).sort((a, b) => Math.abs(ratingScore(a.rating)) - Math.abs(ratingScore(b.rating)))[0]
