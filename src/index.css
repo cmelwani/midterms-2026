@@ -6,11 +6,56 @@ body {
   color: var(--text);
   font-size: 15px;
   line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
 }
 a { color: var(--dem); }
 h1, h2, h3 { line-height: 1.2; }
-.page { max-width: 1200px; margin: 0 auto; padding: 16px; }
+h1 { font-size: 1.6rem; margin: 0.25em 0 0.4em; }
+h2 { font-size: 1.2rem; margin: 0 0 0.6em; }
+h3 { font-size: 1rem; margin: 0 0 0.4em; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+button { font: inherit; }
+
+/* Layout */
+.page { max-width: var(--max-width); margin: 0 auto; padding: 16px; }
+.page__header { margin-bottom: 16px; }
+.page__lede { margin: 0; color: var(--text-muted); max-width: 70ch; }
+.section { margin: 24px 0; }
+.grid { display: grid; gap: var(--gap); grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); }
+.grid--2 { display: grid; gap: var(--gap); grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 700px) { .grid--2 { grid-template-columns: 1fr; } }
+.row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+
+/* Surfaces */
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; box-shadow: var(--shadow); }
+.card--flush { padding: 0; overflow: hidden; }
+
+/* Text */
 .muted { color: var(--text-muted); }
+.small { font-size: 0.85rem; }
+.num { font-variant-numeric: tabular-nums; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+
+/* Party colors: text, background tint, solid dot */
 .party-D { color: var(--dem); }
 .party-R { color: var(--rep); }
 .party-I, .party-L, .party-G, .party-O { color: var(--ind); }
+.party-bg-D { background: var(--dem-light); }
+.party-bg-R { background: var(--rep-light); }
+.party-bg-I, .party-bg-L, .party-bg-G, .party-bg-O { background: var(--ind-light); }
+.party-dot { display: inline-block; width: 0.65em; height: 0.65em; border-radius: 50%; background: var(--ind); flex: none; }
+.party-dot--D { background: var(--dem); }
+.party-dot--R { background: var(--rep); }
+
+/* Small pill label */
+.tag { display: inline-flex; align-items: center; gap: 4px; padding: 1px 8px; border-radius: 999px; font-size: 0.75rem; font-weight: 600; background: var(--surface-2); color: var(--text-muted); white-space: nowrap; }
+
+/* Loading / error / empty states */
+.state { padding: 16px; border-radius: var(--radius); background: var(--surface-2); color: var(--text-muted); text-align: center; }
+.state--error { background: var(--error-light); color: var(--error); }
+.state--warn { background: var(--warn-light); color: var(--warn); }
+
+/* Buttons */
+.btn { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border: 1px solid var(--border); border-radius: 6px; background: var(--surface); color: var(--text); cursor: pointer; }
+.btn:hover { background: var(--surface-2); }
+.btn--link { border: 0; background: none; padding: 0; color: var(--dem); text-decoration: underline; cursor: pointer; }

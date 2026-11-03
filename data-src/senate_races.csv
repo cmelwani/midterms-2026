@@ -1,0 +1,36 @@
+id,state,stateName,seatClass,special,incumbentName,incumbentParty,status,source
+sen-fl-3,FL,Florida,3,true,Ashley Moody,R,Interim appointee nominated,https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Race_summary
+sen-oh-3,OH,Ohio,3,true,Jon Husted,R,Interim appointee nominated,https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Race_summary
+sen-al-2,AL,Alabama,2,false,Tommy Tuberville,R,Incumbent retiring to run for governor,https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Race_summary
+sen-ak-2,AK,Alaska,2,false,Dan Sullivan,R,Incumbent advanced to general,https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Race_summary
+sen-ar-2,AR,Arkansas,2,false,Tom Cotton,R,Incumbent renominated,https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Race_summary
+sen-co-2,CO,Colorado,2,false,John Hickenlooper,D,Incumbent renominated,https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Race_summary
+sen-de-2,DE,Delaware,2,false,Chris Coons,D,Incumbent renominated,https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Race_summary
+sen-ga-2,GA,Georgia,2,false,Jon Ossoff,D,Incumbent renominated,https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Race_summary
+sen-id-2,ID,Idaho,2,false,Jim Risch,R,Incumbent renominated,https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Race_summary
+sen-il-2,IL,Illinois,2,false,Dick Durbin,D,Incumbent retiring,https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Race_summary
+sen-ia-2,IA,Iowa,2,false,Joni Ernst,R,Incumbent retiring,https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Race_summary
+sen-ks-2,KS,Kansas,2,false,Roger Marshall,R,Incumbent renominated,https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Race_summary
+sen-ky-2,KY,Kentucky,2,false,Mitch McConnell,R,Incumbent retiring,https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Race_summary
+sen-la-2,LA,Louisiana,2,false,Bill Cassidy,R,Incumbent lost renomination,https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Race_summary
+sen-me-2,ME,Maine,2,false,Susan Collins,R,Incumbent renominated,https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Race_summary
+sen-ma-2,MA,Massachusetts,2,false,Ed Markey,D,Incumbent renominated,https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Race_summary
+sen-mi-2,MI,Michigan,2,false,Gary Peters,D,Incumbent retiring,https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Race_summary
+sen-mn-2,MN,Minnesota,2,false,Tina Smith,D,Incumbent retiring,https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Race_summary
+sen-ms-2,MS,Mississippi,2,false,Cindy Hyde-Smith,R,Incumbent renominated,https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Race_summary
+sen-mt-2,MT,Montana,2,false,Steve Daines,R,Incumbent retiring,https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Race_summary
+sen-ne-2,NE,Nebraska,2,false,Pete Ricketts,R,Incumbent renominated,https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Race_summary
+sen-nh-2,NH,New Hampshire,2,false,Jeanne Shaheen,D,Incumbent retiring,https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Race_summary
+sen-nj-2,NJ,New Jersey,2,false,Cory Booker,D,Incumbent renominated,https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Race_summary
+sen-nm-2,NM,New Mexico,2,false,Ben Ray Luján,D,Incumbent renominated,https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Race_summary
+sen-nc-2,NC,North Carolina,2,false,Thom Tillis,R,Incumbent retiring,https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Race_summary
+sen-ok-2,OK,Oklahoma,2,false,Alan Armstrong,R,Interim appointee ineligible to run,https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Race_summary
+sen-or-2,OR,Oregon,2,false,Jeff Merkley,D,Incumbent renominated,https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Race_summary
+sen-ri-2,RI,Rhode Island,2,false,Jack Reed,D,Incumbent renominated,https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Race_summary
+sen-sc-2,SC,South Carolina,2,false,Darline Graham,R,Interim appointee nominated in runoff,https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Race_summary
+sen-sd-2,SD,South Dakota,2,false,Mike Rounds,R,Incumbent renominated,https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Race_summary
+sen-tn-2,TN,Tennessee,2,false,Bill Hagerty,R,Incumbent renominated,https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Race_summary
+sen-tx-2,TX,Texas,2,false,John Cornyn,R,Incumbent lost renomination in runoff,https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Race_summary
+sen-va-2,VA,Virginia,2,false,Mark Warner,D,Incumbent renominated,https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Race_summary
+sen-wv-2,WV,West Virginia,2,false,Shelley Moore Capito,R,Incumbent renominated,https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Race_summary
+sen-wy-2,WY,Wyoming,2,false,Cynthia Lummis,R,Incumbent retiring,https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Race_summary

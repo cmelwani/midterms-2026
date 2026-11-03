@@ -1,0 +1,697 @@
+[
+ [
+  "cook-senate",
+  "2026 Senate Race Ratings",
+  "Cook Political Report",
+  "https://www.cookpolitical.com/ratings/senate-race-ratings",
+  "Nonpartisan toss-up / lean / likely / solid ratings for every 2026 Senate race; the canonical ratings used on this site.",
+  "ratings",
+  []
+ ],
+ [
+  "cook-house",
+  "2026 House Race Ratings",
+  "Cook Political Report",
+  "https://www.cookpolitical.com/ratings/house-race-ratings",
+  "Cook's ratings for all 435 House districts, including the competitive-seat list this site uses.",
+  "ratings",
+  []
+ ],
+ [
+  "cook-pvi",
+  "2026 Cook Partisan Voter Index",
+  "Cook Political Report",
+  "https://www.cookpolitical.com/cook-pvi/2026-partisan-voting-index/district-map-and-list",
+  "Partisan lean of every congressional district under the maps in effect for 2026.",
+  "reference",
+  []
+ ],
+ [
+  "sabato-senate",
+  "2026 Senate Ratings",
+  "Sabato's Crystal Ball",
+  "https://centerforpolitics.org/crystalball/2026-senate/",
+  "University of Virginia Center for Politics ratings for every Senate race.",
+  "ratings",
+  []
+ ],
+ [
+  "sabato-house",
+  "2026 House Ratings",
+  "Sabato's Crystal Ball",
+  "https://centerforpolitics.org/crystalball/2026-house/",
+  "Crystal Ball House ratings with district-level commentary.",
+  "ratings",
+  []
+ ],
+ [
+  "inside-senate",
+  "Senate Ratings",
+  "Inside Elections",
+  "https://insideelections.com/ratings/senate",
+  "Nathan Gonzales' nonpartisan Senate ratings, including Tilt categories.",
+  "ratings",
+  []
+ ],
+ [
+  "inside-house",
+  "House Ratings",
+  "Inside Elections",
+  "https://insideelections.com/ratings/house",
+  "Inside Elections' House ratings.",
+  "ratings",
+  []
+ ],
+ [
+  "splitticket-model",
+  "2026 Midterms Model",
+  "Split Ticket",
+  "https://www.theargumentmag.com/p/split-ticket-2026-midterms-model",
+  "Split Ticket's probabilistic House and Senate forecast, published with The Argument.",
+  "forecasts",
+  []
+ ],
+ [
+  "splitticket-site",
+  "Split Ticket",
+  "Split Ticket",
+  "https://split-ticket.org/",
+  "Election analysis, polling averages and race ratings from Split Ticket.",
+  "polling",
+  []
+ ],
+ [
+  "ddhq-senate",
+  "2026 Senate Forecast",
+  "Decision Desk HQ",
+  "https://votes.decisiondeskhq.com/forecast/2026/senate",
+  "DDHQ / The Hill Senate forecast and ratings; DDHQ also calls races on election night.",
+  "forecasts",
+  []
+ ],
+ [
+  "ddhq-house",
+  "2026 House Forecast",
+  "Decision Desk HQ",
+  "https://votes.decisiondeskhq.com/forecast/2026/house",
+  "DDHQ / The Hill House forecast and ratings.",
+  "forecasts",
+  []
+ ],
+ [
+  "racetothewh-senate",
+  "2026 Senate Forecast",
+  "Race to the WH",
+  "https://www.racetothewh.com/senate",
+  "Poll-driven Senate forecast with state-by-state polling averages.",
+  "forecasts",
+  []
+ ],
+ [
+  "racetothewh-house",
+  "2026 House Forecast",
+  "Race to the WH",
+  "https://www.racetothewh.com/house",
+  "District-level House forecast.",
+  "forecasts",
+  []
+ ],
+ [
+  "rcp-senate-map",
+  "Battle for the Senate 2026",
+  "RealClearPolling",
+  "https://www.realclearpolling.com/maps/senate/2026/toss-up",
+  "RealClearPolitics Senate map with ratings and RCP polling averages.",
+  "polling",
+  []
+ ],
+ [
+  "rcp-house-map",
+  "Battle for the House 2026",
+  "RealClearPolling",
+  "https://www.realclearpolling.com/maps/house/2026/toss-up",
+  "RealClearPolitics House ratings map.",
+  "ratings",
+  []
+ ],
+ [
+  "rcp-latest",
+  "Latest Polls",
+  "RealClearPolling",
+  "https://www.realclearpolling.com/latest-polls",
+  "Every newly released public poll, including Senate and House races.",
+  "polling",
+  []
+ ],
+ [
+  "economist-senate",
+  "2026 Senate Forecast",
+  "The Economist",
+  "https://www.economist.com/interactive/2026/us-midterms/prediction-model/senate/",
+  "The Economist's statistical Senate model (may be paywalled).",
+  "forecasts",
+  []
+ ],
+ [
+  "silver-bulletin",
+  "FLIPR 2026 midterm election forecast",
+  "Silver Bulletin",
+  "https://www.natesilver.net/p/nate-silver-2026-midterm-election-polls-model",
+  "Nate Silver's House and Senate forecast (some content is subscriber-only).",
+  "forecasts",
+  []
+ ],
+ [
+  "fpo-senate",
+  "2026 Congressional Forecast (Senate)",
+  "FiftyPlusOne",
+  "https://fiftyplusone.news/forecast/senate/",
+  "Independent Senate forecast.",
+  "forecasts",
+  []
+ ],
+ [
+  "ballotpedia-senate",
+  "United States Senate elections, 2026",
+  "Ballotpedia",
+  "https://ballotpedia.org/United_States_Senate_elections,_2026",
+  "Every Senate candidate, primary result, retirements and battleground analysis.",
+  "reference",
+  []
+ ],
+ [
+  "ballotpedia-house",
+  "United States House of Representatives elections, 2026",
+  "Ballotpedia",
+  "https://ballotpedia.org/United_States_House_of_Representatives_elections,_2026",
+  "Candidate lists for all 435 districts, open seats and redistricting notes.",
+  "reference",
+  []
+ ],
+ [
+  "ballotpedia-senate-battlegrounds",
+  "U.S. Senate battlegrounds, 2026",
+  "Ballotpedia",
+  "https://ballotpedia.org/U.S._Senate_battlegrounds,_2026",
+  "Ballotpedia's list of battleground Senate general elections.",
+  "reference",
+  []
+ ],
+ [
+  "ballotpedia-house-battlegrounds",
+  "U.S. House battlegrounds, 2026",
+  "Ballotpedia",
+  "https://ballotpedia.org/U.S._House_battlegrounds,_2026",
+  "Ballotpedia's list of battleground House general elections.",
+  "reference",
+  []
+ ],
+ [
+  "ballotpedia-sample-ballot",
+  "Sample Ballot Lookup",
+  "Ballotpedia",
+  "https://ballotpedia.org/Sample_Ballot_Lookup",
+  "Look up every race and measure on your own ballot.",
+  "reference",
+  []
+ ],
+ [
+  "fec-candidates",
+  "Candidate & committee finance data",
+  "Federal Election Commission",
+  "https://www.fec.gov/data/candidates/",
+  "Official FEC fundraising and spending filings for every federal candidate.",
+  "reference",
+  []
+ ],
+ [
+  "fec-senate-2026",
+  "2026 Senate candidates (FEC)",
+  "Federal Election Commission",
+  "https://www.fec.gov/data/candidates/senate/?election_year=2026&cycle=2026&election_full=true",
+  "Official FEC list of 2026 Senate candidates with receipts and disbursements.",
+  "reference",
+  []
+ ],
+ [
+  "can-i-vote",
+  "Can I Vote",
+  "National Association of Secretaries of State",
+  "https://www.nass.org/can-I-vote",
+  "Official nonpartisan polling-place, registration and ID lookups by state.",
+  "reference",
+  []
+ ],
+ [
+  "ap-results",
+  "AP Election Results",
+  "Associated Press",
+  "https://apnews.com/hub/election-2026",
+  "Live results and race calls from the Associated Press.",
+  "news",
+  []
+ ],
+ [
+  "ddhq-results",
+  "Decision Desk HQ Live Results",
+  "Decision Desk HQ",
+  "https://decisiondeskhq.com/",
+  "Live vote counts and DDHQ race calls.",
+  "news",
+  []
+ ],
+ [
+  "nbc-midterms",
+  "The race for Congress: 2026 midterms",
+  "NBC News",
+  "https://www.nbcnews.com/politics/2026-elections/midterms",
+  "NBC News ratings, live results and race calls.",
+  "news",
+  []
+ ],
+ [
+  "wiki-senate",
+  "2026 United States Senate elections",
+  "Wikipedia",
+  "https://en.wikipedia.org/wiki/2026_United_States_Senate_elections",
+  "Side-by-side comparison of every major rating and forecast for each Senate race.",
+  "reference",
+  []
+ ],
+ [
+  "wiki-house-ratings",
+  "2026 United States House of Representatives election ratings",
+  "Wikipedia",
+  "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_election_ratings",
+  "Comparison table of House ratings from Cook, Sabato, Inside Elections and others.",
+  "reference",
+  []
+ ],
+ [
+  "fpo-house",
+  "2026 Congressional Forecast (House)",
+  "FiftyPlusOne",
+  "https://fiftyplusone.news/forecast/house/",
+  "Independent House forecast.",
+  "forecasts",
+  []
+ ],
+ [
+  "fpo-generic-ballot",
+  "Generic Ballot Average",
+  "FiftyPlusOne",
+  "https://fiftyplusone.news/polls/generic-ballot/generic-ballot",
+  "Polling average of the national generic congressional ballot.",
+  "polling",
+  []
+ ],
+ [
+  "rcp-generic-ballot",
+  "2026 Generic Congressional Vote",
+  "RealClearPolling",
+  "https://www.realclearpolling.com/polls/state-of-the-union/generic-congressional-vote",
+  "RCP average of the national House generic ballot.",
+  "polling",
+  []
+ ],
+ [
+  "silver-generic-ballot",
+  "Generic ballot average",
+  "Silver Bulletin",
+  "https://www.natesilver.net/p/generic-ballot-average-2026-nate-silver-bulletin-congress-polls",
+  "Silver Bulletin's generic-ballot polling average.",
+  "polling",
+  []
+ ],
+ [
+  "economist-house",
+  "2026 House Forecast",
+  "The Economist",
+  "https://www.economist.com/interactive/2026/us-midterms/prediction-model/house",
+  "The Economist's statistical House model (may be paywalled).",
+  "forecasts",
+  []
+ ],
+ [
+  "fox-power-rankings",
+  "Fox News Power Rankings",
+  "Fox News",
+  "https://www.foxnews.com/politics/fox-news-power-rankings-kansas-moves-toss-up-nebraska-moves-lean-r",
+  "Fox News Decision Desk's latest Senate power rankings.",
+  "ratings",
+  []
+ ],
+ [
+  "msnow-senate",
+  "2026 Senate ratings: races to watch",
+  "MS NOW",
+  "https://www.ms.now/news/2026-senate-ratings-ms-nows-races-to-watch",
+  "MS NOW's Senate race ratings.",
+  "ratings",
+  []
+ ],
+ [
+  "270towin-senate",
+  "2026 Senate interactive map",
+  "270toWin",
+  "https://www.270towin.com/2026-senate-election/",
+  "Build your own Senate forecast map.",
+  "forecasts",
+  []
+ ],
+ [
+  "dem-platform",
+  "2024 Democratic Party Platform",
+  "The American Presidency Project (UCSB)",
+  "https://www.presidency.ucsb.edu/documents/2024-democratic-party-platform",
+  "Full text of the Democratic national platform; used for party-platform priorities on this site.",
+  "reference",
+  []
+ ],
+ [
+  "gop-platform",
+  "2024 Republican Party Platform",
+  "The American Presidency Project (UCSB)",
+  "https://www.presidency.ucsb.edu/documents/2024-republican-party-platform",
+  "Full text of the Republican national platform; used for party-platform priorities on this site.",
+  "reference",
+  []
+ ],
+ [
+  "wiki-house",
+  "2026 United States House of Representatives elections",
+  "Wikipedia",
+  "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections",
+  "Every House district's candidates and redistricting changes for 2026.",
+  "reference",
+  []
+ ],
+ [
+  "wiki-sen-ga",
+  "2026 U.S. Senate election in Georgia",
+  "Wikipedia",
+  "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia",
+  "Candidates, polling table and ratings for the Georgia Senate race.",
+  "reference",
+  [
+   "sen-ga-2"
+  ]
+ ],
+ [
+  "bp-sen-ga",
+  "United States Senate election in Georgia, 2026",
+  "Ballotpedia",
+  "https://ballotpedia.org/United_States_Senate_election_in_Georgia,_2026",
+  "Ballotpedia's race page: candidates, survey responses and campaign finance.",
+  "reference",
+  [
+   "sen-ga-2"
+  ]
+ ],
+ [
+  "wiki-sen-mi",
+  "2026 U.S. Senate election in Michigan",
+  "Wikipedia",
+  "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+  "Candidates, polling table and ratings for the Michigan Senate race.",
+  "reference",
+  [
+   "sen-mi-2"
+  ]
+ ],
+ [
+  "bp-sen-mi",
+  "United States Senate election in Michigan, 2026",
+  "Ballotpedia",
+  "https://ballotpedia.org/United_States_Senate_election_in_Michigan,_2026",
+  "Ballotpedia's race page: candidates, survey responses and campaign finance.",
+  "reference",
+  [
+   "sen-mi-2"
+  ]
+ ],
+ [
+  "wiki-sen-nc",
+  "2026 U.S. Senate election in North Carolina",
+  "Wikipedia",
+  "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
+  "Candidates, polling table and ratings for the North Carolina Senate race.",
+  "reference",
+  [
+   "sen-nc-2"
+  ]
+ ],
+ [
+  "bp-sen-nc",
+  "United States Senate election in North Carolina, 2026",
+  "Ballotpedia",
+  "https://ballotpedia.org/United_States_Senate_election_in_North_Carolina,_2026",
+  "Ballotpedia's race page: candidates, survey responses and campaign finance.",
+  "reference",
+  [
+   "sen-nc-2"
+  ]
+ ],
+ [
+  "wiki-sen-me",
+  "2026 U.S. Senate election in Maine",
+  "Wikipedia",
+  "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+  "Candidates, polling table and ratings for the Maine Senate race.",
+  "reference",
+  [
+   "sen-me-2"
+  ]
+ ],
+ [
+  "bp-sen-me",
+  "United States Senate election in Maine, 2026",
+  "Ballotpedia",
+  "https://ballotpedia.org/United_States_Senate_election_in_Maine,_2026",
+  "Ballotpedia's race page: candidates, survey responses and campaign finance.",
+  "reference",
+  [
+   "sen-me-2"
+  ]
+ ],
+ [
+  "wiki-sen-tx",
+  "2026 U.S. Senate election in Texas",
+  "Wikipedia",
+  "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
+  "Candidates, polling table and ratings for the Texas Senate race.",
+  "reference",
+  [
+   "sen-tx-2"
+  ]
+ ],
+ [
+  "bp-sen-tx",
+  "United States Senate election in Texas, 2026",
+  "Ballotpedia",
+  "https://ballotpedia.org/United_States_Senate_election_in_Texas,_2026",
+  "Ballotpedia's race page: candidates, survey responses and campaign finance.",
+  "reference",
+  [
+   "sen-tx-2"
+  ]
+ ],
+ [
+  "wiki-sen-ia",
+  "2026 U.S. Senate election in Iowa",
+  "Wikipedia",
+  "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+  "Candidates, polling table and ratings for the Iowa Senate race.",
+  "reference",
+  [
+   "sen-ia-2"
+  ]
+ ],
+ [
+  "bp-sen-ia",
+  "United States Senate election in Iowa, 2026",
+  "Ballotpedia",
+  "https://ballotpedia.org/United_States_Senate_election_in_Iowa,_2026",
+  "Ballotpedia's race page: candidates, survey responses and campaign finance.",
+  "reference",
+  [
+   "sen-ia-2"
+  ]
+ ],
+ [
+  "wiki-sen-ak",
+  "2026 U.S. Senate election in Alaska",
+  "Wikipedia",
+  "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alaska",
+  "Candidates, polling table and ratings for the Alaska Senate race.",
+  "reference",
+  [
+   "sen-ak-2"
+  ]
+ ],
+ [
+  "bp-sen-ak",
+  "United States Senate election in Alaska, 2026",
+  "Ballotpedia",
+  "https://ballotpedia.org/United_States_Senate_election_in_Alaska,_2026",
+  "Ballotpedia's race page: candidates, survey responses and campaign finance.",
+  "reference",
+  [
+   "sen-ak-2"
+  ]
+ ],
+ [
+  "wiki-sen-nh",
+  "2026 U.S. Senate election in New Hampshire",
+  "Wikipedia",
+  "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire",
+  "Candidates, polling table and ratings for the New Hampshire Senate race.",
+  "reference",
+  [
+   "sen-nh-2"
+  ]
+ ],
+ [
+  "bp-sen-nh",
+  "United States Senate election in New Hampshire, 2026",
+  "Ballotpedia",
+  "https://ballotpedia.org/United_States_Senate_election_in_New_Hampshire,_2026",
+  "Ballotpedia's race page: candidates, survey responses and campaign finance.",
+  "reference",
+  [
+   "sen-nh-2"
+  ]
+ ],
+ [
+  "wiki-sen-ne",
+  "2026 U.S. Senate election in Nebraska",
+  "Wikipedia",
+  "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Nebraska",
+  "Candidates, polling table and ratings for the Nebraska Senate race.",
+  "reference",
+  [
+   "sen-ne-2"
+  ]
+ ],
+ [
+  "bp-sen-ne",
+  "United States Senate election in Nebraska, 2026",
+  "Ballotpedia",
+  "https://ballotpedia.org/United_States_Senate_election_in_Nebraska,_2026",
+  "Ballotpedia's race page: candidates, survey responses and campaign finance.",
+  "reference",
+  [
+   "sen-ne-2"
+  ]
+ ],
+ [
+  "wiki-sen-mt",
+  "2026 U.S. Senate election in Montana",
+  "Wikipedia",
+  "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Montana",
+  "Candidates, polling table and ratings for the Montana Senate race.",
+  "reference",
+  [
+   "sen-mt-2"
+  ]
+ ],
+ [
+  "bp-sen-mt",
+  "United States Senate election in Montana, 2026",
+  "Ballotpedia",
+  "https://ballotpedia.org/United_States_Senate_election_in_Montana,_2026",
+  "Ballotpedia's race page: candidates, survey responses and campaign finance.",
+  "reference",
+  [
+   "sen-mt-2"
+  ]
+ ],
+ [
+  "wiki-sen-ks",
+  "2026 U.S. Senate election in Kansas",
+  "Wikipedia",
+  "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Kansas",
+  "Candidates, polling table and ratings for the Kansas Senate race.",
+  "reference",
+  [
+   "sen-ks-2"
+  ]
+ ],
+ [
+  "bp-sen-ks",
+  "United States Senate election in Kansas, 2026",
+  "Ballotpedia",
+  "https://ballotpedia.org/United_States_Senate_election_in_Kansas,_2026",
+  "Ballotpedia's race page: candidates, survey responses and campaign finance.",
+  "reference",
+  [
+   "sen-ks-2"
+  ]
+ ],
+ [
+  "wiki-sen-mn",
+  "2026 U.S. Senate election in Minnesota",
+  "Wikipedia",
+  "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
+  "Candidates, polling table and ratings for the Minnesota Senate race.",
+  "reference",
+  [
+   "sen-mn-2"
+  ]
+ ],
+ [
+  "bp-sen-mn",
+  "United States Senate election in Minnesota, 2026",
+  "Ballotpedia",
+  "https://ballotpedia.org/United_States_Senate_election_in_Minnesota,_2026",
+  "Ballotpedia's race page: candidates, survey responses and campaign finance.",
+  "reference",
+  [
+   "sen-mn-2"
+  ]
+ ],
+ [
+  "wiki-sen-oh-special",
+  "2026 U.S. Senate special election in Ohio",
+  "Wikipedia",
+  "https://en.wikipedia.org/wiki/2026_United_States_Senate_special_election_in_Ohio",
+  "Candidates, polling and ratings for the Ohio special Senate election.",
+  "reference",
+  [
+   "sen-oh-3"
+  ]
+ ],
+ [
+  "bp-sen-oh-special",
+  "United States Senate special election in Ohio, 2026",
+  "Ballotpedia",
+  "https://ballotpedia.org/United_States_Senate_special_election_in_Ohio,_2026",
+  "Ballotpedia's page for the Ohio special Senate election.",
+  "reference",
+  [
+   "sen-oh-3"
+  ]
+ ],
+ [
+  "wiki-sen-fl-special",
+  "2026 U.S. Senate special election in Florida",
+  "Wikipedia",
+  "https://en.wikipedia.org/wiki/2026_United_States_Senate_special_election_in_Florida",
+  "Candidates, polling and ratings for the Florida special Senate election.",
+  "reference",
+  [
+   "sen-fl-3"
+  ]
+ ],
+ [
+  "bp-sen-fl-special",
+  "United States Senate special election in Florida, 2026",
+  "Ballotpedia",
+  "https://ballotpedia.org/United_States_Senate_special_election_in_Florida,_2026",
+  "Ballotpedia's page for the Florida special Senate election.",
+  "reference",
+  [
+   "sen-fl-3"
+  ]
+ ]
+]

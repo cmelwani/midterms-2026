@@ -1,0 +1,23 @@
+.candidate-table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+.candidate-table th, .candidate-table td { padding: 3px 4px; text-align: left; border-top: 1px solid var(--border); vertical-align: middle; }
+.candidate-table thead th { border-top: 0; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.03em; color: var(--text-muted); font-weight: 600; }
+.candidate-table__name { font-weight: 500; }
+.candidate-table__name a { color: var(--text); text-decoration: none; }
+.candidate-table__name a:hover, .candidate-table__name a:focus-visible { text-decoration: underline; }
+.candidate-table__num { text-align: right !important; font-variant-numeric: tabular-nums; white-space: nowrap; width: 3.5rem; }
+.candidate-table__chip { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; background: var(--ind); vertical-align: -1px; }
+.candidate-table__chip--D { background: var(--dem); }
+.candidate-table__chip--R { background: var(--rep); }
+.candidate-table__party { color: var(--text-muted); font-size: 0.8em; }
+.candidate-table__inc { margin-left: 4px; font-size: 0.7rem; color: var(--text-muted); text-decoration: none; border: 1px solid var(--border); border-radius: 3px; padding: 0 3px; }
+.candidate-table__check { margin-left: 4px; color: #047857; font-weight: 700; }
+.candidate-table__row--winner th, .candidate-table__row--winner td { font-weight: 700; background: #ecfdf5; }
+.candidate-table__empty { margin: 4px 0; font-size: 0.85rem; }
+@media (max-width: 700px) {
+  .candidate-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .candidate-table tr { display: flex; flex-wrap: wrap; align-items: baseline; border-top: 1px solid var(--border); padding: 3px 0; }
+  .candidate-table th, .candidate-table td { border-top: 0; padding: 1px 4px; }
+  .candidate-table__name { flex: 1 1 100%; }
+  .candidate-table__num { width: auto; text-align: left !important; font-size: 0.8rem; color: var(--text-muted); }
+  .candidate-table__num::before { content: attr(data-label) ' '; }
+}
