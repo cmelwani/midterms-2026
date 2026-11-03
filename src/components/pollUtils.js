@@ -3,8 +3,12 @@ export const STALE_POLL_DAYS = 14
 export const POLLING_ERROR_PTS = 3
 
 // D margins are negative, R positive, everything else (I/L/G/O or tie) by sign of party.
+export const MAX_PLAUSIBLE_MARGIN = 100
+
+const validMargin = (m) => m && m.points != null && Math.abs(m.points) <= MAX_PLAUSIBLE_MARGIN
+
 export function signedMargin(margin) {
-  if (!margin || margin.points == null) return null
+  if (!validMargin(margin)) return null
   if (!margin.party) return 0
   if (margin.party === 'D') return -margin.points
   if (margin.party === 'R') return margin.points
@@ -12,7 +16,7 @@ export function signedMargin(margin) {
 }
 
 export function marginLabel(margin) {
-  if (!margin || margin.points == null) return '—'
+  if (!validMargin(margin)) return '—'
   if (!margin.party || margin.points === 0) return 'Tied'
   return `${margin.party}+${Number(margin.points).toFixed(1).replace(/\.0$/, '')}`
 }
