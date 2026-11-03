@@ -93,7 +93,7 @@ export default function Candidate() {
           <h2 id="cand-about">About</h2>
           {profile?.bio
             ? <p>{profile.bio}</p>
-            : <p className="muted">No detailed profile for this candidate yet. Showing the {party.name} platform below.</p>}
+            : <p className="muted">{profile ? 'No biography available yet.' : 'No detailed profile for this candidate yet.'}{usesPlatform ? ` Showing the ${party.name} platform below.` : ''}</p>}
 
           <h3>{profile ? 'Top priorities' : `${party.name} platform priorities`}</h3>
           {prioritiesSource === 'party-platform' && (
