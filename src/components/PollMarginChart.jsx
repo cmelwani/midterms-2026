@@ -1,20 +1,20 @@
 import { useId, useMemo, useState } from 'react'
-import { absoluteTime, marginLabel, POLLING_ERROR_PTS, pollPct, raceLabel, raceShortLabel, signedMargin } from './pollUtils.js'
+import { absoluteTime, isThirdPartyLead, marginLabel, POLLING_ERROR_PTS, pollPct, raceLabel, raceShortLabel, signedMargin } from './pollUtils.js'
 import './PollMarginChart.css'
 
-// Session C. Diverging poll-margin chart: D+ bars extend left, R+ right.
+// Session C. Diverging poll-margin chart: D+ bars extend left, R+ right; third-party leads (gray) plot opposite their major-party opponent.
 // Props: { races: race objects with non-null poll, onSelect?: (raceId) => void }
 export default function PollMarginChart({ races, onSelect }) {
   const [active, setActive] = useState(null)
   const tipId = useId()
 
   const rows = useMemo(() => races
-    .map((r) => ({ race: r, m: signedMargin(r.poll?.margin) }))
+    .map((r) => ({ race: r, m: signedMargin(r.poll?.margin, r) }))
     .filter((r) => r.m != null)
     .sort((a, b) => a.m - b.m || raceLabel(a.race).localeCompare(raceLabel(b.race))), [races])
 
   const scale = useMemo(() => {
-    const vals = rows.flatMap(({ race, m }) => [m, ...(race.poll.others || []).map((o) => signedMargin(o.margin) ?? 0)])
+    const vals = rows.flatMap(({ race, m }) => [m, ...(race.poll.others || []).map((o) => signedMargin(o.margin, race) ?? 0)])
     const max = Math.max(10, ...vals.map(Math.abs))
     return Math.min(30, Math.ceil(max / 5) * 5)
   }, [rows])
@@ -32,6 +32,7 @@ export default function PollMarginChart({ races, onSelect }) {
         <span className="poll-margin-chart__legend">
           <span className="poll-margin-chart__key poll-margin-chart__key--D" /> Dem lead
           <span className="poll-margin-chart__key poll-margin-chart__key--R" /> Rep lead
+          {rows.some(({ race }) => isThirdPartyLead(race.poll.margin)) && <><span className="poll-margin-chart__key poll-margin-chart__key--I" /> Independent/third-party lead (plotted opposite its main opponent)</>}
           <span className="poll-margin-chart__key poll-margin-chart__key--band" /> ±{POLLING_ERROR_PTS} pts (typical polling error)
           <span className="poll-margin-chart__key poll-margin-chart__key--dot" /> other aggregators
         </span>
@@ -52,7 +53,7 @@ export default function PollMarginChart({ races, onSelect }) {
           const p = race.poll
           const lo = Math.min(pos(m), 50)
           const hi = Math.max(pos(m), 50)
-          const party = m < 0 ? 'D' : m > 0 ? 'R' : 'tie'
+          const party = isThirdPartyLead(p.margin) ? 'I' : m < 0 ? 'D' : m > 0 ? 'R' : 'tie'
           const isActive = active === race.id
           const summary = (race.candidates || [])
             .filter((c) => pollPct(p, c.id) != null)
@@ -76,7 +77,7 @@ export default function PollMarginChart({ races, onSelect }) {
                   <span className="poll-margin-chart__center" />
                   <span className={`poll-margin-chart__bar poll-margin-chart__bar--${party}`} style={{ left: `${lo}%`, width: `${Math.max(hi - lo, 0.6)}%` }} />
                   {(p.others || []).map((o) => {
-                    const om = signedMargin(o.margin)
+                    const om = signedMargin(o.margin, race)
                     return om == null ? null : (
                       <span key={o.source} className="poll-margin-chart__dot" style={{ left: `${pos(om)}%` }} title={`${o.source}: ${marginLabel(o.margin)}`} />
                     )

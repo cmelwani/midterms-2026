@@ -87,7 +87,7 @@ export default function Polls() {
   const noPoll = filtered.filter((r) => !r.poll)
   const sorted = useMemo(() => [...withPoll].sort((a, b) => {
     if (sort === 'recent') return (Date.parse(b.poll.asOf) || 0) - (Date.parse(a.poll.asOf) || 0)
-    return Math.abs(signedMargin(a.poll.margin) ?? 99) - Math.abs(signedMargin(b.poll.margin) ?? 99)
+    return Math.abs(signedMargin(a.poll.margin, a) ?? 99) - Math.abs(signedMargin(b.poll.margin, b) ?? 99)
   }), [withPoll, sort])
   const rows = showNoPoll ? [...sorted, ...noPoll] : sorted
 
