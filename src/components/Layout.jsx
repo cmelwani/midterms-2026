@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { NavLink, Outlet, useLocation } from 'react-router-dom'
 import LastUpdated from './LastUpdated.jsx'
 import { useResults } from '../hooks/useResults.jsx'
@@ -22,6 +22,17 @@ export default function Layout() {
   // Menu is open only for the route it was opened on, so navigating closes it.
   const [openOn, setOpenOn] = useState(null)
   const open = openOn === pathname
+  const headerRef = useRef(null)
+
+  // Publish the real (possibly wrapped) header height so anchor targets clear it.
+  useEffect(() => {
+    const el = headerRef.current
+    if (!el || typeof ResizeObserver === 'undefined') return
+    const root = document.documentElement
+    const ro = new ResizeObserver(() => root.style.setProperty('--nav-offset', `${el.offsetHeight}px`))
+    ro.observe(el)
+    return () => { ro.disconnect(); root.style.removeProperty('--nav-offset') }
+  }, [])
 
   useEffect(() => {
     if (!open) return
@@ -33,7 +44,7 @@ export default function Layout() {
   return (
     <div className="layout">
       <a className="layout__skip" href="#main">Skip to content</a>
-      <header className="nav">
+      <header className="nav" ref={headerRef}>
         <div className="nav__inner">
           <NavLink to="/" className="nav__brand" aria-label="2026 Midterms — Dashboard">
             <span className="nav__logo" aria-hidden="true"><i /><i /></span>
