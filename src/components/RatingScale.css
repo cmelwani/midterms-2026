@@ -1,0 +1,13 @@
+.rating-scale { margin: 6px 0 0; }
+.rating-scale__track { position: relative; display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; height: 12px; }
+.rating-scale__step { border-radius: 2px; }
+.rating-scale__step--D { background: var(--dem-light); }
+.rating-scale__step--D.is-likely { background: #a9c4f0; }
+.rating-scale__step--D.is-solid { background: var(--dem); }
+.rating-scale__step--R { background: var(--rep-light); }
+.rating-scale__step--R.is-likely { background: #f2a9ae; }
+.rating-scale__step--R.is-solid { background: var(--rep); }
+.rating-scale__step--T { background: var(--tossup-light); }
+.rating-scale__marker { position: absolute; top: -5px; width: 0; height: 0; margin-left: -7px; border: 7px solid transparent; border-top: 10px solid var(--text); }
+.rating-scale__labels { display: grid; grid-template-columns: repeat(7, 1fr); font-size: 10px; color: var(--text-muted); text-align: center; margin-top: 3px; }
+.rating-scale--compact .rating-scale__track { height: 8px; }

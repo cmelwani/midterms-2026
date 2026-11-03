@@ -1,0 +1,12 @@
+{
+  "D": {
+    "summary": "The Democratic Party's 2024 national platform, adopted at the August 2024 Democratic National Convention, focuses on lowering everyday costs for working families, restoring and protecting reproductive freedom, and defending democracy and voting rights.",
+    "priorities": ["Lower costs for families, including housing, health care and child care", "Restore and protect reproductive freedom, including abortion access", "Protect democracy and voting rights"],
+    "source": "https://www.presidency.ucsb.edu/documents/2024-democratic-party-platform"
+  },
+  "R": {
+    "summary": "The Republican Party's 2024 national platform, adopted at the July 2024 Republican National Convention, lists twenty promises led by securing the southern border, ending inflation and making America the world's dominant energy producer.",
+    "priorities": ["Seal the border, and stop the migrant invasion", "End inflation, and make America affordable again", "Make America the dominant energy producer in the world"],
+    "source": "https://www.presidency.ucsb.edu/documents/2024-republican-party-platform"
+  }
+}

@@ -1,0 +1,1831 @@
+{
+ "chamber": "senate",
+ "source": "Wikipedia, 2026 United States Senate elections \u2013 Predictions (compiles each publisher's latest rating)",
+ "sourceUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Predictions",
+ "publishers": [
+  {
+   "key": "Cook",
+   "name": "Cook Political Report",
+   "linkId": "cook-senate",
+   "asOf": "2026-11-02"
+  },
+  {
+   "key": "Sabato",
+   "name": "Sabato's Crystal Ball",
+   "linkId": "sabato-senate",
+   "asOf": "2026-11-02"
+  },
+  {
+   "key": "IE",
+   "name": "Inside Elections",
+   "linkId": "inside-senate",
+   "asOf": "2026-10-29"
+  },
+  {
+   "key": "DDHQ",
+   "name": "Decision Desk HQ",
+   "linkId": "ddhq-senate",
+   "asOf": "2026-11-02"
+  },
+  {
+   "key": "Economist",
+   "name": "The Economist",
+   "linkId": "economist-senate",
+   "asOf": "2026-11-03"
+  },
+  {
+   "key": "FPO",
+   "name": "FiftyPlusOne",
+   "linkId": "fpo-senate",
+   "asOf": "2026-11-02"
+  },
+  {
+   "key": "Fox",
+   "name": "Fox News",
+   "linkId": "fox-power-rankings",
+   "asOf": "2026-11-01"
+  },
+  {
+   "key": "MSNOW",
+   "name": "MS NOW",
+   "linkId": "msnow-senate",
+   "asOf": "2026-10-29"
+  },
+  {
+   "key": "NBC",
+   "name": "NBC News",
+   "linkId": "nbc-midterms",
+   "asOf": "2026-11-03"
+  },
+  {
+   "key": "RCP",
+   "name": "RealClearPolitics",
+   "linkId": "rcp-senate-map",
+   "asOf": "2026-11-02"
+  },
+  {
+   "key": "SB",
+   "name": "Silver Bulletin",
+   "linkId": "silver-bulletin",
+   "asOf": "2026-11-03"
+  },
+  {
+   "key": "ST",
+   "name": "Split Ticket",
+   "linkId": "splitticket-model",
+   "asOf": "2026-11-02"
+  }
+ ],
+ "races": {
+  "sen-al-2": {
+   "Cook": {
+    "category": "solid",
+    "party": "R"
+   },
+   "DDHQ": {
+    "category": "solid",
+    "party": "R"
+   },
+   "Economist": {
+    "category": "solid",
+    "party": "R"
+   },
+   "FPO": {
+    "category": "solid",
+    "party": "R"
+   },
+   "Fox": {
+    "category": "solid",
+    "party": "R"
+   },
+   "IE": {
+    "category": "solid",
+    "party": "R"
+   },
+   "MSNOW": {
+    "category": "solid",
+    "party": "R"
+   },
+   "NBC": {
+    "category": "solid",
+    "party": "R"
+   },
+   "RCP": {
+    "category": "solid",
+    "party": "R"
+   },
+   "Sabato": {
+    "category": "solid",
+    "party": "R"
+   },
+   "SB": {
+    "category": "solid",
+    "party": "R"
+   },
+   "ST": {
+    "category": "solid",
+    "party": "R"
+   }
+  },
+  "sen-ak-2": {
+   "Cook": {
+    "category": "toss-up",
+    "party": null
+   },
+   "DDHQ": {
+    "category": "lean",
+    "party": "D"
+   },
+   "Economist": {
+    "category": "toss-up",
+    "party": null
+   },
+   "FPO": {
+    "category": "lean",
+    "party": "D"
+   },
+   "Fox": {
+    "category": "toss-up",
+    "party": null
+   },
+   "IE": {
+    "category": "toss-up",
+    "party": null
+   },
+   "MSNOW": {
+    "category": "toss-up",
+    "party": null
+   },
+   "NBC": {
+    "category": "toss-up",
+    "party": null
+   },
+   "RCP": {
+    "category": "toss-up",
+    "party": null
+   },
+   "Sabato": {
+    "category": "lean",
+    "party": "D"
+   },
+   "SB": {
+    "category": "toss-up",
+    "party": null
+   },
+   "ST": {
+    "category": "lean",
+    "party": "D"
+   }
+  },
+  "sen-ar-2": {
+   "Cook": {
+    "category": "solid",
+    "party": "R"
+   },
+   "DDHQ": {
+    "category": "solid",
+    "party": "R"
+   },
+   "Economist": {
+    "category": "solid",
+    "party": "R"
+   },
+   "FPO": {
+    "category": "solid",
+    "party": "R"
+   },
+   "Fox": {
+    "category": "solid",
+    "party": "R"
+   },
+   "IE": {
+    "category": "solid",
+    "party": "R"
+   },
+   "MSNOW": {
+    "category": "solid",
+    "party": "R"
+   },
+   "NBC": {
+    "category": "solid",
+    "party": "R"
+   },
+   "RCP": {
+    "category": "solid",
+    "party": "R"
+   },
+   "Sabato": {
+    "category": "solid",
+    "party": "R"
+   },
+   "SB": {
+    "category": "solid",
+    "party": "R"
+   },
+   "ST": {
+    "category": "solid",
+    "party": "R"
+   }
+  },
+  "sen-co-2": {
+   "Cook": {
+    "category": "solid",
+    "party": "D"
+   },
+   "DDHQ": {
+    "category": "solid",
+    "party": "D"
+   },
+   "Economist": {
+    "category": "solid",
+    "party": "D"
+   },
+   "FPO": {
+    "category": "solid",
+    "party": "D"
+   },
+   "Fox": {
+    "category": "solid",
+    "party": "D"
+   },
+   "IE": {
+    "category": "solid",
+    "party": "D"
+   },
+   "MSNOW": {
+    "category": "solid",
+    "party": "D"
+   },
+   "NBC": {
+    "category": "solid",
+    "party": "D"
+   },
+   "RCP": {
+    "category": "solid",
+    "party": "D"
+   },
+   "Sabato": {
+    "category": "solid",
+    "party": "D"
+   },
+   "SB": {
+    "category": "solid",
+    "party": "D"
+   },
+   "ST": {
+    "category": "solid",
+    "party": "D"
+   }
+  },
+  "sen-de-2": {
+   "Cook": {
+    "category": "solid",
+    "party": "D"
+   },
+   "DDHQ": {
+    "category": "solid",
+    "party": "D"
+   },
+   "Economist": {
+    "category": "solid",
+    "party": "D"
+   },
+   "FPO": {
+    "category": "solid",
+    "party": "D"
+   },
+   "Fox": {
+    "category": "solid",
+    "party": "D"
+   },
+   "IE": {
+    "category": "solid",
+    "party": "D"
+   },
+   "MSNOW": {
+    "category": "solid",
+    "party": "D"
+   },
+   "NBC": {
+    "category": "solid",
+    "party": "D"
+   },
+   "RCP": {
+    "category": "solid",
+    "party": "D"
+   },
+   "Sabato": {
+    "category": "solid",
+    "party": "D"
+   },
+   "SB": {
+    "category": "solid",
+    "party": "D"
+   },
+   "ST": {
+    "category": "solid",
+    "party": "D"
+   }
+  },
+  "sen-fl-3": {
+   "Cook": {
+    "category": "likely",
+    "party": "R"
+   },
+   "DDHQ": {
+    "category": "likely",
+    "party": "R"
+   },
+   "Economist": {
+    "category": "likely",
+    "party": "R"
+   },
+   "FPO": {
+    "category": "likely",
+    "party": "R"
+   },
+   "Fox": {
+    "category": "solid",
+    "party": "R"
+   },
+   "IE": {
+    "category": "likely",
+    "party": "R"
+   },
+   "MSNOW": {
+    "category": "likely",
+    "party": "R"
+   },
+   "NBC": {
+    "category": "likely",
+    "party": "R"
+   },
+   "RCP": {
+    "category": "lean",
+    "party": "R"
+   },
+   "Sabato": {
+    "category": "likely",
+    "party": "R"
+   },
+   "SB": {
+    "category": "likely",
+    "party": "R"
+   },
+   "ST": {
+    "category": "likely",
+    "party": "R"
+   }
+  },
+  "sen-ga-2": {
+   "Cook": {
+    "category": "likely",
+    "party": "D"
+   },
+   "DDHQ": {
+    "category": "likely",
+    "party": "D"
+   },
+   "Economist": {
+    "category": "likely",
+    "party": "D"
+   },
+   "FPO": {
+    "category": "solid",
+    "party": "D"
+   },
+   "Fox": {
+    "category": "likely",
+    "party": "D"
+   },
+   "IE": {
+    "category": "likely",
+    "party": "D"
+   },
+   "MSNOW": {
+    "category": "lean",
+    "party": "D"
+   },
+   "NBC": {
+    "category": "likely",
+    "party": "D"
+   },
+   "RCP": {
+    "category": "likely",
+    "party": "D"
+   },
+   "Sabato": {
+    "category": "likely",
+    "party": "D"
+   },
+   "SB": {
+    "category": "solid",
+    "party": "D"
+   },
+   "ST": {
+    "category": "solid",
+    "party": "D"
+   }
+  },
+  "sen-id-2": {
+   "Cook": {
+    "category": "solid",
+    "party": "R"
+   },
+   "DDHQ": {
+    "category": "solid",
+    "party": "R"
+   },
+   "Economist": {
+    "category": "solid",
+    "party": "R"
+   },
+   "FPO": {
+    "category": "solid",
+    "party": "R"
+   },
+   "Fox": {
+    "category": "solid",
+    "party": "R"
+   },
+   "IE": {
+    "category": "solid",
+    "party": "R"
+   },
+   "MSNOW": {
+    "category": "solid",
+    "party": "R"
+   },
+   "NBC": {
+    "category": "solid",
+    "party": "R"
+   },
+   "RCP": {
+    "category": "solid",
+    "party": "R"
+   },
+   "Sabato": {
+    "category": "solid",
+    "party": "R"
+   },
+   "SB": {
+    "category": "solid",
+    "party": "R"
+   },
+   "ST": {
+    "category": "solid",
+    "party": "R"
+   }
+  },
+  "sen-il-2": {
+   "Cook": {
+    "category": "solid",
+    "party": "D"
+   },
+   "DDHQ": {
+    "category": "solid",
+    "party": "D"
+   },
+   "Economist": {
+    "category": "solid",
+    "party": "D"
+   },
+   "FPO": {
+    "category": "solid",
+    "party": "D"
+   },
+   "Fox": {
+    "category": "solid",
+    "party": "D"
+   },
+   "IE": {
+    "category": "solid",
+    "party": "D"
+   },
+   "MSNOW": {
+    "category": "solid",
+    "party": "D"
+   },
+   "NBC": {
+    "category": "solid",
+    "party": "D"
+   },
+   "RCP": {
+    "category": "solid",
+    "party": "D"
+   },
+   "Sabato": {
+    "category": "solid",
+    "party": "D"
+   },
+   "SB": {
+    "category": "solid",
+    "party": "D"
+   },
+   "ST": {
+    "category": "solid",
+    "party": "D"
+   }
+  },
+  "sen-ia-2": {
+   "Cook": {
+    "category": "toss-up",
+    "party": null
+   },
+   "DDHQ": {
+    "category": "toss-up",
+    "party": null
+   },
+   "Economist": {
+    "category": "lean",
+    "party": "R"
+   },
+   "FPO": {
+    "category": "toss-up",
+    "party": null
+   },
+   "Fox": {
+    "category": "toss-up",
+    "party": null
+   },
+   "IE": {
+    "category": "toss-up",
+    "party": null
+   },
+   "MSNOW": {
+    "category": "lean",
+    "party": "R"
+   },
+   "NBC": {
+    "category": "toss-up",
+    "party": null
+   },
+   "RCP": {
+    "category": "toss-up",
+    "party": null
+   },
+   "Sabato": {
+    "category": "lean",
+    "party": "R"
+   },
+   "SB": {
+    "category": "toss-up",
+    "party": null
+   },
+   "ST": {
+    "category": "toss-up",
+    "party": null
+   }
+  },
+  "sen-ks-2": {
+   "Cook": {
+    "category": "toss-up",
+    "party": null
+   },
+   "DDHQ": {
+    "category": "toss-up",
+    "party": null
+   },
+   "Economist": {
+    "category": "toss-up",
+    "party": null
+   },
+   "FPO": {
+    "category": "lean",
+    "party": "D"
+   },
+   "Fox": {
+    "category": "toss-up",
+    "party": null
+   },
+   "IE": {
+    "category": "toss-up",
+    "party": null
+   },
+   "MSNOW": {
+    "category": "lean",
+    "party": "R"
+   },
+   "NBC": {
+    "category": "toss-up",
+    "party": null
+   },
+   "RCP": {
+    "category": "toss-up",
+    "party": null
+   },
+   "Sabato": {
+    "category": "lean",
+    "party": "D"
+   },
+   "SB": {
+    "category": "lean",
+    "party": "D"
+   },
+   "ST": {
+    "category": "lean",
+    "party": "D"
+   }
+  },
+  "sen-ky-2": {
+   "Cook": {
+    "category": "solid",
+    "party": "R"
+   },
+   "DDHQ": {
+    "category": "likely",
+    "party": "R"
+   },
+   "Economist": {
+    "category": "solid",
+    "party": "R"
+   },
+   "FPO": {
+    "category": "solid",
+    "party": "R"
+   },
+   "Fox": {
+    "category": "solid",
+    "party": "R"
+   },
+   "IE": {
+    "category": "solid",
+    "party": "R"
+   },
+   "MSNOW": {
+    "category": "solid",
+    "party": "R"
+   },
+   "NBC": {
+    "category": "solid",
+    "party": "R"
+   },
+   "RCP": {
+    "category": "solid",
+    "party": "R"
+   },
+   "Sabato": {
+    "category": "solid",
+    "party": "R"
+   },
+   "SB": {
+    "category": "solid",
+    "party": "R"
+   },
+   "ST": {
+    "category": "solid",
+    "party": "R"
+   }
+  },
+  "sen-la-2": {
+   "Cook": {
+    "category": "solid",
+    "party": "R"
+   },
+   "DDHQ": {
+    "category": "likely",
+    "party": "R"
+   },
+   "Economist": {
+    "category": "likely",
+    "party": "R"
+   },
+   "FPO": {
+    "category": "likely",
+    "party": "R"
+   },
+   "Fox": {
+    "category": "solid",
+    "party": "R"
+   },
+   "IE": {
+    "category": "likely",
+    "party": "R"
+   },
+   "MSNOW": {
+    "category": "solid",
+    "party": "R"
+   },
+   "NBC": {
+    "category": "solid",
+    "party": "R"
+   },
+   "RCP": {
+    "category": "solid",
+    "party": "R"
+   },
+   "Sabato": {
+    "category": "lean",
+    "party": "R"
+   },
+   "SB": {
+    "category": "likely",
+    "party": "R"
+   },
+   "ST": {
+    "category": "likely",
+    "party": "R"
+   }
+  },
+  "sen-me-2": {
+   "Cook": {
+    "category": "toss-up",
+    "party": null
+   },
+   "DDHQ": {
+    "category": "lean",
+    "party": "D"
+   },
+   "Economist": {
+    "category": "lean",
+    "party": "D"
+   },
+   "FPO": {
+    "category": "likely",
+    "party": "D"
+   },
+   "Fox": {
+    "category": "toss-up",
+    "party": null
+   },
+   "IE": {
+    "category": "toss-up",
+    "party": null
+   },
+   "MSNOW": {
+    "category": "toss-up",
+    "party": null
+   },
+   "NBC": {
+    "category": "lean",
+    "party": "D"
+   },
+   "RCP": {
+    "category": "toss-up",
+    "party": null
+   },
+   "Sabato": {
+    "category": "lean",
+    "party": "D"
+   },
+   "SB": {
+    "category": "likely",
+    "party": "D"
+   },
+   "ST": {
+    "category": "lean",
+    "party": "D"
+   }
+  },
+  "sen-ma-2": {
+   "Cook": {
+    "category": "solid",
+    "party": "D"
+   },
+   "DDHQ": {
+    "category": "solid",
+    "party": "D"
+   },
+   "Economist": {
+    "category": "solid",
+    "party": "D"
+   },
+   "FPO": {
+    "category": "solid",
+    "party": "D"
+   },
+   "Fox": {
+    "category": "solid",
+    "party": "D"
+   },
+   "IE": {
+    "category": "solid",
+    "party": "D"
+   },
+   "MSNOW": {
+    "category": "solid",
+    "party": "D"
+   },
+   "NBC": {
+    "category": "solid",
+    "party": "D"
+   },
+   "RCP": {
+    "category": "solid",
+    "party": "D"
+   },
+   "Sabato": {
+    "category": "solid",
+    "party": "D"
+   },
+   "SB": {
+    "category": "solid",
+    "party": "D"
+   },
+   "ST": {
+    "category": "solid",
+    "party": "D"
+   }
+  },
+  "sen-mi-2": {
+   "Cook": {
+    "category": "lean",
+    "party": "D"
+   },
+   "DDHQ": {
+    "category": "likely",
+    "party": "D"
+   },
+   "Economist": {
+    "category": "lean",
+    "party": "D"
+   },
+   "FPO": {
+    "category": "likely",
+    "party": "D"
+   },
+   "Fox": {
+    "category": "toss-up",
+    "party": null
+   },
+   "IE": {
+    "category": "tilt",
+    "party": "D"
+   },
+   "MSNOW": {
+    "category": "toss-up",
+    "party": null
+   },
+   "NBC": {
+    "category": "lean",
+    "party": "D"
+   },
+   "RCP": {
+    "category": "toss-up",
+    "party": null
+   },
+   "Sabato": {
+    "category": "lean",
+    "party": "D"
+   },
+   "SB": {
+    "category": "likely",
+    "party": "D"
+   },
+   "ST": {
+    "category": "likely",
+    "party": "D"
+   }
+  },
+  "sen-mn-2": {
+   "Cook": {
+    "category": "lean",
+    "party": "D"
+   },
+   "DDHQ": {
+    "category": "likely",
+    "party": "D"
+   },
+   "Economist": {
+    "category": "lean",
+    "party": "D"
+   },
+   "FPO": {
+    "category": "likely",
+    "party": "D"
+   },
+   "Fox": {
+    "category": "lean",
+    "party": "D"
+   },
+   "IE": {
+    "category": "lean",
+    "party": "D"
+   },
+   "MSNOW": {
+    "category": "lean",
+    "party": "D"
+   },
+   "NBC": {
+    "category": "likely",
+    "party": "D"
+   },
+   "RCP": {
+    "category": "lean",
+    "party": "D"
+   },
+   "Sabato": {
+    "category": "likely",
+    "party": "D"
+   },
+   "SB": {
+    "category": "likely",
+    "party": "D"
+   },
+   "ST": {
+    "category": "likely",
+    "party": "D"
+   }
+  },
+  "sen-ms-2": {
+   "Cook": {
+    "category": "likely",
+    "party": "R"
+   },
+   "DDHQ": {
+    "category": "likely",
+    "party": "R"
+   },
+   "Economist": {
+    "category": "likely",
+    "party": "R"
+   },
+   "FPO": {
+    "category": "solid",
+    "party": "R"
+   },
+   "Fox": {
+    "category": "likely",
+    "party": "R"
+   },
+   "IE": {
+    "category": "likely",
+    "party": "R"
+   },
+   "MSNOW": {
+    "category": "likely",
+    "party": "R"
+   },
+   "NBC": {
+    "category": "likely",
+    "party": "R"
+   },
+   "RCP": {
+    "category": "likely",
+    "party": "R"
+   },
+   "Sabato": {
+    "category": "likely",
+    "party": "R"
+   },
+   "SB": {
+    "category": "solid",
+    "party": "R"
+   },
+   "ST": {
+    "category": "likely",
+    "party": "R"
+   }
+  },
+  "sen-mt-2": {
+   "Cook": {
+    "category": "solid",
+    "party": "R"
+   },
+   "DDHQ": {
+    "category": "likely",
+    "party": "R"
+   },
+   "Economist": {
+    "category": "likely",
+    "party": "R"
+   },
+   "FPO": {
+    "category": "likely",
+    "party": "R"
+   },
+   "Fox": {
+    "category": "solid",
+    "party": "R"
+   },
+   "IE": {
+    "category": "solid",
+    "party": "R"
+   },
+   "MSNOW": {
+    "category": "solid",
+    "party": "R"
+   },
+   "NBC": {
+    "category": "likely",
+    "party": "R"
+   },
+   "RCP": {
+    "category": "likely",
+    "party": "R"
+   },
+   "Sabato": {
+    "category": "solid",
+    "party": "R"
+   },
+   "SB": {
+    "category": "likely",
+    "party": "R"
+   },
+   "ST": {
+    "category": "solid",
+    "party": "R"
+   }
+  },
+  "sen-ne-2": {
+   "Cook": {
+    "category": "lean",
+    "party": "R"
+   },
+   "DDHQ": {
+    "category": "lean",
+    "party": "R"
+   },
+   "Economist": {
+    "category": "likely",
+    "party": "R"
+   },
+   "FPO": {
+    "category": "likely",
+    "party": "R"
+   },
+   "Fox": {
+    "category": "lean",
+    "party": "R"
+   },
+   "IE": {
+    "category": "tilt",
+    "party": "R"
+   },
+   "MSNOW": {
+    "category": "likely",
+    "party": "R"
+   },
+   "NBC": {
+    "category": "lean",
+    "party": "R"
+   },
+   "RCP": {
+    "category": "toss-up",
+    "party": null
+   },
+   "Sabato": {
+    "category": "lean",
+    "party": "R"
+   },
+   "SB": {
+    "category": "lean",
+    "party": "R"
+   },
+   "ST": {
+    "category": "lean",
+    "party": "R"
+   }
+  },
+  "sen-nh-2": {
+   "Cook": {
+    "category": "lean",
+    "party": "D"
+   },
+   "DDHQ": {
+    "category": "likely",
+    "party": "D"
+   },
+   "Economist": {
+    "category": "likely",
+    "party": "D"
+   },
+   "FPO": {
+    "category": "solid",
+    "party": "D"
+   },
+   "Fox": {
+    "category": "lean",
+    "party": "D"
+   },
+   "IE": {
+    "category": "tilt",
+    "party": "D"
+   },
+   "MSNOW": {
+    "category": "lean",
+    "party": "D"
+   },
+   "NBC": {
+    "category": "lean",
+    "party": "D"
+   },
+   "RCP": {
+    "category": "lean",
+    "party": "D"
+   },
+   "Sabato": {
+    "category": "likely",
+    "party": "D"
+   },
+   "SB": {
+    "category": "solid",
+    "party": "D"
+   },
+   "ST": {
+    "category": "solid",
+    "party": "D"
+   }
+  },
+  "sen-nj-2": {
+   "Cook": {
+    "category": "solid",
+    "party": "D"
+   },
+   "DDHQ": {
+    "category": "solid",
+    "party": "D"
+   },
+   "Economist": {
+    "category": "solid",
+    "party": "D"
+   },
+   "FPO": {
+    "category": "solid",
+    "party": "D"
+   },
+   "Fox": {
+    "category": "solid",
+    "party": "D"
+   },
+   "IE": {
+    "category": "solid",
+    "party": "D"
+   },
+   "MSNOW": {
+    "category": "solid",
+    "party": "D"
+   },
+   "NBC": {
+    "category": "solid",
+    "party": "D"
+   },
+   "RCP": {
+    "category": "solid",
+    "party": "D"
+   },
+   "Sabato": {
+    "category": "solid",
+    "party": "D"
+   },
+   "SB": {
+    "category": "solid",
+    "party": "D"
+   },
+   "ST": {
+    "category": "solid",
+    "party": "D"
+   }
+  },
+  "sen-nm-2": {
+   "Cook": {
+    "category": "solid",
+    "party": "D"
+   },
+   "DDHQ": {
+    "category": "solid",
+    "party": "D"
+   },
+   "Economist": {
+    "category": "solid",
+    "party": "D"
+   },
+   "FPO": {
+    "category": "solid",
+    "party": "D"
+   },
+   "Fox": {
+    "category": "solid",
+    "party": "D"
+   },
+   "IE": {
+    "category": "solid",
+    "party": "D"
+   },
+   "MSNOW": {
+    "category": "solid",
+    "party": "D"
+   },
+   "NBC": {
+    "category": "solid",
+    "party": "D"
+   },
+   "RCP": {
+    "category": "likely",
+    "party": "D"
+   },
+   "Sabato": {
+    "category": "solid",
+    "party": "D"
+   },
+   "SB": {
+    "category": "solid",
+    "party": "D"
+   },
+   "ST": {
+    "category": "solid",
+    "party": "D"
+   }
+  },
+  "sen-nc-2": {
+   "Cook": {
+    "category": "likely",
+    "party": "D"
+   },
+   "DDHQ": {
+    "category": "likely",
+    "party": "D"
+   },
+   "Economist": {
+    "category": "likely",
+    "party": "D"
+   },
+   "FPO": {
+    "category": "likely",
+    "party": "D"
+   },
+   "Fox": {
+    "category": "likely",
+    "party": "D"
+   },
+   "IE": {
+    "category": "lean",
+    "party": "D"
+   },
+   "MSNOW": {
+    "category": "lean",
+    "party": "D"
+   },
+   "NBC": {
+    "category": "likely",
+    "party": "D"
+   },
+   "RCP": {
+    "category": "likely",
+    "party": "D"
+   },
+   "Sabato": {
+    "category": "likely",
+    "party": "D"
+   },
+   "SB": {
+    "category": "solid",
+    "party": "D"
+   },
+   "ST": {
+    "category": "solid",
+    "party": "D"
+   }
+  },
+  "sen-oh-3": {
+   "Cook": {
+    "category": "toss-up",
+    "party": null
+   },
+   "DDHQ": {
+    "category": "toss-up",
+    "party": null
+   },
+   "Economist": {
+    "category": "toss-up",
+    "party": null
+   },
+   "FPO": {
+    "category": "lean",
+    "party": "D"
+   },
+   "Fox": {
+    "category": "lean",
+    "party": "D"
+   },
+   "IE": {
+    "category": "tilt",
+    "party": "D"
+   },
+   "MSNOW": {
+    "category": "toss-up",
+    "party": null
+   },
+   "NBC": {
+    "category": "toss-up",
+    "party": null
+   },
+   "RCP": {
+    "category": "toss-up",
+    "party": null
+   },
+   "Sabato": {
+    "category": "lean",
+    "party": "D"
+   },
+   "SB": {
+    "category": "lean",
+    "party": "D"
+   },
+   "ST": {
+    "category": "lean",
+    "party": "D"
+   }
+  },
+  "sen-ok-2": {
+   "Cook": {
+    "category": "solid",
+    "party": "R"
+   },
+   "DDHQ": {
+    "category": "solid",
+    "party": "R"
+   },
+   "Economist": {
+    "category": "solid",
+    "party": "R"
+   },
+   "FPO": {
+    "category": "solid",
+    "party": "R"
+   },
+   "Fox": {
+    "category": "solid",
+    "party": "R"
+   },
+   "IE": {
+    "category": "solid",
+    "party": "R"
+   },
+   "MSNOW": {
+    "category": "solid",
+    "party": "R"
+   },
+   "NBC": {
+    "category": "solid",
+    "party": "R"
+   },
+   "RCP": {
+    "category": "solid",
+    "party": "R"
+   },
+   "Sabato": {
+    "category": "solid",
+    "party": "R"
+   },
+   "SB": {
+    "category": "solid",
+    "party": "R"
+   },
+   "ST": {
+    "category": "solid",
+    "party": "R"
+   }
+  },
+  "sen-or-2": {
+   "Cook": {
+    "category": "solid",
+    "party": "D"
+   },
+   "DDHQ": {
+    "category": "solid",
+    "party": "D"
+   },
+   "Economist": {
+    "category": "solid",
+    "party": "D"
+   },
+   "FPO": {
+    "category": "solid",
+    "party": "D"
+   },
+   "Fox": {
+    "category": "solid",
+    "party": "D"
+   },
+   "IE": {
+    "category": "solid",
+    "party": "D"
+   },
+   "MSNOW": {
+    "category": "solid",
+    "party": "D"
+   },
+   "NBC": {
+    "category": "solid",
+    "party": "D"
+   },
+   "RCP": {
+    "category": "solid",
+    "party": "D"
+   },
+   "Sabato": {
+    "category": "solid",
+    "party": "D"
+   },
+   "SB": {
+    "category": "solid",
+    "party": "D"
+   },
+   "ST": {
+    "category": "solid",
+    "party": "D"
+   }
+  },
+  "sen-ri-2": {
+   "Cook": {
+    "category": "solid",
+    "party": "D"
+   },
+   "DDHQ": {
+    "category": "solid",
+    "party": "D"
+   },
+   "Economist": {
+    "category": "solid",
+    "party": "D"
+   },
+   "FPO": {
+    "category": "solid",
+    "party": "D"
+   },
+   "Fox": {
+    "category": "solid",
+    "party": "D"
+   },
+   "IE": {
+    "category": "solid",
+    "party": "D"
+   },
+   "MSNOW": {
+    "category": "solid",
+    "party": "D"
+   },
+   "NBC": {
+    "category": "solid",
+    "party": "D"
+   },
+   "RCP": {
+    "category": "solid",
+    "party": "D"
+   },
+   "Sabato": {
+    "category": "solid",
+    "party": "D"
+   },
+   "SB": {
+    "category": "solid",
+    "party": "D"
+   },
+   "ST": {
+    "category": "solid",
+    "party": "D"
+   }
+  },
+  "sen-sc-2": {
+   "Cook": {
+    "category": "lean",
+    "party": "R"
+   },
+   "DDHQ": {
+    "category": "lean",
+    "party": "R"
+   },
+   "Economist": {
+    "category": "lean",
+    "party": "R"
+   },
+   "FPO": {
+    "category": "lean",
+    "party": "R"
+   },
+   "Fox": {
+    "category": "toss-up",
+    "party": null
+   },
+   "IE": {
+    "category": "tilt",
+    "party": "R"
+   },
+   "MSNOW": {
+    "category": "lean",
+    "party": "R"
+   },
+   "NBC": {
+    "category": "lean",
+    "party": "R"
+   },
+   "RCP": {
+    "category": "toss-up",
+    "party": null
+   },
+   "Sabato": {
+    "category": "lean",
+    "party": "R"
+   },
+   "SB": {
+    "category": "lean",
+    "party": "R"
+   },
+   "ST": {
+    "category": "lean",
+    "party": "R"
+   }
+  },
+  "sen-sd-2": {
+   "Cook": {
+    "category": "solid",
+    "party": "R"
+   },
+   "DDHQ": {
+    "category": "solid",
+    "party": "R"
+   },
+   "Economist": {
+    "category": "solid",
+    "party": "R"
+   },
+   "FPO": {
+    "category": "solid",
+    "party": "R"
+   },
+   "Fox": {
+    "category": "solid",
+    "party": "R"
+   },
+   "IE": {
+    "category": "solid",
+    "party": "R"
+   },
+   "MSNOW": {
+    "category": "solid",
+    "party": "R"
+   },
+   "NBC": {
+    "category": "solid",
+    "party": "R"
+   },
+   "RCP": {
+    "category": "solid",
+    "party": "R"
+   },
+   "Sabato": {
+    "category": "solid",
+    "party": "R"
+   },
+   "SB": {
+    "category": "solid",
+    "party": "R"
+   },
+   "ST": {
+    "category": "likely",
+    "party": "R"
+   }
+  },
+  "sen-tn-2": {
+   "Cook": {
+    "category": "solid",
+    "party": "R"
+   },
+   "DDHQ": {
+    "category": "solid",
+    "party": "R"
+   },
+   "Economist": {
+    "category": "solid",
+    "party": "R"
+   },
+   "FPO": {
+    "category": "solid",
+    "party": "R"
+   },
+   "Fox": {
+    "category": "solid",
+    "party": "R"
+   },
+   "IE": {
+    "category": "solid",
+    "party": "R"
+   },
+   "MSNOW": {
+    "category": "solid",
+    "party": "R"
+   },
+   "NBC": {
+    "category": "solid",
+    "party": "R"
+   },
+   "RCP": {
+    "category": "solid",
+    "party": "R"
+   },
+   "Sabato": {
+    "category": "solid",
+    "party": "R"
+   },
+   "SB": {
+    "category": "solid",
+    "party": "R"
+   },
+   "ST": {
+    "category": "solid",
+    "party": "R"
+   }
+  },
+  "sen-tx-2": {
+   "Cook": {
+    "category": "toss-up",
+    "party": null
+   },
+   "DDHQ": {
+    "category": "lean",
+    "party": "D"
+   },
+   "Economist": {
+    "category": "toss-up",
+    "party": null
+   },
+   "FPO": {
+    "category": "lean",
+    "party": "D"
+   },
+   "Fox": {
+    "category": "toss-up",
+    "party": null
+   },
+   "IE": {
+    "category": "tilt",
+    "party": "D"
+   },
+   "MSNOW": {
+    "category": "toss-up",
+    "party": null
+   },
+   "NBC": {
+    "category": "toss-up",
+    "party": null
+   },
+   "RCP": {
+    "category": "toss-up",
+    "party": null
+   },
+   "Sabato": {
+    "category": "lean",
+    "party": "D"
+   },
+   "SB": {
+    "category": "likely",
+    "party": "D"
+   },
+   "ST": {
+    "category": "likely",
+    "party": "D"
+   }
+  },
+  "sen-va-2": {
+   "Cook": {
+    "category": "solid",
+    "party": "D"
+   },
+   "DDHQ": {
+    "category": "solid",
+    "party": "D"
+   },
+   "Economist": {
+    "category": "solid",
+    "party": "D"
+   },
+   "FPO": {
+    "category": "solid",
+    "party": "D"
+   },
+   "Fox": {
+    "category": "solid",
+    "party": "D"
+   },
+   "IE": {
+    "category": "solid",
+    "party": "D"
+   },
+   "MSNOW": {
+    "category": "solid",
+    "party": "D"
+   },
+   "NBC": {
+    "category": "solid",
+    "party": "D"
+   },
+   "RCP": {
+    "category": "solid",
+    "party": "D"
+   },
+   "Sabato": {
+    "category": "solid",
+    "party": "D"
+   },
+   "SB": {
+    "category": "solid",
+    "party": "D"
+   },
+   "ST": {
+    "category": "solid",
+    "party": "D"
+   }
+  },
+  "sen-wv-2": {
+   "Cook": {
+    "category": "solid",
+    "party": "R"
+   },
+   "DDHQ": {
+    "category": "solid",
+    "party": "R"
+   },
+   "Economist": {
+    "category": "solid",
+    "party": "R"
+   },
+   "FPO": {
+    "category": "solid",
+    "party": "R"
+   },
+   "Fox": {
+    "category": "solid",
+    "party": "R"
+   },
+   "IE": {
+    "category": "solid",
+    "party": "R"
+   },
+   "MSNOW": {
+    "category": "solid",
+    "party": "R"
+   },
+   "NBC": {
+    "category": "solid",
+    "party": "R"
+   },
+   "RCP": {
+    "category": "solid",
+    "party": "R"
+   },
+   "Sabato": {
+    "category": "solid",
+    "party": "R"
+   },
+   "SB": {
+    "category": "solid",
+    "party": "R"
+   },
+   "ST": {
+    "category": "solid",
+    "party": "R"
+   }
+  },
+  "sen-wy-2": {
+   "Cook": {
+    "category": "solid",
+    "party": "R"
+   },
+   "DDHQ": {
+    "category": "solid",
+    "party": "R"
+   },
+   "Economist": {
+    "category": "solid",
+    "party": "R"
+   },
+   "FPO": {
+    "category": "solid",
+    "party": "R"
+   },
+   "Fox": {
+    "category": "solid",
+    "party": "R"
+   },
+   "IE": {
+    "category": "solid",
+    "party": "R"
+   },
+   "MSNOW": {
+    "category": "solid",
+    "party": "R"
+   },
+   "NBC": {
+    "category": "solid",
+    "party": "R"
+   },
+   "RCP": {
+    "category": "solid",
+    "party": "R"
+   },
+   "Sabato": {
+    "category": "solid",
+    "party": "R"
+   },
+   "SB": {
+    "category": "solid",
+    "party": "R"
+   },
+   "ST": {
+    "category": "solid",
+    "party": "R"
+   }
+  }
+ }
+}
