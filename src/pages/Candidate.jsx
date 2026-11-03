@@ -55,7 +55,8 @@ export default function Candidate() {
     )
   }
 
-  const platform = !profile ? cands.data?.partyPlatforms?.[base.party] : null
+  const usesPlatform = !profile || profile.prioritiesSource === 'party-platform'
+  const platform = usesPlatform ? cands.data?.partyPlatforms?.[base.party] || null : null
   const priorities = profile?.priorities || platform?.priorities || []
   const prioritiesSource = profile?.prioritiesSource || (platform ? 'party-platform' : null)
   const party = partyInfo(base.party)
