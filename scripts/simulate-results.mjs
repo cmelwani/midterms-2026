@@ -72,9 +72,11 @@ function readJson(name) {
 }
 
 const seedNow = () => ({ updated: isoLocal(), ...structuredClone(SEED) })
+// Fixed so a reset reproduces the committed seed byte-for-byte.
+const SEED_UPDATED = '2026-11-03T17:00:00+00:00'
 
 if (flag('reset')) {
-  writeJson('results.json', seedNow())
+  writeJson('results.json', { updated: SEED_UPDATED, ...structuredClone(SEED) })
   console.log('results.json reset to the pre-election seed.')
   process.exit(0)
 }
