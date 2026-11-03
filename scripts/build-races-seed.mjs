@@ -134,7 +134,7 @@ for (const r of senRaces) {
     const matched = candCols.map((h) => {
       const name = h.replace(/\([A-Z]\)$/, '').trim()
       const last = name.split(' ').pop().toLowerCase()
-      return nominees.find((n) => n.name.toLowerCase().endsWith(last) && (n.name.toLowerCase().split(' ')[0] === name.toLowerCase().split(' ')[0] || nominees.filter((x) => x.name.toLowerCase().endsWith(last)).length === 1))
+      return nominees.find((n) => n.name.toLowerCase() === name.toLowerCase()) || nominees.find((n) => n.name.toLowerCase().endsWith(last) && (n.name.toLowerCase().split(' ')[0] === name.toLowerCase().split(' ')[0] || nominees.filter((x) => x.name.toLowerCase().endsWith(last)).length === 1))
     })
     if (!candCols.length || matched.some((m) => !m)) continue
     for (const row of tableRows(t).slice(1)) {

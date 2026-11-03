@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T16:52:28Z",
+ "updated": "2026-11-03T16:52:56Z",
  "sources": [
   {
    "name": "Cook Political Report — Senate race ratings",
@@ -121,7 +121,63 @@
     "asOf": "2026-11-02",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "poll": null,
+   "poll": {
+    "average": [
+     {
+      "candidateId": "ak-sen-sullivan",
+      "pct": 48.2
+     },
+     {
+      "candidateId": "ak-sen-peltola",
+      "pct": 49.2
+     }
+    ],
+    "margin": {
+     "party": "D",
+     "points": 1
+    },
+    "source": "RealClearPolling",
+    "url": "https://www.realclearpolling.com/polls/senate/general/2026/alaska/peltola-vs-sullivan",
+    "asOf": "2026-11-02",
+    "others": [
+     {
+      "source": "FiftyPlusOne",
+      "url": "https://fiftyplusone.news/polls/senate/general/alaska",
+      "asOf": "2026-11-03",
+      "margin": {
+       "party": "D",
+       "points": 2.3
+      }
+     },
+     {
+      "source": "Silver Bulletin",
+      "url": "https://www.natesilver.net/p/nate-silver-2026-midterm-election-polls-model",
+      "asOf": "2026-11-03",
+      "margin": {
+       "party": "D",
+       "points": 2.4
+      }
+     },
+     {
+      "source": "270toWin",
+      "url": "https://www.270towin.com/2026-senate-polls/alaska",
+      "asOf": "2026-11-02",
+      "margin": {
+       "party": "D",
+       "points": 3.5
+      }
+     },
+     {
+      "source": "Decision Desk HQ",
+      "url": "https://votes.decisiondeskhq.com/races/2026-11-03/alaska-us-senate-general-election/polling",
+      "asOf": "2026-11-02",
+      "margin": {
+       "party": "D",
+       "points": 1.4
+      }
+     }
+    ]
+   },
    "winner": null
   },
   {

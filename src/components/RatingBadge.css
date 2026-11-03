@@ -1,0 +1,9 @@
+.rating-badge { display: inline-block; padding: 1px 7px; border-radius: 999px; font-size: 0.75rem; font-weight: 600; line-height: 1.5; white-space: nowrap; border: 1px solid transparent; cursor: help; }
+.rating-badge--toss-up { background: var(--tossup-light); color: #5b21b6; border-color: var(--tossup); }
+.rating-badge--lean-D { background: var(--dem-light); color: #1e3a8a; border-color: #8fb3ea; }
+.rating-badge--likely-D { background: #4f84d6; color: #fff; }
+.rating-badge--solid-D { background: var(--dem); color: #fff; }
+.rating-badge--lean-R { background: var(--rep-light); color: #7f1d1d; border-color: #f09aa2; }
+.rating-badge--likely-R { background: #d8404f; color: #fff; }
+.rating-badge--solid-R { background: var(--rep); color: #fff; }
+.rating-badge--lean-I, .rating-badge--likely-I, .rating-badge--solid-I, .rating-badge--none { background: var(--ind-light); color: #374151; border-color: var(--ind); }
